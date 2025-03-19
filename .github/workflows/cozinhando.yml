@@ -11,9 +11,9 @@ jobs:
     name: Cozinhando nossa app
     runs-on: ubuntu-latest
     steps:
-      - name: Sincronizar repositorio
+      - name: Sincronizando repositorio
         uses: actions/checkout@v4
-      - name: npm install e build
+      - name: Cozinhando (npm install & build)
         run: |
           npm install
           npm run build --if-present
@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
             name: cozido
-            path: .next/server/pages
+            path: dist
