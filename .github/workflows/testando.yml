@@ -28,6 +28,7 @@ jobs:
     name: Servindo
     needs: download
     runs-on: ubuntu-latest
+    steps:
       - name: Servindo o cozido
         uses: appleboy/ssh-action@master
         with:
