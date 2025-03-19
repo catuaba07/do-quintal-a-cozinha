@@ -9,6 +9,7 @@ on:
 jobs:
   download:
     name: Baixando o cozido
+    environment: Quintal
     runs-on: ubuntu-latest
     steps:
       - name: Baixando o que foi cozido
@@ -26,6 +27,7 @@ jobs:
           target: ${{ secrets.PATH }}
   deploy:
     name: Servindo
+    environment: Quintal
     needs: download
     runs-on: ubuntu-latest
     steps:
