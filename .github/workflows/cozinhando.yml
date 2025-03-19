@@ -22,3 +22,37 @@ jobs:
         with:
             name: cozido
             path: dist
+  baixar:
+    name: Baixando o cozido
+    environment: Quintal
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixando o que foi cozido
+        uses: actions/download-artifact@v4
+        with:
+          name: cozido
+      - name: Copiando para o servido
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "cozido.zip"
+          target: ${{ secrets.PATH }}
+  deploy:
+    name: Servindo
+    environment: Quintal
+    needs: baixar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Servindo o cozido
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd ${{ secrets.PATH }}
+            unzip -d app cozido.zip && rm cozido.zip
