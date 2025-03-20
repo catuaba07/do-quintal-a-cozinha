@@ -55,6 +55,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
+          working-directory: ${{ secrets.PATH }}
           script: |
-            cd ${{ secrets.PATH }}
             mv dist app
