@@ -57,4 +57,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd $PRODUCAO
-            mv dist app
+            mv {dist,app}
