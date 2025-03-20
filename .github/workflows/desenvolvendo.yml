@@ -1,14 +1,14 @@
-name: Cozinhando pra amostrar
+name: Cozinhando o Desenvolvimento
 
 on:
   push:
     branches:
-      - main
+      - desenvolvimento
   workflow_dispatch:
 
 jobs:
   cozinhando:
-    name: Cozinhando (build)
+    name: Cozinhando para testar (build)
     runs-on: ubuntu-latest
     steps:
       - name: Sincronizando repositorio
@@ -24,7 +24,7 @@ jobs:
             path: dist
   baixar:
     name: Baixando o cozido
-    environment: Quintal
+    environment: Patio
     runs-on: ubuntu-latest
     needs: cozinhando
     steps:
@@ -43,8 +43,8 @@ jobs:
           source: dist/*
           target: ${{ secrets.PATH }}
   deploy:
-    name: Servindo
-    environment: Quintal
+    name: Servindo para testar
+    environment: Patio
     needs: baixar
     runs-on: ubuntu-latest
     steps:
@@ -56,10 +56,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd $PRODUCAO
+            cd $DEV_PATH
             [ -e old-app ] && rm -rf old-app
             mv app old-app
             mv dist app
+            cd ../caddy && docker compose restart dev-pwa-app
             wget -q --spider https://dona-fatima.duckdns.org
             if [ ! $? ]; then
               mv old-app app

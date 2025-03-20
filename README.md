@@ -1,39 +1,32 @@
 # Do Quintal a Cozinha
-  Dando visibilidade a producao do MMTR
-  
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+  Aplicativo desenvolvido pelas mulheres do MMTR-SE
 
-## Getting Started
 
-First, run the development server:
+## Contribuindo
+Clonar o rep
+    $ git clone https://github.com/catuaba07/do-quintal-a-cozinha.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Dependencias node e npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rodar
+    $ npm cli
+    $ npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O site estara disponivel em
+    http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Docker
+Se preferir usar docker, tenha instalado docker compose e rode:
+    $ docker compose up 
 
-## Learn More
+O site estara disponivel em
+    http://localhost:3001
 
-To learn more about Next.js, take a look at the following resources:
+O docker esta configurado para assistir suas mudancas, ou seja, assim que um codigo for alterado no projeto, docker se encarregara de atualizar o conteudo do site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Obrigada!
+@josantostd
+Jullie
+hmohr
+Cris
+telemias
