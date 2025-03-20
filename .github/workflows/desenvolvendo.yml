@@ -3,7 +3,7 @@ name: Cozinhando o Desenvolvimento
 on:
   push:
     branches:
-      - deselvolvimento
+      - desenvolvimento
   workflow_dispatch:
 
 jobs:
