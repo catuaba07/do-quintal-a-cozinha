@@ -32,14 +32,14 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: cozido
-      - name: Copiando para o servido
+      - name: Copiando para o servidor
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "cozido.zip"
+          source: "cozido"
           target: ${{ secrets.PATH }}
   deploy:
     name: Servindo
