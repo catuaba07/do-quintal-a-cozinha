@@ -57,4 +57,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd ${{ secrets.PATH }}
-            unzip -d app cozido.zip && rm cozido.zip
+            mv dist app
