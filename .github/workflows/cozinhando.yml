@@ -1,4 +1,4 @@
-name: Cozinhando o final
+name: Cozinhando pra amostrar
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   cozinhando:
-    name: Cozinhando para producao
+    name: Cozinhando (build)
     runs-on: ubuntu-latest
     steps:
       - name: Sincronizando repositorio
@@ -56,5 +56,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd ${{ secrets.PATH }}
-            mv dist app
+            whoami
+            ls -al
