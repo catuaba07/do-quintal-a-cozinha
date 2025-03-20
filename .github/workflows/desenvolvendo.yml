@@ -60,6 +60,7 @@ jobs:
             [ -e old-app ] && rm -rf old-app
             mv app old-app
             mv dist app
+            cd ../caddy && docker compose restart dev-pwa-app
             wget -q --spider https://dona-fatima.duckdns.org
             if [ ! $? ]; then
               mv old-app app
