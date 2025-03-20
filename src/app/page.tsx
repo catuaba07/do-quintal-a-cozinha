@@ -28,9 +28,6 @@ export default function Home() {
           <li className="tracking-[-.01em]">
             e papas y maiz, ademas de palomitas?
           </li>
-          <li className="tracking-[-.01em]">
-            e ovo, e ovo
-          </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
