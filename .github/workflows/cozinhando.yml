@@ -32,6 +32,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: cozido
+          path: dist
       - name: Copiando para o servidor
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -39,7 +40,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "cozido"
+          source: dist/*
           target: ${{ secrets.PATH }}
   deploy:
     name: Servindo
