@@ -1,28 +1,17 @@
-# Stage 1: Build the application
-FROM node:20-alpine as builder
+# Development stage
+FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy package files
+# Install dependencies first (better layer caching)
 COPY package*.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm ci
-
-# Copy source code
+# Copy the rest of the application
 COPY . .
 
-# Build the application
-RUN npm run build
+# Expose port 3000
+EXPOSE 3000
 
-# Stage 2: Serve the application
-FROM nginx:alpine
-
-# Copy the built assets from builder stage
-COPY --from=builder /app/out /usr/share/nginx/html
-
-# Copy nginx configuration (if you have custom config)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Start the development server with hot reloading
+CMD ["npm", "run", "dev"]

@@ -1,11 +1,17 @@
 services:
-  ux-web:
-    container_name: ${UX_APP}
+  dev-quintal:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true  # Enable polling for hot reload in Docker
+    command: npm run dev
     restart: unless-stopped
     networks:
       - app_network

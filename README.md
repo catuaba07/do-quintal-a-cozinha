@@ -17,10 +17,12 @@ O site estara disponivel em
 
 ### Docker
 Se preferir usar docker, tenha instalado docker compose e rode:
-    $ docker compose up -d
+    $ docker compose up 
 
 O site estara disponivel em
-    http://localhost:8080
+    http://localhost:3001
+
+O docker esta configurado para assistir suas mudancas, ou seja, assim que um codigo for alterado no projeto, docker se encarregara de atualizar o conteudo do site.
 
 Obrigada!
 @josantostd
