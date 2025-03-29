@@ -16,14 +16,14 @@ datasource db {
 model Offer {
   id           String  @id
   name         String
-  social_name  String
+  social_name  String?
   phone_number String
   instagram    String?
 
   product_name String
   description  String
   category     Category
-  img_path     String
+  img_path     String?
   audio_path   String?
   video_path   String?
 }
