@@ -4,6 +4,12 @@ type params = { params: Promise<{ phone_number: string }> };
 export async function GET(request: Request, { params }: params) {
   const { phone_number } = await params;
 
+  if (request.headers.get("API_KEY") !== process.env.API_KEY) {
+    return new Response(JSON.stringify({ error: "Invalid API Key" }), {
+      status: 401,
+    });
+  }
+
   const profile = await prisma.profile.findUnique({ where: { phone_number } });
 
   if (!profile) {
