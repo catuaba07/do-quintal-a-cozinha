@@ -16,8 +16,8 @@ datasource db {
 model Profile {
   id           String  @id
   name         String
-  social_name  String
-  phone_number String
+  phone_number String  @unique
+  social_name  String?
   instagram    String?
 
   Product Product[]
