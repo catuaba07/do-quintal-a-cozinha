@@ -5,7 +5,7 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "sqlite"
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -13,19 +13,27 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Offer {
+model Profile {
   id           String  @id
   name         String
-  social_name  String?
+  social_name  String
   phone_number String
   instagram    String?
 
+  Product Product[]
+}
+
+model Product {
+  id           String   @id
   product_name String
   description  String
   category     Category
   img_path     String?
   audio_path   String?
   video_path   String?
+
+  profile    Profile @relation(fields: [profile_id], references: [id])
+  profile_id String
 }
 
 enum Category {
