@@ -26,7 +26,7 @@ model Profile {
 model Product {
   id           String   @id
   product_name String
-  description  String
+  description  String?
   category     Category
   img_path     String?
   audio_path   String?
