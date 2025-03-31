@@ -12,3 +12,12 @@ API_KEY:
 ### get profile by phone_number
 GET http://localhost:3000/api/profile/+15 981669682 HTTP/1.1
 API_KEY: 
+
+### update profile
+PUT http://localhost:3000/api/profile/+15 981669682 HTTP/1.1
+content-type: application/json
+API_KEY: 
+
+{
+    "name": "Gustavo Galoow"
+}
