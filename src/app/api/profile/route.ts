@@ -33,7 +33,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    await prisma.profile.create({
+    const profile = await prisma.profile.create({
       data: {
         id: uuidv4(),
         name: body.name,
@@ -44,7 +44,10 @@ export async function POST(request: Request) {
     });
 
     return new Response(
-      JSON.stringify({ message: "Profile created successfully" }),
+      JSON.stringify({
+        message: "Profile created successfully",
+        data: profile,
+      }),
       {
         status: 201,
       }
