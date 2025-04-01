@@ -1,0 +1,22 @@
+services:
+  pre-quintal:
+    container_name: pre-quintal
+    build:
+        context: $PWD
+        dockerfile: docker/pre-producao/Dockerfile
+    env_file:
+      - $PWD/.env
+    ports:
+      - "82:3000"
+    volumes:
+      - $PWD:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
