@@ -16,10 +16,12 @@
 # next.js
 /.next/
 /out/
-/dist/
 
 # production
 /build
+
+#prism
+/generated/
 
 # misc
 .DS_Store

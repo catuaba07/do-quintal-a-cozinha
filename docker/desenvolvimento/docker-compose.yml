@@ -1,12 +1,14 @@
 services:
   dev-quintal:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: $PWD
+      dockerfile: docker/desenvolvimento/Dockerfile
+    env_file:
+      - $PWD/.env
     ports:
       - "3001:3000"
     volumes:
-      - .:/app
+      - $PWD:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
