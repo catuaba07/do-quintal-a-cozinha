@@ -4,7 +4,7 @@ import { prisma } from "@/lib/prisma";
 import { type NextRequest } from "next/server";
 import { Category, type Prisma } from "../../../../generated/prisma";
 
-import { saveFile } from "@/utils/saveFile";
+import { saveFile } from "@/utils/saveFIle";
 
 export async function POST(request: Request) {
   const formData = await request.formData();

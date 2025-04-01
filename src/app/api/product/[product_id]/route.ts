@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { saveFile } from "@/utils/saveFile";
+import { saveFile } from "@/utils/saveFIle";
 import { Category } from "../../../../../generated/prisma";
 import path from "path";
 
