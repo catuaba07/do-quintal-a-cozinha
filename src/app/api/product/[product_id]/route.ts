@@ -1,6 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { saveFile } from "@/utils/saveFIle";
-import { Category } from "@prisma/client";
+import { Category } from "../../../../../generated/prisma";
 import path from "path";
 
 type params = { params: Promise<{ product_id: string }> };

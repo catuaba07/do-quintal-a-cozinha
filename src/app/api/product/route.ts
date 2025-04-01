@@ -2,7 +2,7 @@ import path from "path";
 import { v4 as uuidv4 } from "uuid";
 import { prisma } from "@/lib/prisma";
 import { type NextRequest } from "next/server";
-import { Category, type Prisma } from "@prisma/client";
+import { Category, type Prisma } from "../../../../generated/prisma";
 
 import { saveFile } from "@/utils/saveFIle";
 
