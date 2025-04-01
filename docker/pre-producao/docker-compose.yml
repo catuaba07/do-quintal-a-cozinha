@@ -2,14 +2,14 @@ services:
   pre-quintal:
     container_name: pre-quintal
     build:
-        context: $PWD
-        dockerfile: docker/pre-producao/Dockerfile
+        context: $DEV_PATH
+        dockerfile: $DEV_PATH/docker/pre-producao/Dockerfile
     env_file:
-      - $PWD/.env
+      - $DEV_PATH/.env
     ports:
       - "82:3000"
     volumes:
-      - $PWD:/app
+      - $DEV_PATH:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
