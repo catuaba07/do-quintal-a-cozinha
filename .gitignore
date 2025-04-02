@@ -16,10 +16,12 @@
 # next.js
 /.next/
 /out/
-/dist/
 
 # production
 /build
+
+#prism
+/generated
 
 # misc
 .DS_Store
@@ -40,3 +42,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# File Storage paths
+/public/images/*
+!/public/images/.gitkeep
+/public/audio/*
+!/public/audio/.gitkeep
+/public/video/*
+!/public/video/.gitkeep

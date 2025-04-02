@@ -1,0 +1,23 @@
+services:
+  dev-quintal:
+    build:
+      context: $PWD
+      dockerfile: docker/desenvolvimento/Dockerfile
+    env_file:
+      - $PWD/.env
+    ports:
+      - "3001:3000"
+    volumes:
+      - $PWD:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true  # Enable polling for hot reload in Docker
+    command: npm run dev
+    restart: unless-stopped
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
