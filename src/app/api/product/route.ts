@@ -14,13 +14,13 @@ export async function POST(request: Request) {
     });
   }
 
-  if (body.product_name) {
+  if (!body.product_name) {
     return new Response(JSON.stringify({ error: "Product name is required" }), {
       status: 400,
     });
   }
 
-  if (body.phone_number) {
+  if (!body.phone_number) {
     return new Response(JSON.stringify({ error: "Phone number is required" }), {
       status: 400,
     });
