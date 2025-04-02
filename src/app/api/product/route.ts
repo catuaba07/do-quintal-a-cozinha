@@ -1,18 +1,12 @@
-import path from "path";
 import { v4 as uuidv4 } from "uuid";
 import { prisma } from "@/lib/prisma";
 import { type NextRequest } from "next/server";
-import { Category, type Prisma } from "../../../../generated/prisma";
+import { Category } from "../../../../generated/prisma";
 
-import { saveFile } from "@/utils/saveFIle";
 
 export async function POST(request: Request) {
-  const formData = await request.formData();
-  const productImage = formData.get("product_image") as File;
-  const productAudio = formData.get("product_audio") as File;
-  const productVideo = formData.get("product_video") as File;
-
-  const category = formData.get("category");
+  const body = await request.json();
+  const category = body.category;
 
   if (request.headers.get("API_KEY") !== process.env.API_KEY) {
     return new Response(JSON.stringify({ error: "Invalid API Key" }), {
@@ -20,13 +14,13 @@ export async function POST(request: Request) {
     });
   }
 
-  if (!formData.get("product_name")) {
+  if (body.product_name) {
     return new Response(JSON.stringify({ error: "Product name is required" }), {
       status: 400,
     });
   }
 
-  if (!formData.get("phone_number")) {
+  if (body.phone_number) {
     return new Response(JSON.stringify({ error: "Phone number is required" }), {
       status: 400,
     });
@@ -53,9 +47,7 @@ export async function POST(request: Request) {
 
   const profile = await prisma.profile.findUnique({
     where: {
-      phone_number: (
-        formData.get("phone_number") as FormDataEntryValue
-      ).toString(),
+      phone_number: body.phone_number,
     },
   });
 
@@ -65,70 +57,18 @@ export async function POST(request: Request) {
     });
   }
 
-  const data: Prisma.ProductCreateManyInput = {
-    id: uuidv4(),
-    category,
-    description: formData.get("description")?.toString() || null,
-    product_name: (
-      formData.get("product_name") as FormDataEntryValue
-    ).toString(),
-    profile_id: profile.id,
-  };
-
-  if (productImage) {
-    try {
-      const productImagePath = path.join(
-        process.cwd(),
-        `/public/images/${productImage.name}`
-      );
-      console.log("productImagePath: ", productImagePath);
-
-      saveFile(productImage, productImagePath);
-      data.img_path = `/images/${productImage.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
-  }
-
-  if (productAudio) {
-    try {
-      const productAudioPath = path.join(
-        process.cwd(),
-        `/public/audio/${productAudio.name}`
-      );
-
-      saveFile(productAudio, productAudioPath);
-      data.audio_path = `/audio/${productAudio.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
-  }
-
-  if (productVideo) {
-    try {
-      const productVideoPath = path.join(
-        process.cwd(),
-        `/public/video/${productVideo.name}`
-      );
-
-      saveFile(productVideo, productVideoPath);
-      data.video_path = `/video/${productVideo.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
-  }
 
   const newProduct = await prisma.product.create({
-    data,
+    data: {
+      id: uuidv4(),
+      category,
+      description: body.description || null,
+      product_name: body.product_name,
+      profile_id: profile.id,
+      image_url: body.image_url || null,
+      audio_url: body.audio_url || null,
+      video_url: body.video_url || null,
+    },
   });
 
   return new Response(
