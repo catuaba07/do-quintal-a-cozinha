@@ -1,17 +1,11 @@
 import { prisma } from "@/lib/prisma";
-import { saveFile } from "@/utils/saveFIle";
 import { Category } from "../../../../../generated/prisma";
-import path from "path";
 
 type params = { params: Promise<{ product_id: string }> };
 export async function PUT(request: Request, { params }: params) {
   const { product_id } = await params;
-  const formData = await request.formData();
-  const productImage = formData.get("product_image") as File;
-  const productAudio = formData.get("product_audio") as File;
-  const productVideo = formData.get("product_video") as File;
-
-  const category = formData.get("category");
+  const body = await request.json();
+  const category = body.category;
 
   if (request.headers.get("API_KEY") !== process.env.API_KEY) {
     return new Response(JSON.stringify({ error: "Invalid API Key" }), {
@@ -46,67 +40,24 @@ export async function PUT(request: Request, { params }: params) {
     product.category = category;
   }
 
-  if (formData.get("product_name")) {
-    product.product_name = (
-      formData.get("product_name") as FormDataEntryValue
-    ).toString();
+  if (body.product_name) {
+    product.product_name = body.product_name
   }
 
-  if (formData.get("description")) {
-    product.description = (
-      formData.get("description") as FormDataEntryValue
-    ).toString();
+  if (body.description) {
+    product.description = body.description
   }
 
-  if (productImage) {
-    try {
-      const productImagePath = path.join(
-        process.cwd(),
-        `/public/images/${productImage.name}`
-      );
-
-      saveFile(productImage, productImagePath);
-      product.img_path = `/images/${productImage.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
+  if (body.image_url) {
+    product.image_url = body.image_url
   }
 
-  if (productAudio) {
-    try {
-      const productAudioPath = path.join(
-        process.cwd(),
-        `/public/audio/${productAudio.name}`
-      );
-
-      saveFile(productAudio, productAudioPath);
-      product.audio_path = `/audio/${productAudio.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
+  if (body.audio_url) {
+    product.audio_url = body.audio_url
   }
 
-  if (productVideo) {
-    try {
-      const productVideoPath = path.join(
-        process.cwd(),
-        `/public/video/${productVideo.name}`
-      );
-
-      saveFile(productVideo, productVideoPath);
-      product.video_path = `/video/${productVideo.name}`;
-    } catch (error) {
-      return new Response(
-        JSON.stringify({ error: "Internal Server Error", stack: error }),
-        { status: 500 }
-      );
-    }
+  if (body.video_url) {
+    product.video_url = body.video_url
   }
 
   const editedProduct = await prisma.product.update({
