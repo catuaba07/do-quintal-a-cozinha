@@ -21,7 +21,7 @@
 /build
 
 #prism
-/generated/
+/generated
 
 # misc
 .DS_Store
