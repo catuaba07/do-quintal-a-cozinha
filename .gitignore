@@ -50,3 +50,9 @@ next-env.d.ts
 !/public/audio/.gitkeep
 /public/video/*
 !/public/video/.gitkeep
+
+/dist
+
+# Prisma
+dev.db
+dev.db-journal
