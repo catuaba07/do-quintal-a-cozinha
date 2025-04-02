@@ -30,9 +30,9 @@ model Product {
   product_name String
   description  String?
   category     Category
-  img_path     String?
-  audio_path   String?
-  video_path   String?
+  image_url    String?
+  audio_url    String?
+  video_url    String?
 
   profile    Profile @relation(fields: [profile_id], references: [id])
   profile_id String
