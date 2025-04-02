@@ -9,6 +9,4 @@ COPY . .
 
 EXPOSE 3000
 
-RUN npm run build
-
-CMD ["sh", "-c", "npm run db:deploy && npm run start"]
+CMD ["sh", "-c", "npm run build && npm run db:deploy && npm run start"]
