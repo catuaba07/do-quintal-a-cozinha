@@ -22,7 +22,6 @@ jobs:
   deploy:
     name: Servindo para testar
     environment: Patio
-    needs: baixar
     runs-on: ubuntu-latest
     steps:
       - name: Servindo o cozido
