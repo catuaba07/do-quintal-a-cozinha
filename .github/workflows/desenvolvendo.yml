@@ -9,6 +9,7 @@ on:
 jobs:
   cozinhando:
     name: Cozinhando para testar (build)
+    environment: Patio
     runs-on: ubuntu-latest
     steps:
       - name: Sincronizando repositorio
