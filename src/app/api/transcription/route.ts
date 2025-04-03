@@ -1,5 +1,4 @@
 import { Groq } from "groq-sdk";
-import { NextRequest } from "next/server";
 
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
@@ -42,7 +41,7 @@ export async function POST(request: Request) {
   }
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   return new Response(
     JSON.stringify({ error: "Method not allowed. Use POST instead." }),
     { status: 405 }
