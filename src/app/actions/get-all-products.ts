@@ -9,8 +9,17 @@ interface Options {
   price?: string[]
 }
 
+interface CategorySearch {
+  in: Category[]
+}
+
+interface Where {
+  category?: CategorySearch
+  product_name?: { contains: string }
+}
+
 export async function getAllProducts(options?: Options) {
-  let where: any = {}
+  const where = {} as Where;
   if (options?.categories) {
     console.log(options.categories)
     where.category = {

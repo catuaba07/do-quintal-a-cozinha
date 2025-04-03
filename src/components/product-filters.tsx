@@ -38,9 +38,9 @@ export function ProductFilters() {
     selectedPriceRanges.forEach((p) => params.append("price", p));
     console.log(params.toString());
     router.push(pathname + "?" + params.toString());
-  }, [searchParams, selectedCategories, selectedPriceRanges]);
+  }, [searchParams, selectedCategories, selectedPriceRanges, pathname, router]);
 
-  useEffect(resolvePath, [selectedCategories, selectedPriceRanges]);
+  useEffect(resolvePath, [selectedCategories, selectedPriceRanges, resolvePath]);
 
   const toggleCategory = (id: string) => {
     setSelectedCategories((prev) =>
