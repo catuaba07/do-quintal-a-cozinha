@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   output: "standalone",
   trailingSlash: true,
@@ -23,10 +24,19 @@ const nextConfig: NextConfig = {
     },
   ],
   images: {
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'picsum.photos',
-    }],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
+      {
+        protocol: "https",
+        hostname: "typebot.luisotee.com",
+        port: "",
+        pathname: "/api/**",
+      },
+    ],
   },
 };
+
 export default nextConfig;
