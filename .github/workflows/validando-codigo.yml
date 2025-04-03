@@ -29,6 +29,7 @@ jobs:
         run: npm run build
         env:
           CI: true
+          GROQ_API_KEY: "some-key"
 
       - name: Cache node modules
         uses: actions/cache@v4
