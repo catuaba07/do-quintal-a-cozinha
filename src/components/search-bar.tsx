@@ -2,25 +2,36 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
-interface SearchBarProps {
-  onSearch: (query: string) => void;
-}
-
-export function SearchBar({ onSearch }: SearchBarProps) {
+export function SearchBar() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    onSearch(searchQuery);
-  };
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set(name, value);
+
+      return params.toString();
+    },
+    [searchParams]
+  );
 
   return (
-    <form onSubmit={handleSearch} className="relative">
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        router.push(pathname + "?" + createQueryString("search", searchQuery));
+      }}
+      className="relative"
+    >
       <Input
         type="text"
         placeholder="Buscar produtos, artesãs ou regiões..."
