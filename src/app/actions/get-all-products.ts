@@ -10,7 +10,7 @@ interface Options {
 }
 
 export async function getAllProducts(options?: Options) {
-  let where: any = {}
+  const where: unknown = {}
   if (options?.categories) {
     console.log(options.categories)
     where.category = {
