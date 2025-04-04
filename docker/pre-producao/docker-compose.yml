@@ -8,9 +8,6 @@ services:
       - $DEV_PATH/.env
     ports:
       - "82:3000"
-    volumes:
-      - $DEV_PATH:/app
-      - /app/node_modules
     restart: unless-stopped
     networks:
       - app_network
