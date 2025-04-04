@@ -48,5 +48,4 @@ jobs:
             git checkout desenvolvimento
             git pull --rebase origin desenvolvimento
             cd ../caddy
-            docker compose build pre-quintal
-            docker compose up -d pre-quintal
+            docker compose up -d --build pre-quintal
