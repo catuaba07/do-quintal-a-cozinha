@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { Category } from "../../../../../generated/prisma";
+import { Category } from "@prisma/client";
 
 type params = { params: Promise<{ product_id: string }> };
 export async function PUT(request: Request, { params }: params) {

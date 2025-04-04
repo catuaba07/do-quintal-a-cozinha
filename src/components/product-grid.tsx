@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useMobile } from "@/hooks/use-mobile";
-import { $Enums } from "../../generated/prisma";
+import { $Enums } from "@prisma/client";
 
 interface Profile {
   name: string;

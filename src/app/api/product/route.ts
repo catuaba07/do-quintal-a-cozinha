@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { prisma } from "@/lib/prisma";
 import { type NextRequest } from "next/server";
-import { Category } from "../../../../generated/prisma";
+import { Category } from "@prisma/client";
 
 
 export async function POST(request: Request) {

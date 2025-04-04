@@ -1,7 +1,7 @@
 "use server";
 
 import { prisma } from "@/lib/prisma";
-import { Category } from "../../../generated/prisma";
+import { Category } from "@prisma/client";
 
 interface Options {
   search?: string
