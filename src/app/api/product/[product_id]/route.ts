@@ -7,12 +7,6 @@ export async function PUT(request: Request, { params }: params) {
   const body = await request.json();
   const category = body.category;
 
-  if (request.headers.get("API_KEY") !== process.env.API_KEY) {
-    return new Response(JSON.stringify({ error: "Invalid API Key" }), {
-      status: 401,
-    });
-  }
-
   const product = await prisma.product.findUnique({
     where: { id: product_id },
   });

@@ -5,12 +5,6 @@ const groq = new Groq({
 });
 
 export async function POST(request: Request) {
-  if (request.headers.get("API_KEY") !== process.env.API_KEY) {
-    return new Response(JSON.stringify({ error: "Invalid API Key" }), {
-      status: 401,
-    });
-  }
-
   const body = await request.json();
 
   if (!body.url) {

@@ -4,12 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 export async function POST(request: Request) {
   const body = await request.json();
 
-  if (request.headers.get("API_KEY") !== process.env.API_KEY) {
-    return new Response(JSON.stringify({ error: "Invalid API Key" }), {
-      status: 401,
-    });
-  }
-
   if (!body.phone_number) {
     return new Response(JSON.stringify({ error: "Phone number is required" }), {
       status: 400,
