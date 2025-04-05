@@ -36,11 +36,14 @@ export function ProductFilters() {
     const params = new URLSearchParams(searchParams.get("search") ?? "");
     selectedCategories.forEach((c) => params.append("categories", c));
     selectedPriceRanges.forEach((p) => params.append("price", p));
-    console.log(params.toString());
     router.push(pathname + "?" + params.toString());
   }, [searchParams, selectedCategories, selectedPriceRanges, pathname, router]);
 
-  useEffect(resolvePath, [selectedCategories, selectedPriceRanges, resolvePath]);
+  useEffect(resolvePath, [
+    selectedCategories,
+    selectedPriceRanges,
+    resolvePath,
+  ]);
 
   const toggleCategory = (id: string) => {
     setSelectedCategories((prev) =>

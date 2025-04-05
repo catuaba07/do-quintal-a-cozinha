@@ -21,7 +21,6 @@ interface Where {
 export async function getAllProducts(options?: Options) {
   const where = {} as Where;
   if (options?.categories) {
-    console.log(options.categories)
     where.category = {
       in: options.categories as Category[]
     }
@@ -31,7 +30,6 @@ export async function getAllProducts(options?: Options) {
       contains: options.search
     }
   }
-  console.log(where)
 
   const products = await prisma.product.findMany({
     select: {
