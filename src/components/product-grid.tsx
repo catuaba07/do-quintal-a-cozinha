@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useMobile } from "@/hooks/use-mobile";
-import { $Enums } from "@prisma/client";
+import { $Enums } from "../../generated/prisma";
 
 interface Profile {
   name: string;
@@ -55,7 +55,7 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
         <Card key={product.id} className="overflow-hidden group">
           <div className="relative aspect-square">
             <Image
-              src={"https://picsum.photos/1000"}
+              src={product.image_url || "/placeholder.svg"}
               alt={product.product_name}
               fill
               className="object-cover transition-transform group-hover:scale-105"
