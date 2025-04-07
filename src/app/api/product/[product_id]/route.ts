@@ -67,3 +67,24 @@ export async function PUT(request: Request, { params }: params) {
     { status: 201 }
   );
 }
+
+export async function DELETE(request: Request, { params }: params) {
+  const { product_id } = await params;
+
+  const product = await prisma.product.findUnique({
+    where: { id: product_id },
+  });
+
+  if (!product) {
+    return new Response(JSON.stringify({ error: "Product not found" }), {
+      status: 404,
+    });
+  }
+
+  await prisma.product.delete({ where: { id: product_id } });
+
+  return new Response(
+    JSON.stringify({ message: "Product deleted successfully" }),
+    { status: 200 }
+  );
+}

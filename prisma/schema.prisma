@@ -34,7 +34,7 @@ model Product {
   audio_url    String?
   video_url    String?
 
-  profile    Profile @relation(fields: [profile_id], references: [id])
+  profile    Profile @relation(fields: [profile_id], references: [id], onDelete: Cascade)
   profile_id String
 }
 
