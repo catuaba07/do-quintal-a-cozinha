@@ -57,3 +57,5 @@ next-env.d.ts
 # Prisma
 dev.db
 dev.db-journal
+
+*.http
