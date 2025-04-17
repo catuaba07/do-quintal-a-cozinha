@@ -23,11 +23,10 @@ export default function Home() {
       <div className="flex flex-col gap-6">
         <div className="space-y-4">
           <h1 className="text-3xl font-bold tracking-tight">
-            Artesanato de Sergipe
+            Nossa Produção
           </h1>
           <p className="text-muted-foreground">
-            Descubra produtos artesanais únicos feitos por mulheres artesãs do
-            interior de Sergipe
+            Conheça nossa produção!
           </p>
         </div>
         <SearchBar />

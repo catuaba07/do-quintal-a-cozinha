@@ -59,3 +59,4 @@ dev.db
 dev.db-journal
 
 *.http
+*storybook.log
