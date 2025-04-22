@@ -17,7 +17,7 @@ O site estara disponivel em
 
 ### Docker
 Se preferir usar docker, tenha instalado docker compose e rode:
-    $ docker compose up 
+    $ docker compose -f docker/desenvolvimento/docker-compose.yml up -d
 
 O site estara disponivel em
     http://localhost:3001
@@ -25,8 +25,10 @@ O site estara disponivel em
 O docker esta configurado para assistir suas mudancas, ou seja, assim que um codigo for alterado no projeto, docker se encarregara de atualizar o conteudo do site.
 
 Obrigada!
-@josantostd
-Jullie
-hmohr
-Cris
-telemias
+- @josantostd
+- @gustavogalo
+- @Luisotee
+- Jullie
+- hmohr
+- Cris
+- telemias

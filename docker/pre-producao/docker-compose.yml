@@ -1,0 +1,19 @@
+services:
+  pre-quintal:
+    container_name: pre-quintal
+    build:
+      context: $DEV_PATH
+      dockerfile: $DEV_PATH/docker/pre-producao/Dockerfile
+    env_file:
+      - $DEV_PATH/.env
+    ports:
+      - "82:3000"
+    restart: unless-stopped
+    networks:
+      - app_network
+    volumes:
+      - $DEV_PATH/prisma:/app/prisma
+
+networks:
+  app_network:
+    driver: bridge
