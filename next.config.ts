@@ -31,6 +31,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/api/**",
       },
+      {
+        protocol: "https",
+        hostname: "storage.luisotee.com",
+        port: "",
+        pathname: "/typebot/public/**",
+      },
     ],
   },
 };
