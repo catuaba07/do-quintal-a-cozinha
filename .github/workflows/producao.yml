@@ -8,7 +8,7 @@ on:
 
 jobs:
   cozinhando:
-    name: Cozinhando para testar (build)
+    name: Cozinhando para validar (build)
     runs-on: ubuntu-latest
     steps:
       - name: Sincronizando repositorio
