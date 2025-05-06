@@ -10,7 +10,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export function Header() {
   return (
-    <header className="border-grid sticky top-0 z-50 w-full bg-purple-400/95 backdrop-blur supports-[backdrop-filter]:bg-purple-400/60">
+    <header className="sticky top-0 z-50 w-full bg-purple-400/95 backdrop-blur supports-[backdrop-filter]:bg-purple-400/60">
       <div className="container-wrapper">
         <div className="container flex h-14 items-center gap-2 md:gap-4">
           <MainNav />
@@ -39,7 +39,7 @@ export function Header() {
                 className="h-8 w-8 px-0 text-white hover:text-primary"
               >
                 <a
-                  href={`mailto:${siteConfig.links.mail}`}
+                  href={`mailto:${siteConfig.mail}`}
                   target="_blank"
                   rel="noreferrer"
                 >
