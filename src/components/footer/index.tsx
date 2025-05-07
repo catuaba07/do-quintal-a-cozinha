@@ -9,7 +9,7 @@ export function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="w-full bg-purple-400/95 backdrop-blur supports-[backdrop-filter]:bg-purple-400/60">
+    <footer className="w-full bg-yellow-400/95 backdrop-blur supports-[backdrop-filter]:bg-yellow-400/60">
       <div className="container-wrapper">
         <div className="container flex flex-col my-4 gap-2 md:gap-4">
           <div className="flex justify-between lg:min-w-[1024px] m-auto flex-col lg:flex-row">
