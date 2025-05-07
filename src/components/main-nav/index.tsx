@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -9,7 +10,7 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-        <img src="/logo.png" alt="logo" height={32} width={32} />
+        <Image src="/logo.png" alt="logo" height={32} width={32} />
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
         <Link
