@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dona Fatima",
+  title: "Raimunda Raquel",
   description:
     "Descubra produtos artesanais únicos feitos por mulheres artesãs do interior de Sergipe",
 };
@@ -29,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${montserratSans.variable} ${geistMono.variable} antialiased`}
       >
