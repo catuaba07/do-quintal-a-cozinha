@@ -39,7 +39,7 @@ export default function RootLayout({
           <Suspense fallback={<div>Loading...</div>}>
             <div className="flex flex-col justify-between h-[100vh]">
               <Header />
-              <div className="flex-1">{children}</div>
+              <div className="flex-1 my-10">{children}</div>
               <Footer />
             </div>
           </Suspense>
