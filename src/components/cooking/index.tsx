@@ -2,7 +2,7 @@ import "./styles.css";
 
 export function Cooking() {
   return (
-    <div className="flex flex-col items-center justify-center h-full space-y-4">
+    <div className="flex flex-col items-center justify-center h-full space-y-4 p-4">
       <div className="relative">
         <div className="text-6xl panela">🍲</div>
         <div className="absolute -top-6 left-2 text-2xl steam">💨</div>

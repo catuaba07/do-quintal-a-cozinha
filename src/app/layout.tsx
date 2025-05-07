@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist_Mono, Montserrat } from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
 import { Suspense } from "react";
