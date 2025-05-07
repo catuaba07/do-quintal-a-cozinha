@@ -79,9 +79,9 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
               className="rounded-full bg-green-600 hover:bg-green-700"
               onClick={() => {
                 const message = `Olá! Estou interessado(a) no produto: ${product.product_name}`;
-                const whatsappUrl = `https://wa.me/5579999999999?text=${encodeURIComponent(
-                  message
-                )}`;
+                const whatsappUrl = `https://wa.me/${
+                  product.profile.phone_number
+                }?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, "_blank");
               }}
             >

@@ -19,8 +19,8 @@ export default function Home() {
   });
 
   return (
-    <main className="container mx-auto px-4 py-8">
-      <div className="flex flex-col gap-6">
+    <main className="container-wrapper">
+      <div className="container flex flex-col gap-6">
         <div className="space-y-4">
           <h1 className="text-3xl font-bold tracking-tight">
             Artesanato de Sergipe
