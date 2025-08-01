@@ -59,9 +59,6 @@ export async function POST(request: Request) {
       description: body.description || null,
       product_name: body.product_name,
       profile_id: profile.id,
-      image_url: body.image_url || null,
-      audio_url: body.audio_url || null,
-      video_url: body.video_url || null,
     },
   });
 
@@ -98,6 +95,14 @@ export async function GET(request: NextRequest) {
   }
 
   const product = await prisma.product.findUnique({
+    select: {
+      id: true,
+      product_name: true,
+      description: true,
+      category: true,
+      profile_id: true,
+      media: true
+    },
     where: { id: product_id as string },
   });
 

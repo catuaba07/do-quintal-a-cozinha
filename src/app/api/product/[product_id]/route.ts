@@ -42,18 +42,6 @@ export async function PUT(request: Request, { params }: params) {
     product.description = body.description
   }
 
-  if (body.image_url) {
-    product.image_url = body.image_url
-  }
-
-  if (body.audio_url) {
-    product.audio_url = body.audio_url
-  }
-
-  if (body.video_url) {
-    product.video_url = body.video_url
-  }
-
   const editedProduct = await prisma.product.update({
     data: product,
     where: { id: product_id },
