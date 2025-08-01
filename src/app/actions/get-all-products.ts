@@ -36,10 +36,7 @@ export async function getAllProducts(options?: Options) {
       id: true,
       product_name: true,
       description: true,
-      image_url: true,
       category: true,
-      audio_url: true,
-      video_url: true,
       profile: {
         select: {
           name: true,
@@ -47,7 +44,8 @@ export async function getAllProducts(options?: Options) {
           social_name: true,
           instagram: true,
         },
-      }
+      },
+      media: { omit: { productId: true } }
     },
     where
   });

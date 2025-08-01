@@ -14,15 +14,19 @@ interface Profile {
   instagram: string | null;
 }
 
+interface Media {
+  id: string;
+  url: string;
+  media_type: $Enums.MediaType;
+}
+
 interface Product {
   id: string;
   product_name: string;
   description: string | null;
   category: $Enums.Category;
-  image_url: string | null;
-  audio_url: string | null;
-  video_url: string | null;
   profile: Profile;
+  media: Media[];
 }
 
 interface ProductGridProps {
@@ -55,7 +59,7 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
         <Card key={product.id} className="overflow-hidden group">
           <div className="relative aspect-square">
             <Image
-              src={product.image_url || "/placeholder.svg"}
+              src={product.media.at(0)?.url || "/placeholder.svg"}
               alt={product.product_name}
               fill
               className="object-cover transition-transform group-hover:scale-105"
