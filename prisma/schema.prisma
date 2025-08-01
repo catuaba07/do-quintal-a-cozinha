@@ -30,12 +30,25 @@ model Product {
   product_name String
   description  String?
   category     Category
-  image_url    String?
-  audio_url    String?
-  video_url    String?
+  media        Media[]
 
   profile    Profile @relation(fields: [profile_id], references: [id], onDelete: Cascade)
   profile_id String
+}
+
+model Media {
+  id         String    @id
+  url        String
+  media_type MediaType
+
+  Product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId String
+}
+
+enum MediaType {
+  AUDIO
+  IMAGE
+  VIDEO
 }
 
 enum Category {
