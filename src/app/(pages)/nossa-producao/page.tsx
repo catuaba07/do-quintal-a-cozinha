@@ -3,6 +3,7 @@ import { useSearchParams } from "next/navigation";
 
 import { useGetAllProducts } from "@/hooks/use-get-all-products";
 import { ProductGrid } from "@/components/product-grid";
+import { Tag } from "@/components/tag";
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -19,12 +20,7 @@ export default function Page() {
   return (
     <main className="container-wrapper">
       <div className="container flex flex-col gap-6">
-        <div>
-          <div className="px-4 py-2 bg-purple-400/95 inline">
-            <span className="text-lg font-bold text-white">Nossa Produção</span>
-          </div>
-          <p className="mt-3">Conheça a nossa produção</p>
-        </div>
+        <Tag text="Nossa Produção" caption="Conheça nossa produção!"/>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
             <ProductGrid products={data ?? []} isLoading={isLoading} />
