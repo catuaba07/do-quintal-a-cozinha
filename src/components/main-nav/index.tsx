@@ -13,6 +13,7 @@ export function MainNav() {
         <Image src="/logo.png" alt="logo" height={32} width={32} />
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
+        <Link href="/">Home</Link>
         <Link
           href="/sobre"
           className={cn(
@@ -21,7 +22,7 @@ export function MainNav() {
           )}
         >
           Sobre
-        </Link>
+        </Link>    
         <Link
           href="/nossa-producao"
           className={cn(
