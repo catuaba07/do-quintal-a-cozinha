@@ -39,7 +39,7 @@ export default function Home() {
           <Tag text="Destaques" caption="" />
         </div>
         <div></div>
-        <div className="grid grid-cols-2 gap-12 place-items-center justify-center w-fit mx-auto ">
+        <div className="grid grid-cols-2 gap-30 place-items-center justify-center w-fit mx-auto ">
            <Link href="/nosso-espaco"><HomeIcon text="Nosso Espaço"></HomeIcon></Link>       
           <Link href="/nossa-historia"><HomeIcon text="Nossas Histórias"></HomeIcon></Link> 
           <Link href="/nossa-producao"><HomeIcon text="Nossa Produção"></HomeIcon></Link> 
