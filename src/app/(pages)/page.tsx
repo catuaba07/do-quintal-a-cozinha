@@ -7,9 +7,10 @@ import { useGetAllProducts } from "@/hooks/use-get-all-products";
 import { useSearchParams } from "next/navigation";
 import { Tag } from "@/components/tag";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Card, CardContent } from "@mui/material";
-import { CardTitle } from "@/components/ui/card";
 import { ImageIcon } from "lucide-react";
+import { HomeIcon } from "@/components/home-icon";
+import Link from "next/link";
+
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -37,41 +38,13 @@ export default function Home() {
         <div className="space-y-4">
           <Tag text="Destaques" caption="" />
         </div>
-        <div></div><div></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 place-items-center">
-          <Card className="w-full max-w-lg h-36">
-            <CardContent className="flex gap-4 items-center">
-              <div className="w-28 h-28 rounded-full bg-gray-200 flex items-center justify-center">
-                <ImageIcon className="w-10 h-10 text-gray-500" />
-              </div>
-              <div className="text-lg font-medium text-gray-800">Nosso Espaço</div>
-            </CardContent>
-          </Card>
-           <Card className="w-full max-w-lg h-36">
-            <CardContent className="flex items-center gap-4">
-              <div className="w-28 h-28 rounded-full bg-gray-200 flex items-center justify-center">
-                <ImageIcon className="w-10 h-10 text-gray-500" />
-              </div>
-              <div className="text-lg font-medium text-gray-800">Nossas Histórias</div>
-            </CardContent>
-          </Card>
-           <Card className="w-full max-w-lg h-36">
-            <CardContent className="flex items-center gap-4">
-              <div className="w-28 h-28 rounded-full bg-gray-200 flex items-center justify-center">
-                <ImageIcon className="w-10 h-10 text-gray-500" />
-              </div>
-              <div className="text-lg font-medium text-gray-800">Nossa Produção</div>
-            </CardContent>
-          </Card>
-           <Card className="w-full max-w-lg h-36">
-            <CardContent className="flex items-center gap-4">
-              <div className="w-28 h-28 rounded-full bg-gray-200 flex items-center justify-center">
-                <ImageIcon className="w-10 h-10 text-gray-500" />
-              </div>
-              <div className="text-lg font-medium text-gray-800">Nossas Receitas</div>
-            </CardContent>
-          </Card>
-        </div>
+        <div></div>
+        <div className="grid grid-cols-2 gap-12 place-items-center justify-center w-fit mx-auto ">
+           <Link href="/nosso-espaco"><HomeIcon text="Nosso Espaço"></HomeIcon></Link>       
+          <Link href="/nossa-historia"><HomeIcon text="Nossas Histórias"></HomeIcon></Link> 
+          <Link href="/nossa-producao"><HomeIcon text="Nossa Produção"></HomeIcon></Link> 
+         <Link href="/nossas-receitas"><HomeIcon text="Nossas Receitas"></HomeIcon></Link> 
+          </div>
       </div>
     </main>
   );
