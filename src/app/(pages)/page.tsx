@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import MyImage from '../../../public/images/home-image.jpg'
 import { Tag } from "@/components/tag";
 import { HomeIcon } from "@/components/home-icon";
 import Link from "next/link";
@@ -11,7 +10,7 @@ export default function Home() {
     <main className="container-wrapper">
       <div className="container flex flex-col gap-6 -mt-10">
         <div className="h-150 w-full relative">
-          <Image src={MyImage} alt="Description of my image" layout="fill" objectFit="cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+          <Image src="/home-image.jpg" alt="Description of my image" layout="fill" objectFit="cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
         </div>
         <div className="space-y-4">
           <Tag text="Destaques" caption="" />
