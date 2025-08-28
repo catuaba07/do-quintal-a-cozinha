@@ -1,6 +1,7 @@
 "use client";
+import Image from "next/image";
+import MyImage from '../../../public/images/home-image.jpg'
 import { Tag } from "@/components/tag";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { HomeIcon } from "@/components/home-icon";
 import Link from "next/link";
 
@@ -8,15 +9,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="container-wrapper">
-      <div className="container flex flex-col gap-6">
-        <Carousel>
-          <CarouselContent>
-            <CarouselItem></CarouselItem>
-            <CarouselItem></CarouselItem>
-            <CarouselPrevious/>
-            <CarouselNext/>
-          </CarouselContent>
-        </Carousel>
+      <div className="container flex flex-col gap-6 -mt-10">
+        <div className="h-150 w-full relative">
+          <Image src={MyImage} alt="Description of my image" layout="fill" objectFit="cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+        </div>
         <div className="space-y-4">
           <Tag text="Destaques" caption="" />
         </div>
