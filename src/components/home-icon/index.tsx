@@ -1,5 +1,5 @@
 
-export function HomeIcon({text}) {
+export function HomeIcon({text}:{text: string}) {
   return (
     <div className="">
       <span className="h-[112px] w-[112px] mt-5 bg-red-600 rounded-full grid place-items-center"></span>
