@@ -1,4 +1,4 @@
-export function Tag({text, caption}) {
+export function Tag({text, caption} : {text: string, caption: string}) {
     return (
         <div>
             <div className="px-4 py-2 bg-purple-400/95 inline border border-dashed border-white grid place-items-center text-white text-sm font-medium">
