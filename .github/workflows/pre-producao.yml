@@ -1,4 +1,4 @@
-name: Cozinhando o Desenvolvimento
+name: Cozinhando Pre-Produção
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - name: Cozinhando (npm install & build)
         run: |
-          npm install
+          npm install --omit=dev
           npm run build --if-present
         env:
           GROQ_API_KEY: "some-key"
