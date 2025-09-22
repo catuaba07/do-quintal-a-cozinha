@@ -1,5 +1,10 @@
 # Do Quintal a Cozinha
 
+  Aplicativo desenvolvido pelas e paras as mulheres do MMTR-SE
+
+![](https://md.coolab.org/uploads/upload_122e84e11ea4901d32b1e0307c692e01.png)
+
+
 Aplicativo desenvolvido pelas mulheres do MMTR-SE (Movimento da Mulher Trabalhadora Rural de Sergipe).
 
 ## 🚀 Sobre o Projeto
