@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatMinutes, formatRecipeDifficulty } from "@/lib/utils";
@@ -6,6 +8,7 @@ import { Clock, Users, ChefHat, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Skeleton } from "@/components/ui/skeleton";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 interface RecipeDetailProps {
   recipe: RecipeWithDetail | null | undefined;
@@ -174,9 +177,10 @@ export function RecipeDetail({ recipe, isLoading }: RecipeDetailProps) {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden">
-              <img
+              <Image
                 src={recipe.media[0].media.url || "/placeholder.svg"}
                 alt={recipe.title}
+                fill
                 className="w-full h-full object-cover"
               />
             </div>
@@ -188,7 +192,7 @@ export function RecipeDetail({ recipe, isLoading }: RecipeDetailProps) {
               <CardContent className="space-y-6">
                 {recipe.steps
                   .sort((a, b) => a.step_number - b.step_number)
-                  .map((step, index) => (
+                  .map((step) => (
                     <div key={step.step_number} className="flex gap-4">
                       <div className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
                         {step.step_number}

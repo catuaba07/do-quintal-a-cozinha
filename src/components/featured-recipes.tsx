@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users } from "lucide-react";
@@ -5,6 +7,7 @@ import Link from "next/link";
 import { formatMinutes, formatRecipeDifficulty } from "@/lib/utils";
 import { Recipe } from "@/types/recipe";
 import { Skeleton } from "@/components/ui/skeleton";
+import Image from "next/image";
 
 interface FeaturedRecipesProps {
   featured_recipes: Recipe[];
@@ -66,9 +69,10 @@ export function FeaturedRecipes({
           <Link key={recipe.id} href={`/nossas-receitas/${recipe.id}`}>
             <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-border hover:border-primary/20 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={recipe.media[0].media.url || "/placeholder.svg"}
                   alt={recipe.title}
+                  fill
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

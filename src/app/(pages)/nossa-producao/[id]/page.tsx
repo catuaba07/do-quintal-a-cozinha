@@ -26,7 +26,7 @@ export default function Page({ params }: Props) {
     if (data && selectedMedia + 1 < data.media.length) {
       setSelectedMedia((prev) => prev + 1);
     }
-  }, [selectedMedia]);
+  }, [data, selectedMedia]);
 
   const handlePrevMedia = useCallback(() => {
     if (selectedMedia !== 0) {
@@ -75,10 +75,10 @@ export default function Page({ params }: Props) {
                 </div>
               )}
               {data.media
-                .filter((media) => media.media_type === "IMAGE")
+                .filter((media) => media.media.media_type === "IMAGE")
                 .map((media, index) => (
                   <div
-                    key={media.id}
+                    key={media.mediaId}
                     className={`p-4 ${
                       selectedMedia === index
                         ? "border border-orange-500"
@@ -88,7 +88,7 @@ export default function Page({ params }: Props) {
                   >
                     <div className="relative aspect-square min-w-[100px]">
                       <Image
-                        src={media.url || "/placeholder.svg"}
+                        src={media.media.url || "/placeholder.svg"}
                         alt={data?.product_name || ""}
                         fill
                         className="object-cover transition-transform group-hover:scale-105"
@@ -110,7 +110,10 @@ export default function Page({ params }: Props) {
             <div>
               <div className="relative aspect-video md:min-w-[500px]">
                 <Image
-                  src={data.media.at(selectedMedia)?.url || "/placeholder.svg"}
+                  src={
+                    data.media.at(selectedMedia)?.media.url ||
+                    "/placeholder.svg"
+                  }
                   alt={data?.product_name || ""}
                   style={{ objectFit: "contain" }}
                   fill

@@ -6,6 +6,7 @@ import { Recipe } from "@/types/recipe";
 import { formatMinutes, formatRecipeDifficulty } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface RecipeGridProps {
   recipes: Recipe[];
@@ -85,8 +86,8 @@ export function RecipeGrid({
                 Nenhuma receita encontrada
               </h3>
               <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                Não encontramos receitas para "{searchQuery}". Tente buscar por
-                outros ingredientes ou categorias.
+                Não encontramos receitas para {`"${searchQuery}"`}. Tente buscar
+                por outros ingredientes ou categorias.
               </p>
               {onClearSearch && (
                 <Button onClick={onClearSearch} variant="outline">
@@ -111,9 +112,10 @@ export function RecipeGrid({
             <Link key={recipe.id} href={`/nossas-receitas/${recipe.id}`}>
               <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border hover:border-primary/30 overflow-hidden h-full">
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={recipe.media[0].media.url || "/placeholder.svg"}
                     alt={recipe.title}
+                    fill
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

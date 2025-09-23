@@ -36,6 +36,6 @@ export interface RecipeWithDetail {
   media: RecipeMedia[];
   difficulty: RecipeDifficulty;
   steps: RecipeStep[];
-  ingredients: any;
+  ingredients: any; // eslint-disable-line
 }
 
