@@ -4,13 +4,118 @@ import { formatMinutes, formatRecipeDifficulty } from "@/lib/utils";
 import { RecipeWithDetail } from "@/types/recipe";
 import { Clock, Users, ChefHat, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { Skeleton } from "@/components/ui/skeleton";
+import { notFound } from "next/navigation";
 
 interface RecipeDetailProps {
-  recipe: RecipeWithDetail;
+  recipe: RecipeWithDetail | null | undefined;
+  isLoading: boolean;
 }
 
-export function RecipeDetail({ recipe }: RecipeDetailProps) {
-  const ingredients: String[] = Array.from(JSON.parse(recipe.ingredients));
+export function RecipeDetail({ recipe, isLoading }: RecipeDetailProps) {
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="bg-muted/30 border-b">
+          <div className="container mx-auto px-4 py-4">
+            <Skeleton className="h-6 w-32" />
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 py-8">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <Skeleton className="h-6 w-24 rounded-full" />
+                  <Skeleton className="h-4 w-32" />
+                </div>
+
+                <Skeleton className="h-12 w-3/4" />
+                <div className="space-y-2">
+                  <Skeleton className="h-5 w-full" />
+                  <Skeleton className="h-5 w-2/3" />
+                </div>
+
+                <div className="flex flex-wrap items-center gap-6">
+                  <Skeleton className="h-5 w-24" />
+                  <Skeleton className="h-5 w-28" />
+                  <Skeleton className="h-5 w-20" />
+                  <Skeleton className="h-6 w-20 rounded-full" />
+                </div>
+
+                <div className="flex gap-3">
+                  <Skeleton className="h-10 w-32" />
+                  <Skeleton className="h-10 w-28" />
+                </div>
+              </div>
+
+              <Skeleton className="h-96 w-full rounded-lg" />
+
+              <Card>
+                <CardHeader>
+                  <Skeleton className="h-8 w-48" />
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {Array.from({ length: 6 }).map((_, index) => (
+                    <div key={index} className="flex gap-4">
+                      <Skeleton className="w-8 h-8 rounded-full flex-shrink-0" />
+                      <div className="space-y-2 flex-1">
+                        <Skeleton className="h-4 w-full" />
+                        <Skeleton className="h-4 w-3/4" />
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <Skeleton className="h-6 w-32" />
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    {Array.from({ length: 3 }).map((_, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <Skeleton className="w-2 h-2 rounded-full mt-2 flex-shrink-0" />
+                        <div className="space-y-2 flex-1">
+                          <Skeleton className="h-4 w-full" />
+                          <Skeleton className="h-4 w-2/3" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div>
+              <Card>
+                <CardHeader>
+                  <Skeleton className="h-6 w-24" />
+                  <Skeleton className="h-4 w-20" />
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {Array.from({ length: 8 }).map((_, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <Skeleton className="w-2 h-2 rounded-full mt-2 flex-shrink-0" />
+                      <Skeleton className="h-4 w-full" />
+                    </div>
+                  ))}
+
+                  <div className="pt-4">
+                    <Skeleton className="h-10 w-full" />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!recipe) return notFound();
 
   return (
     <div className="min-h-screen bg-background">
@@ -107,14 +212,16 @@ export function RecipeDetail({ recipe }: RecipeDetailProps) {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {ingredients.map((ingredient, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-foreground leading-relaxed">
-                        {ingredient}
-                      </span>
-                    </li>
-                  ))}
+                  {(Array.from(JSON.parse(recipe.ingredients)) as string[]).map(
+                    (ingredient, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-foreground leading-relaxed">
+                          {ingredient}
+                        </span>
+                      </li>
+                    )
+                  )}
                 </ul>
               </CardContent>
             </Card>
