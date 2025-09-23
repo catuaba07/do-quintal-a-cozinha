@@ -2,6 +2,9 @@
   "name": "mmtrse",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,6 +32,7 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "groq-sdk": "^0.19.0",
     "lucide-react": "^0.486.0",
