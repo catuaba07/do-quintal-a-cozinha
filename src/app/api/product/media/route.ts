@@ -49,9 +49,10 @@ export async function POST(request: Request) {
       id: uuidv4(),
       media_type: mediaType,
       url: body.url,
-      productId: product.id
     },
   });
+
+  await prisma.productMedia.create({ data: { mediaId: newMedia.id, productId: product.id } })
 
   return new Response(
     JSON.stringify({
