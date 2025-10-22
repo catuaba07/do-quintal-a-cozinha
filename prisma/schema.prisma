@@ -26,11 +26,11 @@ model Profile {
 }
 
 model Product {
-  id           String   @id
+  id           String         @id
   product_name String
   description  String?
   category     Category
-  media        Media[]
+  media        ProductMedia[]
 
   profile    Profile @relation(fields: [profile_id], references: [id], onDelete: Cascade)
   profile_id String
@@ -41,8 +41,53 @@ model Media {
   url        String
   media_type MediaType
 
-  Product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productMedia ProductMedia[]
+  recipeMedia  RecipeMedia[]
+}
+
+model ProductMedia {
   productId String
+  mediaId   String
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  media   Media   @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+
+  @@id([productId, mediaId])
+}
+
+model RecipeMedia {
+  recipeId String
+  mediaId  String
+
+  recipe Recipe @relation(fields: [recipeId], references: [id])
+  media  Media  @relation(fields: [mediaId], references: [id])
+
+  @@id([recipeId, mediaId])
+}
+
+model Recipe {
+  id                          String           @id
+  title                       String
+  description                 String
+  preparation_time_in_minutes Int
+  cooking_time_in_minutes     Int
+  number_of_servings          Int
+  difficulty                  RecipeDifficulty
+  created_at                  DateTime         @default(now())
+  updated_at                  DateTime         @updatedAt
+
+  ingredients Json
+  steps       RecipeStep[]
+  media       RecipeMedia[]
+}
+
+model RecipeStep {
+  id          Int    @id @default(autoincrement())
+  step_number Int
+  instruction String
+
+  recipe    Recipe @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+  recipe_id String
 }
 
 enum MediaType {
@@ -55,4 +100,10 @@ enum Category {
   AGRICOLA
   ARTESANATO
   PROCESSADO
+}
+
+enum RecipeDifficulty {
+  EASY
+  INTERMEDIARY
+  HARD
 }

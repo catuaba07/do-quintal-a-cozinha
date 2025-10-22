@@ -21,7 +21,7 @@ export async function getProductById(options: Options) {
           instagram: true,
         },
       },
-      media: { omit: { productId: true } }
+      media: { include: { media: { select: { url: true, media_type: true } } } }
     },
     where: {
       id: options.id
