@@ -15,7 +15,7 @@ export function Footer() {
         <div className="container flex flex-col my-4 gap-2 md:gap-4">
           <div className="flex justify-between lg:min-w-[1024px] m-auto flex-col lg:flex-row">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-              <Image src="/logo.png" alt="logo" height={64} width={64} />
+              <Image src="/logo192x192.png" alt="logo" height={64} width={64} />
             </Link>
             <div className="flex flex-col gap-2 my-auto">
               <p className="font-bold">{siteConfig.name}</p>
