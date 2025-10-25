@@ -24,7 +24,13 @@ export function Footer() {
             </Link>
             <div className="flex flex-col gap-2 my-auto">
               <p className="font-bold">{siteConfig.name}</p>
-              <p className="font-bold">{siteConfig.mail}</p>
+              <p className="font-bold">
+                <ObfuscatedEmail 
+                  user="mulheresruraisse" 
+                  domain="gmail.com"
+                  className=""
+                />
+              </p>
             </div>
             <div className="lg:grid grid-flow-col grid-rows-2 gap-x-8 flex flex-col">
               <Link
