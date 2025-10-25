@@ -16,7 +16,6 @@ export async function getProductById(options: Options) {
       profile: {
         select: {
           name: true,
-          phone_number: true,
           social_name: true,
           instagram: true,
         },
