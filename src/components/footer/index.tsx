@@ -21,7 +21,14 @@ export function Footer() {
             <div className="flex flex-col gap-2 my-auto">
               <p className="font-bold">{siteConfig.name}</p>
               <p className="font-bold">
-                <Obfuscate email="mulheresruraisse@gmail.com" />
+                <Obfuscate 
+                  email="mulheresruraisse@gmail.com"
+                  headers={{
+                    subject: 'Contato via site'
+                  }}
+                  obfuscate
+                  obfuscateChildren={false}
+                />
               </p>
             </div>
             <div className="lg:grid grid-flow-col grid-rows-2 gap-x-8 flex flex-col">
