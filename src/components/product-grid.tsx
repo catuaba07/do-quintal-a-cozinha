@@ -65,7 +65,7 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
           <Card className="overflow-hidden group">
             <div className="relative aspect-square">
               <Image
-                src={product.media.at(0)?.media.url || "/placeholder.svg"}
+                src={product.media.at(0)?.media.url || "/product-placeholder.png"}
                 alt={product.product_name}
                 fill
                 className="object-cover transition-transform group-hover:scale-105"
