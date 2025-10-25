@@ -146,10 +146,10 @@ export default function Page({ params }: Props) {
               <div className="flex gap-5">
                 <Image
                   src={"/placeholder.svg"}
-                  alt={`Foto de perfil da ${data.profile.name}`}
+                  alt={`Foto de perfil de ${data.profile.name}`}
                   width={100}
                   height={100}
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover rounded-full transition-transform group-hover:scale-105"
                 />
                 <div className="font-bold text-base">
                   <p>{data.profile.name}</p>
