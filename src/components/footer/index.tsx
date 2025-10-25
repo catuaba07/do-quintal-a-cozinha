@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
+import { ObfuscatedEmail } from "@/components/obfuscated-email";
 
 export function Footer() {
   const pathname = usePathname();
