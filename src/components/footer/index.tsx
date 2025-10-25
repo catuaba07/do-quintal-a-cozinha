@@ -42,7 +42,7 @@ export function Footer() {
                 href="/nossa-historia"
                 className={cn(
                   "transition-colors hover:text-foreground/80",
-                  pathname === "/sobre"
+                  pathname === "/nossa-historia"
                     ? "text-foreground"
                     : "text-foreground/80"
                 )}
@@ -53,7 +53,7 @@ export function Footer() {
                 href="/onde-estamos"
                 className={cn(
                   "transition-colors hover:text-foreground/80",
-                  pathname === "/sobre"
+                  pathname === "/onde-estamos"
                     ? "text-foreground"
                     : "text-foreground/80"
                 )}

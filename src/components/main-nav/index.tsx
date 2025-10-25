@@ -12,23 +12,22 @@ export function MainNav() {
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
         <Image 
           src="/logo.png" 
-          alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe" 
+          alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe e voltar ao ínicio da página" 
           height={32} 
           width={32} 
         />
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
-        <Link href="/">Home</Link>
+        <Link href="/sobre">Sobre</Link>
         <Link
-          href="/sobre"
+          href="/nossa-historia"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname === "/sobre" ? "text-foreground" : "text-foreground/80"
+            pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
           )}
         >
-          Sobre
-        </Link> 
-        <Link href="/nossa-historia">Nossas Histórias</Link>   
+          Nossas Histórias
+        </Link>
         <Link
           href="/nossa-producao"
           className={cn(
