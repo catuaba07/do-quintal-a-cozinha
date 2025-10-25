@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { Tag } from "@/components/tag";
 import { HomeIcon } from "@/components/home-icon";
@@ -12,8 +11,9 @@ export default function Home() {
           <Image
             src="/home-image.jpg"
             alt="Description of my image"
-            layout="fill"
-            objectFit="cover"
+            fill
+            priority
+            style={{ objectFit: 'cover' }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
