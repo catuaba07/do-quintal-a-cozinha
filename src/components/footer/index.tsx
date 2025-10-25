@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Obfuscate from "react-obfuscate";
 
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
@@ -21,14 +20,16 @@ export function Footer() {
             <div className="flex flex-col gap-2 my-auto">
               <p className="font-bold">{siteConfig.name}</p>
               <p className="font-bold">
-                <Obfuscate 
-                  email="mulheresruraisse@gmail.com"
-                  headers={{
-                    subject: 'Contato via site'
+                <a 
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('/api/email?subject=Contato via site', '_blank');
                   }}
-                  obfuscate
-                  obfuscateChildren={false}
-                />
+                  className="hover:underline cursor-pointer"
+                >
+                  Enviar email
+                </a>
               </p>
             </div>
             <div className="lg:grid grid-flow-col grid-rows-2 gap-x-8 flex flex-col">
