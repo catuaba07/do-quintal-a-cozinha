@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Obfuscate from "react-obfuscate";
 
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
-import { ObfuscatedEmail } from "@/components/obfuscated-email";
 
 export function Footer() {
   const pathname = usePathname();
