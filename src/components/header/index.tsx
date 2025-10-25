@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Obfuscate from "react-obfuscate";
 
 import { siteConfig } from "@/config/site";
 import { MainNav } from "@/components/main-nav";
