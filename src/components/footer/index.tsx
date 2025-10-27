@@ -19,7 +19,18 @@ export function Footer() {
             </Link>
             <div className="flex flex-col gap-2 my-auto">
               <p className="font-bold">{siteConfig.name}</p>
-              <p className="font-bold">{siteConfig.mail}</p>
+              <p className="font-bold">
+                <a 
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('/api/email?subject=Contato via site', '_blank');
+                  }}
+                  className="hover:underline cursor-pointer"
+                >
+                  Enviar email
+                </a>
+              </p>
             </div>
             <div className="lg:grid grid-flow-col grid-rows-2 gap-x-8 flex flex-col">
               <Link
