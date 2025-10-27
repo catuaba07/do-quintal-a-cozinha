@@ -88,7 +88,7 @@ export default function Page({ params }: Props) {
                   >
                     <div className="relative aspect-square min-w-[100px]">
                       <Image
-                        src={media.media.url || "/placeholder.svg"}
+                      src={media.media.url || "/product-placeholder.png"}
                         alt={data?.product_name || ""}
                         fill
                         className="object-cover transition-transform group-hover:scale-105"
@@ -112,7 +112,7 @@ export default function Page({ params }: Props) {
                 <Image
                   src={
                     data.media.at(selectedMedia)?.media.url ||
-                    "/placeholder.svg"
+                    "/product-placeholder.png"
                   }
                   alt={data?.product_name || ""}
                   style={{ objectFit: "contain" }}
@@ -145,7 +145,7 @@ export default function Page({ params }: Props) {
               <p className="font-semibold text-base">Feito por</p>
               <div className="flex gap-5">
                 <Image
-                  src={"/placeholder.svg"}
+                  src={"/profile-placeholder.png"}
                   alt={`Foto de perfil da ${data.profile.name}`}
                   width={100}
                   height={100}
