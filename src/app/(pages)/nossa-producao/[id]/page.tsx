@@ -157,7 +157,13 @@ export default function Page({ params }: Props) {
               </div>
             </div>
             <div>
-              <Button>Contatar</Button>
+              <Button
+                onClick={() => {
+                  window.open(`/api/whatsapp?product=${data.id}`, "_blank");
+                }}
+              >
+                Contatar
+              </Button>
             </div>
           </div>
         </div>

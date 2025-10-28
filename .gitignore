@@ -60,3 +60,4 @@ dev.db-journal
 
 *.http
 *storybook.log
+test-whatsapp-api.js
