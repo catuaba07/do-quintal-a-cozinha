@@ -173,3 +173,14 @@
   }
 }
 
+/* Melhorias de acessibilidade - Focus visível para navegação por teclado */
+@layer base {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply outline-2 outline-offset-2 outline-purple-600 ring-2 ring-purple-600/30;
+  }
+}
+

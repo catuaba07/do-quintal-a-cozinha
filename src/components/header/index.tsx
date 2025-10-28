@@ -22,7 +22,7 @@ export function Header() {
                 asChild
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 px-0 text-white hover:text-primary"
+                className="h-8 w-8 px-0 text-purple-600 hover:text-purple-800"
               >
                 <Link
                   href={siteConfig.links.ig}
@@ -36,13 +36,17 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 px-0 text-white hover:text-primary"
+                className="h-8 w-8 px-0 text-purple-600 hover:text-purple-800"
                 onClick={() => {
-                  window.open('/api/email?subject=Contato via site', '_blank');
+                  window.location.href = 'mailto:mulheresruraisse@gmail.com';
                 }}
               >
                 <MailOutlineIcon />
                 <span className="sr-only">Email</span>
+              </Button>
+                  <MailOutlineIcon />
+                  <span className="sr-only">Mail</span>
+                </a>
               </Button>
             </nav>
           </div>

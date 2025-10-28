@@ -64,10 +64,12 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
           <Card className="overflow-hidden group">
             <div className="relative aspect-square">
               <Image
-                src={product.media.at(0)?.media.url || "/placeholder.svg"}
+                src={product.media.at(0)?.media.url || "/product-placeholder.png"}
                 alt={product.product_name}
                 fill
                 className="object-cover transition-transform group-hover:scale-105"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                loading="lazy"
               />
             </div>
             <CardContent className="p-4">
