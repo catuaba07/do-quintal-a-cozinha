@@ -55,8 +55,9 @@ next-env.d.ts
 /dist
 
 # Prisma
-dev.db
-dev.db-journal
+/prisma/dev.db
+/prisma/dev.db-journal
+/prisma/migrations
 
 *.http
 *storybook.log
