@@ -10,7 +10,6 @@ import Link from "next/link";
 
 interface Profile {
   name: string;
-  phone_number: string;
   social_name: string | null;
   instagram: string | null;
 }
@@ -90,11 +89,7 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
                 size={isMobile ? "sm" : "default"}
                 className="rounded-full bg-green-600 hover:bg-green-700"
                 onClick={() => {
-                  const message = `Olá! Estou interessado(a) no produto: ${product.product_name}`;
-                  const whatsappUrl = `https://wa.me/${
-                    product.profile.phone_number
-                  }?text=${encodeURIComponent(message)}`;
-                  window.open(whatsappUrl, "_blank");
+                  window.open(`/api/whatsapp?product=${product.id}`, "_blank");
                 }}
               >
                 <MessageCircle className="h-4 w-4 mr-2" />
