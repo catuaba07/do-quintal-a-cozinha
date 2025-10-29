@@ -1,6 +1,7 @@
 "use server";
 
 import { prisma } from "@/lib/prisma";
+import { Prisma } from "@prisma/client";
 
 interface Options {
   search?: string;
@@ -9,7 +10,7 @@ interface Options {
 }
 
 export async function getAllStories(options?: Options) {
-    const where: any = {}; 
+    const where: Prisma.StoryWhereInput = {}; 
     if (options?.search) {
         where.name = {
             contains: options.search,
