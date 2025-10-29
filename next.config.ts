@@ -37,6 +37,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/typebot/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "storage.example.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

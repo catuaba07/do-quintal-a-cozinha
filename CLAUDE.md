@@ -591,10 +591,6 @@ npm run lint -- src/components/recipe-grid.tsx
 - Fetch specific product with media
 - Returns: Product with media URLs (200) or error (404)
 
-**POST /api/product/media**
-- Upload and link media to product
-- Returns: Media object (201) or error (400/500)
-
 ### Profile Management
 
 **POST /api/profile**
