@@ -34,15 +34,15 @@ export function Header() {
                 </Link>
               </Button>
               <Button
+                asChild
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 px-0 text-white hover:text-primary"
-                onClick={() => {
-                  window.open('/api/email?subject=Contato via site', '_blank');
-                }}
+                className="h-8 w-8 px-0 text-purple-600 hover:text-purple-800"
               >
-                <MailOutlineIcon />
-                <span className="sr-only">Email</span>
+                <a href="mailto:mulheresruraisse@gmail.com">
+                  <MailOutlineIcon />
+                  <span className="sr-only">Email</span>
+                </a>
               </Button>
             </nav>
           </div>
