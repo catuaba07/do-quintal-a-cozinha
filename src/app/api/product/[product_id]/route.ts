@@ -43,37 +43,37 @@ export async function PUT(request: Request, { params }: params) {
     }
   }
 
-  // Validate media array if provided
-  if (media.length > 0) {
-    for (let i = 0; i < media.length; i++) {
-      const item = media[i];
+  // Filter out media items with empty URLs and validate remaining items
+  const validMedia = media.filter(item => {
+    // Skip items with empty/missing URLs
+    if (!item.url || typeof item.url !== 'string' || item.url.trim() === '') {
+      return false;
+    }
+    return true;
+  });
 
-      if (!item.url || typeof item.url !== 'string' || item.url.trim() === '') {
-        return new Response(
-          JSON.stringify({ error: `Media item at index ${i}: url is required and must be a non-empty string` }),
-          { status: 400 }
-        );
-      }
+  // Validate media_type for remaining items
+  for (let i = 0; i < validMedia.length; i++) {
+    const item = validMedia[i];
 
-      if (!item.media_type) {
-        return new Response(
-          JSON.stringify({ error: `Media item at index ${i}: media_type is required` }),
-          { status: 400 }
-        );
-      }
+    if (!item.media_type) {
+      return new Response(
+        JSON.stringify({ error: `Media item at index ${i}: media_type is required` }),
+        { status: 400 }
+      );
+    }
 
-      if (
-        item.media_type !== MediaType.IMAGE &&
-        item.media_type !== MediaType.AUDIO &&
-        item.media_type !== MediaType.VIDEO
-      ) {
-        return new Response(
-          JSON.stringify({
-            error: `Media item at index ${i}: media_type must be one of "${MediaType.IMAGE}", "${MediaType.AUDIO}", "${MediaType.VIDEO}"`,
-          }),
-          { status: 400 }
-        );
-      }
+    if (
+      item.media_type !== MediaType.IMAGE &&
+      item.media_type !== MediaType.AUDIO &&
+      item.media_type !== MediaType.VIDEO
+    ) {
+      return new Response(
+        JSON.stringify({
+          error: `Media item at index ${i}: media_type must be one of "${MediaType.IMAGE}", "${MediaType.AUDIO}", "${MediaType.VIDEO}"`,
+        }),
+        { status: 400 }
+      );
     }
   }
 
@@ -109,7 +109,7 @@ export async function PUT(request: Request, { params }: params) {
 
       // Handle media updates if provided
       const createdMedia = [];
-      if (media.length > 0) {
+      if (validMedia.length > 0) {
         // If replace_media is true, delete all existing media links
         if (replaceMedia) {
           // Delete ProductMedia links (media files themselves are kept for potential reuse)
@@ -119,7 +119,7 @@ export async function PUT(request: Request, { params }: params) {
         }
 
         // Add new media
-        for (const mediaItem of media) {
+        for (const mediaItem of validMedia) {
           const newMedia = await tx.media.create({
             data: {
               id: uuidv4(),
@@ -175,7 +175,7 @@ export async function PUT(request: Request, { params }: params) {
   }
 }
 
-export async function DELETE(request: Request, { params }: params) {
+export async function DELETE(_request: Request, { params }: params) {
   const { product_id } = await params;
 
   const product = await prisma.product.findUnique({
