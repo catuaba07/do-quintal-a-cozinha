@@ -1,5 +1,5 @@
 // components/story-card.tsx
-import { Card, CardHeader, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image";
 import { Story } from "@/types/story";
@@ -10,13 +10,12 @@ interface StoryCardProps {
   stories: Story[];
   isLoading: boolean;
   searchQuery?: string;
-  onClearSearch?: () => void;
 }
 
-export function StoryCard({ stories, isLoading, searchQuery, onClearSearch }: StoryCardProps) {
+export function StoryCard({ stories, isLoading, searchQuery }: StoryCardProps) {
   return (
     <section>
-      <Tag title="Nossas História" caption="Conheça nossas histórias inspiradoras!" />
+      <Tag text="Nossas História" caption="Conheça nossas histórias inspiradoras!" />
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-foreground mb-4">
           {!!searchQuery
@@ -39,7 +38,7 @@ export function StoryCard({ stories, isLoading, searchQuery, onClearSearch }: St
               <div className="relative h-48">
                 {story.media.length > 0 && (
                   <Image
-                    src={story.media[0].url}
+                    src={story.media[0].media.url}
                     alt={story.name}
                     layout="fill"
                     objectFit="cover"
