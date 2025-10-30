@@ -34,18 +34,14 @@ export function Header() {
                 </Link>
               </Button>
               <Button
+                asChild
                 variant="ghost"
                 size="icon"
                 className="h-8 w-8 px-0 text-purple-600 hover:text-purple-800"
-                onClick={() => {
-                  window.location.href = 'mailto:mulheresruraisse@gmail.com';
-                }}
               >
-                <MailOutlineIcon />
-                <span className="sr-only">Email</span>
-              </Button>
+                <a href="mailto:mulheresruraisse@gmail.com">
                   <MailOutlineIcon />
-                  <span className="sr-only">Mail</span>
+                  <span className="sr-only">Email</span>
                 </a>
               </Button>
             </nav>

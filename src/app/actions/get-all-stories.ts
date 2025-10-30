@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use server";
 
 import { prisma } from "@/lib/prisma";
@@ -21,6 +22,7 @@ export async function getAllStories(options?: Options) {
             id: true,
             name: true,
             description: true,
+	    content: true,
             category: true,
             region: true,
             media: {

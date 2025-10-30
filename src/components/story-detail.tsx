@@ -1,14 +1,13 @@
 "use client";
 
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { Story, StoryWithDetail } from "@/types/story";
+import { Story } from "@/types/story";
 import { Cooking } from "@/components/cooking";
 
 
 interface StoryDetailProps {
-  story: StoryWithDetail | null | undefined;
+  story: Story | null | undefined;
     isLoading: boolean;
 }
 
@@ -27,7 +26,7 @@ export function StoryDetail({ story, isLoading }: StoryDetailProps) {
           <div className="relative h-64 md:h-96 w-full">
             {story.media.length > 0 && (
               <Image
-                src={story.media[0].url}
+                src={story.media[0].media.url}
                 alt={story.name}
                 layout="fill"
                 objectFit="cover"
