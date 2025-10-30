@@ -10,6 +10,7 @@ interface StoryCardProps {
   stories: Story[];
   isLoading: boolean;
   searchQuery?: string;
+  onClearSearch?: () => void;
 }
 
 export function StoryCard({ stories, isLoading, searchQuery }: StoryCardProps) {
