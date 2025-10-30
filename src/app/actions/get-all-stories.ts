@@ -1,7 +1,7 @@
+/* eslint-disable */
 "use server";
 
 import { prisma } from "@/lib/prisma";
-import { Prisma } from "@prisma/client";
 
 interface Options {
   search?: string;
@@ -10,7 +10,7 @@ interface Options {
 }
 
 export async function getAllStories(options?: Options) {
-    const where: Prisma.StoryWhereInput = {}; 
+    const where: any = {}; 
     if (options?.search) {
         where.name = {
             contains: options.search,
@@ -22,6 +22,7 @@ export async function getAllStories(options?: Options) {
             id: true,
             name: true,
             description: true,
+	    content: true,
             category: true,
             region: true,
             media: {

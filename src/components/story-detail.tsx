@@ -2,12 +2,12 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { StoryWithDetail } from "@/types/story";
+import { Story } from "@/types/story";
 import { Cooking } from "@/components/cooking";
 
 
 interface StoryDetailProps {
-  story: StoryWithDetail | null | undefined;
+  story: Story | null | undefined;
     isLoading: boolean;
 }
 

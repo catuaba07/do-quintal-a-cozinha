@@ -1,3 +1,10 @@
+import { Category } from "@prisma/client";
+
+export type Region = ({
+  id: string;
+  name: string;
+})
+
 export type StoryMedia = ({
     media: {
         url: string;
@@ -7,21 +14,11 @@ export type StoryMedia = ({
     })
 
 export interface Story {
-  id: string
-  name: string
-  description: string
-  content: string
-  category: string
-  region: string
-  media: StoryMedia[]
-}
-
-export interface StoryWithDetail {
-    id: string;
-    name: string;
-    description: string;
-    content: string;
-    category: string;
-    region: string;
-    media: StoryMedia[];
+  id: string;
+  name: string;
+  description: string;
+  content: string;
+  category: Category;
+  region: Region;
+  media: StoryMedia[];
 }

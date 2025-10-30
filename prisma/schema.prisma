@@ -43,6 +43,7 @@ model Media {
 
   productMedia ProductMedia[]
   recipeMedia  RecipeMedia[]
+  storyMedia   StoryMedia[]
 }
 
 model ProductMedia {
@@ -88,6 +89,35 @@ model RecipeStep {
 
   recipe    Recipe @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
   recipe_id String
+}
+
+model Story {
+  id          String   @id
+  name        String
+  description String
+  content     String
+  category    Category
+
+  region   Region @relation(fields: [regionId], references: [id])
+  regionId String
+
+  media StoryMedia[]
+}
+
+model StoryMedia {
+  storyId String
+  mediaId String
+
+  story Story @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  media Media @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+
+  @@id([storyId, mediaId])
+}
+
+model Region {
+  id    String  @id
+  name  String
+  Story Story[]
 }
 
 enum MediaType {
