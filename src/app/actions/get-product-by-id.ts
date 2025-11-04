@@ -7,11 +7,12 @@ interface Options {
 }
 
 export async function getProductById(options: Options) {
-  const products = await prisma.product.findUnique({
+  const product = await prisma.product.findUnique({
     select: {
       id: true,
       product_name: true,
       description: true,
+      price: true,
       category: true,
       profile: {
         select: {
@@ -27,5 +28,13 @@ export async function getProductById(options: Options) {
     }
   });
 
-  return products
+  if (!product) {
+    return null;
+  }
+
+  // Convert Decimal to number for client component serialization
+  return {
+    ...product,
+    price: product.price ? Number(product.price) : null
+  };
 }
