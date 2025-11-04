@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useGetProductById } from "@/hooks/use-get-product-by-id";
 import { useMobile } from "@/hooks/use-mobile";
+import { formatPrice } from "@/lib/utils";
 import { Divider } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -137,7 +138,7 @@ export default function Page({ params }: Props) {
             </div>
             <div>
               <p className="font-semibold text-base">
-                R$ {Math.floor(Math.random() * 600).toFixed(2)}
+                {formatPrice(data.price)}
               </p>
             </div>
             <Divider />

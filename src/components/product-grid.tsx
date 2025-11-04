@@ -5,33 +5,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useMobile } from "@/hooks/use-mobile";
-import { $Enums } from "@prisma/client";
 import Link from "next/link";
-
-interface Profile {
-  name: string;
-  social_name: string | null;
-  instagram: string | null;
-}
-
-type Media = {
-  media: {
-    url: string;
-    media_type: $Enums.MediaType;
-  };
-} & {
-  mediaId: string;
-  productId: string;
-};
-
-interface Product {
-  id: string;
-  product_name: string;
-  description: string | null;
-  category: $Enums.Category;
-  profile: Profile;
-  media: Media[];
-}
+import { Product } from "@/types/product";
+import { formatPrice } from "@/lib/utils";
 
 interface ProductGridProps {
   products: Product[];
@@ -83,7 +59,7 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
             </CardContent>
             <CardFooter className="p-4 pt-0 flex justify-between items-center">
               <div className="font-semibold">
-                R$ {Math.floor(Math.random() * 600).toFixed(2)}
+                {formatPrice(product.price)}
               </div>
               <Button
                 size={isMobile ? "sm" : "default"}

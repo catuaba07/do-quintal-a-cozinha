@@ -29,6 +29,7 @@ model Product {
   id           String         @id
   product_name String
   description  String?
+  price        Decimal?
   category     Category
   media        ProductMedia[]
 

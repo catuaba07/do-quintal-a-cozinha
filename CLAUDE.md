@@ -164,6 +164,7 @@ Product
   ├── id: String (UUID)
   ├── product_name: String
   ├── description: String?
+  ├── price: Decimal? (converted to number in server actions)
   ├── category: Category (AGRICOLA | ARTESANATO | PROCESSADO)
   ├── ProductMedia[] (many-to-many via junction)
   └── Profile (many-to-1)
@@ -266,7 +267,45 @@ export async function getAllRecipes(options?: {
 }
 ```
 
-#### **3. React Query Hooks Pattern**
+#### **3. Prisma Decimal Serialization**
+
+**CRITICAL**: Prisma's `Decimal` type cannot be serialized for Client Components.
+
+**Problem**: When passing Prisma query results with `Decimal` fields to Client Components, Next.js throws:
+```
+Only plain objects can be passed to Client Components from Server Components.
+Decimal objects are not supported.
+```
+
+**Solution**: Convert `Decimal` to `number` in server actions before returning:
+
+```typescript
+"use server";
+
+export async function getAllProducts() {
+  const products = await prisma.product.findMany({
+    select: {
+      id: true,
+      product_name: true,
+      price: true, // Prisma Decimal type
+    }
+  });
+
+  // Convert Decimal to number for client component serialization
+  return products.map(product => ({
+    ...product,
+    price: product.price ? Number(product.price) : null
+  }));
+}
+```
+
+**Key Points:**
+- Always convert `Decimal` fields to `number` in server actions
+- Do the conversion before returning data to client components
+- Preserve `null` values (don't convert `null` to `0`)
+- This applies to all Prisma types that aren't plain objects (Date, Decimal, etc.)
+
+#### **4. React Query Hooks Pattern**
 
 Located in `src/hooks/`. Wraps server actions with React Query.
 
@@ -284,7 +323,7 @@ export function useGetAllRecipes(options?: { search?: string }) {
 }
 ```
 
-#### **4. API Routes Pattern**
+#### **5. API Routes Pattern**
 
 RESTful endpoints in `src/app/api/`. All routes include CORS headers.
 
@@ -295,7 +334,7 @@ RESTful endpoints in `src/app/api/`. All routes include CORS headers.
 - Not Found: `new Response(JSON.stringify({ error: "Not found" }), { status: 404 })`
 - Server Error: `new Response(JSON.stringify({ error: "Internal Server Error" }), { status: 500 })`
 
-#### **5. Component Architecture**
+#### **6. Component Architecture**
 
 **Layered Structure:**
 1. **UI Primitives**: Base components from shadcn/ui (Button, Card, etc.)
@@ -326,7 +365,7 @@ if (recipes.length === 0) {
 return <GridLayout items={recipes} />;
 ```
 
-#### **6. Styling Architecture**
+#### **7. Styling Architecture**
 
 - **Utility-First**: Tailwind CSS classes
 - **CSS Variables**: Theme colors in `globals.css` using OKLch color space
@@ -339,7 +378,7 @@ Example:
 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
 ```
 
-#### **7. Integration Patterns**
+#### **8. Integration Patterns**
 
 **WhatsApp Integration:**
 ```typescript
@@ -573,14 +612,55 @@ npm run lint
 npm run lint -- src/components/recipe-grid.tsx
 ```
 
+## API Documentation
+
+**IMPORTANT**: This project uses **Scalar** for API documentation with an OpenAPI 3.0 specification.
+
+### Documentation Location
+
+- **OpenAPI Spec**: `public/openapi.json`
+- **Format**: OpenAPI 3.0 (JSON)
+- **Viewer**: Scalar (interactive API documentation)
+
+### Keeping Documentation Updated
+
+**CRITICAL**: Whenever you make changes to API routes, you MUST update the OpenAPI specification:
+
+1. **After adding/modifying endpoints**: Update schemas, request/response examples in `public/openapi.json`
+2. **After adding fields to models**: Add the field to all relevant request/response schemas
+3. **After adding validation**: Document new error responses and validation rules
+4. **After changing behavior**: Update endpoint descriptions and examples
+
+### OpenAPI Structure
+
+The spec includes:
+- **Complete API reference**: All endpoints with request/response schemas
+- **Authentication**: API key header authentication
+- **Request examples**: Multiple examples for different scenarios
+- **Response examples**: Success and error responses with status codes
+- **Schema definitions**: Reusable component schemas in `components.schemas`
+- **Validation errors**: Comprehensive error examples for bad requests
+
+### Example: Adding a New Field
+
+When adding a field (e.g., `price` to Product):
+1. Add to request body schema in POST/PUT endpoints
+2. Add to response schema in GET endpoints
+3. Add to examples in all relevant operations
+4. Add validation error example if applicable
+5. Update the component schema definition
+6. Test the spec is valid JSON (no syntax errors)
+
 ## API Routes Reference
+
+**Note**: This is a quick reference. For comprehensive documentation with request/response schemas, examples, and validation rules, see `public/openapi.json`.
 
 ### Product Management
 
 **POST /api/product**
 - Create new product
 - Required: `phone_number`, `product_name`, `category`
-- Optional: `description`
+- Optional: `description`, `price`, `media[]`
 - Returns: Product object (201) or error (400/500)
 
 **GET /api/product**

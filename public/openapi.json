@@ -71,6 +71,13 @@
                     "description": "Optional product description",
                     "example": "Queijo artesanal feito com leite de cabra"
                   },
+                  "price": {
+                    "type": "number",
+                    "format": "decimal",
+                    "minimum": 0,
+                    "description": "Optional product price in Brazilian Real (R$)",
+                    "example": 25.50
+                  },
                   "category": {
                     "type": "string",
                     "enum": ["AGRICOLA", "ARTESANATO", "PROCESSADO"],
@@ -112,6 +119,7 @@
                   "value": {
                     "product_name": "Queijo Artesanal",
                     "description": "Queijo artesanal feito com leite de cabra",
+                    "price": 25.50,
                     "category": "PROCESSADO",
                     "phone_number": "+5579999999999",
                     "media": [
@@ -168,6 +176,12 @@
                           "nullable": true,
                           "example": "Queijo artesanal feito com leite de cabra"
                         },
+                        "price": {
+                          "type": "number",
+                          "format": "decimal",
+                          "nullable": true,
+                          "example": 25.50
+                        },
                         "category": {
                           "type": "string",
                           "enum": ["AGRICOLA", "ARTESANATO", "PROCESSADO"],
@@ -211,6 +225,7 @@
                     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                     "product_name": "Queijo Artesanal",
                     "description": "Queijo artesanal feito com leite de cabra",
+                    "price": 25.50,
                     "category": "PROCESSADO",
                     "profile_id": "p1r2o3f4-i5l6-7890-abcd-ef1234567890",
                     "media": [
@@ -277,6 +292,12 @@
                     "summary": "Missing media URL",
                     "value": {
                       "error": "Media item at index 0: url is required and must be a non-empty string"
+                    }
+                  },
+                  "invalidPrice": {
+                    "summary": "Invalid price",
+                    "value": {
+                      "error": "Price must be a positive number"
                     }
                   }
                 }
@@ -373,6 +394,12 @@
                               "nullable": true,
                               "example": "Queijo artesanal feito com leite de cabra"
                             },
+                            "price": {
+                              "type": "number",
+                              "format": "decimal",
+                              "nullable": true,
+                              "example": 25.50
+                            },
                             "category": {
                               "type": "string",
                               "enum": ["AGRICOLA", "ARTESANATO", "PROCESSADO"],
@@ -418,6 +445,11 @@
                                 "type": "string",
                                 "nullable": true
                               },
+                              "price": {
+                                "type": "number",
+                                "format": "decimal",
+                                "nullable": true
+                              },
                               "category": {
                                 "type": "string",
                                 "enum": ["AGRICOLA", "ARTESANATO", "PROCESSADO"]
@@ -441,6 +473,7 @@
                         "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                         "product_name": "Queijo Artesanal",
                         "description": "Queijo artesanal feito com leite de cabra",
+                        "price": 25.50,
                         "category": "PROCESSADO",
                         "profile_id": "p1r2o3f4-i5l6-7890-abcd-ef1234567890",
                         "media": [
@@ -460,6 +493,7 @@
                           "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                           "product_name": "Queijo Artesanal",
                           "description": "Queijo artesanal feito com leite de cabra",
+                          "price": 25.50,
                           "category": "PROCESSADO",
                           "profile_id": "p1r2o3f4-i5l6-7890-abcd-ef1234567890"
                         },
@@ -467,6 +501,7 @@
                           "id": "b2c3d4e5-f6g7-8901-bcde-fg2345678901",
                           "product_name": "Mel Silvestre",
                           "description": "Mel puro extraído de colmeias silvestres",
+                          "price": 35.00,
                           "category": "AGRICOLA",
                           "profile_id": "p1r2o3f4-i5l6-7890-abcd-ef1234567890"
                         }
@@ -531,6 +566,13 @@
                     "type": "string",
                     "description": "Updated product description",
                     "example": "Queijo artesanal premium feito com leite de cabra orgânico"
+                  },
+                  "price": {
+                    "type": "number",
+                    "format": "decimal",
+                    "minimum": 0,
+                    "description": "Updated product price in Brazilian Real (R$)",
+                    "example": 30.00
                   },
                   "category": {
                     "type": "string",
@@ -644,6 +686,12 @@
                           "nullable": true,
                           "example": "Queijo artesanal premium feito com leite de cabra orgânico"
                         },
+                        "price": {
+                          "type": "number",
+                          "format": "decimal",
+                          "nullable": true,
+                          "example": 30.00
+                        },
                         "category": {
                           "type": "string",
                           "enum": ["AGRICOLA", "ARTESANATO", "PROCESSADO"],
@@ -708,6 +756,7 @@
                     "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                     "product_name": "Queijo Artesanal Premium",
                     "description": "Queijo artesanal premium feito com leite de cabra orgânico",
+                    "price": 30.00,
                     "category": "PROCESSADO",
                     "profile_id": "p1r2o3f4-i5l6-7890-abcd-ef1234567890",
                     "media": [
@@ -765,6 +814,12 @@
                     "summary": "Missing media URL",
                     "value": {
                       "error": "Media item at index 0: url is required and must be a non-empty string"
+                    }
+                  },
+                  "invalidPrice": {
+                    "summary": "Invalid price",
+                    "value": {
+                      "error": "Price must be a positive number"
                     }
                   }
                 }
@@ -1739,6 +1794,14 @@
             "nullable": true,
             "description": "Product description (optional)",
             "example": "Queijo artesanal feito com leite de cabra"
+          },
+          "price": {
+            "type": "number",
+            "format": "decimal",
+            "nullable": true,
+            "minimum": 0,
+            "description": "Product price in Brazilian Real (R$, optional)",
+            "example": 25.50
           },
           "category": {
             "$ref": "#/components/schemas/Category"
