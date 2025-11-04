@@ -10,17 +10,21 @@ interface MediaItem {
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const category = body.category;
+
+  // Normalize empty strings to undefined (handles Typebot variables that aren't set)
+  const productName = body.product_name?.trim() || undefined;
+  const phoneNumber = body.phone_number?.trim() || undefined;
+  const category = body.category?.trim() || undefined;
   const media: MediaItem[] = body.media || [];
 
   // Validate required fields
-  if (!body.product_name) {
+  if (!productName) {
     return new Response(JSON.stringify({ error: "Product name is required" }), {
       status: 400,
     });
   }
 
-  if (!body.phone_number) {
+  if (!phoneNumber) {
     return new Response(JSON.stringify({ error: "Phone number is required" }), {
       status: 400,
     });
@@ -82,7 +86,7 @@ export async function POST(request: Request) {
   // Verify profile exists
   const profile = await prisma.profile.findUnique({
     where: {
-      phone_number: body.phone_number,
+      phone_number: phoneNumber,
     },
   });
 
@@ -101,7 +105,7 @@ export async function POST(request: Request) {
           id: uuidv4(),
           category,
           description: body.description || null,
-          product_name: body.product_name,
+          product_name: productName,
           profile_id: profile.id,
         },
       });

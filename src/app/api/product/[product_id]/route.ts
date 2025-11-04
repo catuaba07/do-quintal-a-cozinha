@@ -12,7 +12,10 @@ type params = { params: Promise<{ product_id: string }> };
 export async function PUT(request: Request, { params }: params) {
   const { product_id } = await params;
   const body = await request.json();
-  const category = body.category;
+
+  // Normalize empty strings to undefined (handles Typebot variables that aren't set)
+  const productName = body.product_name?.trim() || undefined;
+  const category = body.category?.trim() || undefined;
   const media: MediaItem[] = body.media || [];
   const replaceMedia: boolean = body.replace_media ?? false;
 
@@ -28,7 +31,7 @@ export async function PUT(request: Request, { params }: params) {
   }
 
   // Validate category if provided
-  if (category) {
+  if (category !== undefined) {
     if (
       category !== Category.AGRICOLA &&
       category !== Category.ARTESANATO &&
@@ -87,8 +90,8 @@ export async function PUT(request: Request, { params }: params) {
         category?: Category;
       } = {};
 
-      if (body.product_name !== undefined) {
-        updateData.product_name = body.product_name;
+      if (productName !== undefined) {
+        updateData.product_name = productName;
       }
 
       if (body.description !== undefined) {
