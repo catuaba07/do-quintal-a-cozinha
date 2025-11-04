@@ -16,6 +16,9 @@ export async function POST(request: Request) {
   const phoneNumber = body.phone_number?.trim() || undefined;
   const category = body.category?.trim() || undefined;
   const media: MediaItem[] = body.media || [];
+  const price = body.price !== undefined && body.price !== null && body.price !== ""
+    ? Number(body.price)
+    : null;
 
   // Validate required fields
   if (!productName) {
@@ -45,6 +48,14 @@ export async function POST(request: Request) {
       JSON.stringify({
         error: `Category must be one of "${Category.AGRICOLA}", "${Category.ARTESANATO}", "${Category.PROCESSADO}"`,
       }),
+      { status: 400 }
+    );
+  }
+
+  // Validate price if provided
+  if (price !== null && (isNaN(price) || price < 0)) {
+    return new Response(
+      JSON.stringify({ error: "Price must be a positive number" }),
       { status: 400 }
     );
   }
@@ -105,6 +116,7 @@ export async function POST(request: Request) {
           id: uuidv4(),
           category,
           description: body.description || null,
+          price,
           product_name: productName,
           profile_id: profile.id,
         },
@@ -175,6 +187,15 @@ export async function GET(request: NextRequest) {
   if (phone_number) {
     const products = await prisma.product.findMany({
       where: { profile: { phone_number } },
+      select: {
+        id: true,
+        product_name: true,
+        description: true,
+        price: true,
+        category: true,
+        profile_id: true,
+        media: true
+      }
     });
 
     return new Response(JSON.stringify({ data: products }), { status: 200 });
@@ -185,6 +206,7 @@ export async function GET(request: NextRequest) {
       id: true,
       product_name: true,
       description: true,
+      price: true,
       category: true,
       profile_id: true,
       media: true

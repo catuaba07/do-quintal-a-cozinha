@@ -19,6 +19,11 @@ export async function PUT(request: Request, { params }: params) {
   const media: MediaItem[] = body.media || [];
   const replaceMedia: boolean = body.replace_media ?? false;
 
+  let price: number | null | undefined = undefined;
+  if (body.price !== undefined) {
+    price = body.price !== null && body.price !== "" ? Number(body.price) : null;
+  }
+
   // Verify product exists
   const product = await prisma.product.findUnique({
     where: { id: product_id },
@@ -44,6 +49,14 @@ export async function PUT(request: Request, { params }: params) {
         { status: 400 }
       );
     }
+  }
+
+  // Validate price if provided
+  if (price !== undefined && price !== null && (isNaN(price) || price < 0)) {
+    return new Response(
+      JSON.stringify({ error: "Price must be a positive number" }),
+      { status: 400 }
+    );
   }
 
   // Filter out media items with empty URLs and validate remaining items
@@ -87,6 +100,7 @@ export async function PUT(request: Request, { params }: params) {
       const updateData: {
         product_name?: string;
         description?: string | null;
+        price?: number | null;
         category?: Category;
       } = {};
 
@@ -96,6 +110,10 @@ export async function PUT(request: Request, { params }: params) {
 
       if (body.description !== undefined) {
         updateData.description = body.description || null;
+      }
+
+      if (price !== undefined) {
+        updateData.price = price;
       }
 
       if (category !== undefined) {
