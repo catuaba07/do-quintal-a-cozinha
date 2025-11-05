@@ -37,7 +37,7 @@ export function formatMinutes(mins: number) {
  */
 export function formatPrice(price: number | null): string {
   if (price === null || price === undefined) {
-    return "Consulte o produtor";
+    return "Consulte a produtora";
   }
 
   const numericPrice = typeof price === "number" ? price : Number(price);
