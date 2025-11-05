@@ -14,6 +14,18 @@ const products = [
     category: Category.PROCESSADO,
     image: "https://md.coolab.org/uploads/upload_238a4f1269f0e4126d3774d68d84c992.jpeg",
   },
+  {
+    product_name: "Cocada mundinha",
+    description: "Cocada mundinha com gosto de infancia",
+    category: Category.PROCESSADO,
+    image: "https://md.coolab.org/uploads/upload_289c1845efd5caf8b2be1492fc73ab0c.jpeg",
+  },
+  {
+    product_name: "Bolo de Macaxeira",
+    description: "Bolo de macaxeira da vó",
+    category: Category.PROCESSADO,
+    image: "https://md.coolab.org/uploads/upload_c5b15456eea74eac7fe8630455570585.jpeg",
+  },
 ];
 
 const profile = {
