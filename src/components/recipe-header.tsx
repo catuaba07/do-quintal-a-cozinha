@@ -12,7 +12,7 @@ export function RecipeHeader() {
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-4 text-balance">
-          Sabores do Brasil
+          Sabores Tradicionais
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 text-pretty max-w-2xl">
           Descubra receitas autênticas e deliciosas da culinária brasileira
