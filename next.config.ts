@@ -39,9 +39,9 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "storage.example.com",
+        hostname: "md.coolab.org",
         port: "",
-        pathname: "/**",
+        pathname: "/uploads/**",
       },
     ],
   },
