@@ -22,7 +22,8 @@ export function MainNav() {
           )}
         >
           Sobre
-        </Link>    
+        </Link> 
+        <Link href="/nossa-historia">Nossas Histórias</Link>   
         <Link
           href="/nossa-producao"
           className={cn(
