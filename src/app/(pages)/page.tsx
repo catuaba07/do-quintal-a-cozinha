@@ -18,21 +18,21 @@ export default function Home() {
           />
         </div>
         <div className="space-y-4">
-          <Tag text="Destaques" caption="" />
+          <Tag title="Destaques" caption="" />
         </div>
         <div></div>
         <div className="grid grid-cols-2 gap-30 place-items-center justify-center w-fit mx-auto ">
           <Link href="/nosso-espaco">
-            <HomeIcon text="Nosso Espaço"></HomeIcon>
+            <HomeIcon title="Nosso Espaço" illustrationSrc="/icons/botton-espaco.svg" backgroundSrc="/pink-bg.svg"></HomeIcon>
           </Link>
           <Link href="/nossa-historia">
-            <HomeIcon text="Nossas Histórias"></HomeIcon>
+            <HomeIcon title="Nossas Histórias" illustrationSrc="/icons/botton-historias.svg"></HomeIcon>
           </Link>
           <Link href="/nossa-producao">
-            <HomeIcon text="Nossa Produção"></HomeIcon>
+            <HomeIcon title="Nossa Produção" illustrationSrc="/icons/botton-produtos.svg"></HomeIcon>
           </Link>
           <Link href="/nossas-receitas">
-            <HomeIcon text="Nossas Receitas"></HomeIcon>
+            <HomeIcon title="Nossas Receitas" illustrationSrc="/icons/botton-receitas.svg"></HomeIcon>
           </Link>
         </div>
       </div>
