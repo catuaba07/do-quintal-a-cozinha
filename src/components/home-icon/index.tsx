@@ -1,13 +1,17 @@
+import Image from "next/image";
 
-export function HomeIcon({text}:{text: string}) {
+interface HomeIconProps {
+  title: string;
+  illustrationSrc: string;
+}
+
+
+
+export function HomeIcon({title, illustrationSrc}: HomeIconProps) {
   return (
     <div className="">
-      <span className="h-[112px] w-[112px] mt-5 bg-red-600 rounded-full grid place-items-center"></span>
-      <div className="h-4"></div>
-      
-      <span className="h-[35px] w-[150px] bg-purple-400/95 border border-dashed border-white rounded-sm grid place-items-center text-white text-sm font-medium">
-       {text}
-      </span>
+      <Image src={illustrationSrc} alt={title} width={112} height={112} />
+       {title}
     </div>
   )
 }
