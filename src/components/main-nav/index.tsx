@@ -18,16 +18,15 @@ export function MainNav() {
         />
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
-        <Link href="/sobre">Sobre</Link>
+         <Link href="/sobre">Sobre</Link>
         <Link
           href="/nossa-historia"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
-          )}
-        >
+          )}>
           Nossas Histórias
-        </Link>
+        </Link>         
         <Link
           href="/nossa-producao"
           className={cn(
