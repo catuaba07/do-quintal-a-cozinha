@@ -24,9 +24,10 @@ export function MainNav() {
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
-          )}>
+          )}
+        >
           Nossas Histórias
-        </Link>         
+        </Link>
         <Link
           href="/nossa-producao"
           className={cn(
