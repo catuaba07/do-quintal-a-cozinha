@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <main className="container-wrapper">
       <div className="container flex flex-col gap-6">
-        <Tag text="Nossa Produção" caption="Conheça nossa produção!" />
+        <Tag title="Nossa Produção" caption="Conheça nossa produção!" />
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
             <ProductGrid products={data ?? []} isLoading={isLoading} />

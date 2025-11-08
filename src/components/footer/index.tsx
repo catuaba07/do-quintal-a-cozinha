@@ -16,7 +16,7 @@ export function Footer() {
           <div className="flex justify-between lg:min-w-[1024px] m-auto flex-col lg:flex-row">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               <Image 
-                src="/logo.png" 
+                src="/logo192x192.png" 
                 alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe" 
                 height={64} 
                 width={64} 
