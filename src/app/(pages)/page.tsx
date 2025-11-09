@@ -23,7 +23,7 @@ export default function Home() {
         <div></div>
         <div className="grid grid-cols-2 gap-30 place-items-center justify-center w-fit mx-auto ">
           <Link href="/nosso-espaco">
-            <HomeIcon title="Nosso Espaço" illustrationSrc="/icons/botton-espaco.svg" backgroundSrc="/pink-bg.svg"></HomeIcon>
+            <HomeIcon title="Nosso Espaço" illustrationSrc="/icons/botton-espaco.svg" illustrationSrc="/pink-bg.svg"></HomeIcon>
           </Link>
           <Link href="/nossa-historia">
             <HomeIcon title="Nossas Histórias" illustrationSrc="/icons/botton-historias.svg"></HomeIcon>
