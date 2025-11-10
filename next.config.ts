@@ -43,6 +43,18 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "typebot.mulheresrurais.com.br",
+        port: "",
+        pathname: "/api/**",
+      },
+      {
+        protocol: "https",
+        hostname: "storage.mulheresrurais.com.br",
+        port: "",
+        pathname: "/typebot/public/**",
+      },
     ],
   },
 };
