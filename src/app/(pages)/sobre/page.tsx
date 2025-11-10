@@ -59,7 +59,7 @@ export default function Sobre() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
-                  src="/mmtr-sobre-1.jpg"
+                  src="/mmtr-sobre-1.webp"
                   alt="Mulheres trabalhadoras rurais do MMTR-SE reunidas em atividade coletiva de organização e formação política"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -68,7 +68,7 @@ export default function Sobre() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
-                  src="/mmtr-sobre-2.jpg"
+                  src="/mmtr-sobre-2.webp"
                   alt="Evento do Movimento da Mulher Trabalhadora Rural com participantes em momento de mobilização e debate"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -77,7 +77,7 @@ export default function Sobre() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
-                  src="/mmtr-sobre-3.jpg"
+                  src="/mmtr-sobre-3.webp"
                   alt="Mulheres do MMTR-SE em espaço de participação política, demonstrando a atuação do movimento em Sergipe"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -86,7 +86,7 @@ export default function Sobre() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
-                  src="/mmtr-sobre-4.jpg"
+                  src="/mmtr-sobre-4.webp"
                   alt="Trabalhadoras rurais em ação de mobilização do MMTR-SE, construindo o feminismo rural a partir de suas identidades e territórios"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"

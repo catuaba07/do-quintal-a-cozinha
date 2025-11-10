@@ -11,7 +11,7 @@ export function MainNav() {
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
         <Image 
-          src="/logo192x192.png" 
+          src="/logo.webp" 
           alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe e voltar ao ínicio da página" 
           height={32} 
           width={32} 

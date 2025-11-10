@@ -3,7 +3,7 @@ import { HTMLProps } from "react";
 interface TagProps extends HTMLProps<HTMLDivElement> {
   title: string;
   caption: string;
-  backgroundSrc?: "/pink-bg.svg";
+  backgroundSrc?: "/pink-bg.webp";
 }
 
 export function Tag({ title, caption, ...props }: TagProps) {

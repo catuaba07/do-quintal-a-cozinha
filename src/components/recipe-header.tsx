@@ -4,7 +4,7 @@ export function RecipeHeader() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/brazilian-feast-with-colorful-dishes-on-wooden-tab.jpg')`,
+          backgroundImage: `url('/brazilian-feast-with-colorful-dishes-on-wooden-tab.webp')`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80" />

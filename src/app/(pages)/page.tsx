@@ -9,7 +9,7 @@ export default function Home() {
       <div className="container flex flex-col gap-6">
         <div className="h-150 w-full relative">
           <Image
-            src="/home-image.jpg"
+            src="/home-image.webp"
             alt="Description of my image"
             fill
             priority
