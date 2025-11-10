@@ -16,7 +16,7 @@ interface StoryCardProps {
 export function StoryCard({ stories, isLoading, searchQuery }: StoryCardProps) {
   return (
     <section>
-      <Tag text="Nossas História" caption="Conheça nossas histórias inspiradoras!" />
+      <Tag title="Nossas História" caption="Conheça nossas histórias inspiradoras!" />
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-foreground mb-4">
           {!!searchQuery

@@ -5,7 +5,7 @@ export default function Sobre() {
   return (
     <main className="container-wrapper">
       <div className="container flex flex-col gap-6 py-8">
-        <Tag text="Sobre" caption="Conheça nossa história" />
+        <Tag title="Sobre" caption="Conheça nossa história" />
         
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
