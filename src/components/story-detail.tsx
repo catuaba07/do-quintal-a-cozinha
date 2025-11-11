@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { ImageLightbox } from "@/components/image-lightbox";
 import Image from "next/image";
 import { Story } from "@/types/story";
 import { Cooking } from "@/components/cooking";
@@ -11,8 +13,10 @@ interface StoryDetailProps {
     isLoading: boolean;
 }
 
-export function StoryDetail({ story, isLoading }: StoryDetailProps) { 
-    if (isLoading) {   
+export function StoryDetail({ story, isLoading }: StoryDetailProps) {
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+
+    if (isLoading) {
     return <Cooking />;
     }
     if (!story) {
@@ -23,16 +27,21 @@ export function StoryDetail({ story, isLoading }: StoryDetailProps) {
     <main className="container-wrapper">
       <div className="container flex flex-col gap-6">
         <Card className="overflow-hidden">
-          <div className="relative h-64 md:h-96 w-full">
+          <button
+            onClick={() => setLightboxOpen(true)}
+            className="relative h-64 md:h-96 w-full cursor-zoom-in group"
+            aria-label="Ver imagem em tamanho completo"
+          >
             {story.media.length > 0 && (
               <Image
                 src={story.media[0].media.url}
                 alt={story.name}
                 layout="fill"
                 objectFit="cover"
+                className="group-hover:scale-105 transition-transform duration-300"
               />
             )}
-          </div>
+          </button>
           <CardContent className="p-6">
             <h1 className="text-4xl font-bold mb-4">{story.name}</h1>
             <p className="text-lg text-muted-foreground mb-6">{story.description}</p>
@@ -43,6 +52,20 @@ export function StoryDetail({ story, isLoading }: StoryDetailProps) {
           </CardContent>
         </Card>
       </div>
+
+      {story.media.length > 0 && (
+        <ImageLightbox
+          images={[
+            {
+              url: story.media[0].media.url,
+              alt: story.name,
+            },
+          ]}
+          initialIndex={0}
+          isOpen={lightboxOpen}
+          onClose={() => setLightboxOpen(false)}
+        />
+      )}
     </main>
   );
 }  

@@ -1,7 +1,38 @@
+"use client";
+
+import { useState } from "react";
 import { PageHeader } from "@/components/page-header";
+import { ImageLightbox } from "@/components/image-lightbox";
 import Image from "next/image";
 
+const galleryImages = [
+  {
+    url: "/mmtr-sobre-1.webp",
+    alt: "Mulheres trabalhadoras rurais do MMTR-SE reunidas em atividade coletiva de organização e formação política",
+  },
+  {
+    url: "/mmtr-sobre-2.webp",
+    alt: "Evento do Movimento da Mulher Trabalhadora Rural com participantes em momento de mobilização e debate",
+  },
+  {
+    url: "/mmtr-sobre-3.webp",
+    alt: "Mulheres do MMTR-SE em espaço de participação política, demonstrando a atuação do movimento em Sergipe",
+  },
+  {
+    url: "/mmtr-sobre-4.webp",
+    alt: "Trabalhadoras rurais em ação de mobilização do MMTR-SE, construindo o feminismo rural a partir de suas identidades e territórios",
+  },
+];
+
 export default function Sobre() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setSelectedImageIndex(index);
+    setLightboxOpen(true);
+  };
+
   return (
     <>
       <PageHeader
@@ -62,47 +93,34 @@ export default function Sobre() {
               Galeria de Fotos
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <Image
-                  src="/mmtr-sobre-1.webp"
-                  alt="Mulheres trabalhadoras rurais do MMTR-SE reunidas em atividade coletiva de organização e formação política"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <Image
-                  src="/mmtr-sobre-2.webp"
-                  alt="Evento do Movimento da Mulher Trabalhadora Rural com participantes em momento de mobilização e debate"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <Image
-                  src="/mmtr-sobre-3.webp"
-                  alt="Mulheres do MMTR-SE em espaço de participação política, demonstrando a atuação do movimento em Sergipe"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <Image
-                  src="/mmtr-sobre-4.webp"
-                  alt="Trabalhadoras rurais em ação de mobilização do MMTR-SE, construindo o feminismo rural a partir de suas identidades e territórios"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              {galleryImages.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => openLightbox(index)}
+                  className="relative aspect-[4/3] overflow-hidden rounded-lg cursor-zoom-in group"
+                  aria-label={`Ver imagem ${index + 1} em tamanho completo`}
+                >
+                  <Image
+                    src={image.url}
+                    alt={image.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </button>
+              ))}
             </div>
           </section>
         </div>
       </div>
       </main>
+
+      <ImageLightbox
+        images={galleryImages}
+        initialIndex={selectedImageIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
     </>
   );
 }

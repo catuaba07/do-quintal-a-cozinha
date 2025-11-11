@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Tag } from "@/components/tag";
 import { HomeIcon } from "@/components/home-icon";
 import Link from "next/link";
 

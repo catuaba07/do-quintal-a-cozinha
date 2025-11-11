@@ -3,7 +3,10 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:www.prisma.io)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:yet-another-react-lightbox.com)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs"
     ],
     "deny": [],
     "ask": []
