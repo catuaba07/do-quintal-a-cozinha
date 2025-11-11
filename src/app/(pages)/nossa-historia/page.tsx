@@ -1,6 +1,7 @@
 "use client";
 import { StoryCard } from "@/components/story-card";
 import { useGetAllStories } from "@/hooks/use-get-all-stories";
+import { PageHeader } from "@/components/page-header";
 import { useState } from "react"; 
 export default function OurStoryPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,6 +17,11 @@ export default function OurStoryPage() {
   }
   return (
     <div className="min-h-screen bg-background">
+      <PageHeader
+        title="Nossas Histórias"
+        subtitle="Descubra as histórias inspiradoras das mulheres do MMTR-SE"
+        backgroundImage="/mmtr-sobre-1.webp"
+      />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">  
           <input

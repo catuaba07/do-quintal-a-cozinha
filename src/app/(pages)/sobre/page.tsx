@@ -1,11 +1,16 @@
-import { Tag } from "@/components/tag";
+import { PageHeader } from "@/components/page-header";
 import Image from "next/image";
 
 export default function Sobre() {
   return (
-    <main className="container-wrapper">
-      <div className="container flex flex-col gap-6 py-8">
-        <Tag title="Sobre" caption="Conheça nossa história" />
+    <>
+      <PageHeader
+        title="Sobre Nós"
+        subtitle="Movimento de Mulheres Trabalhadoras Rurais de Sergipe"
+        backgroundImage="/mmtr-sobre-3.webp"
+      />
+      <main className="container-wrapper">
+        <div className="container flex flex-col gap-6 py-8">
         
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
@@ -97,6 +102,7 @@ export default function Sobre() {
           </section>
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { RecipeHeader } from "@/components/recipe-header";
+import { PageHeader } from "@/components/page-header";
 import { RecipeSearch } from "@/components/recipe-search";
 import { FeaturedRecipes } from "@/components/featured-recipes";
 import { RecipeGrid } from "@/components/recipe-grid";
@@ -24,7 +24,11 @@ export default function RecipesPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <RecipeHeader />
+      <PageHeader
+        title="Sabores Tradicionais"
+        subtitle="Descubra receitas autênticas e deliciosas da culinária brasileira"
+        backgroundImage="/brazilian-feast-with-colorful-dishes-on-wooden-tab.webp"
+      />
       <main className="container mx-auto px-4 py-8">
         <RecipeSearch
           searchQuery={searchQuery}
