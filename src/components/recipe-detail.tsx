@@ -186,7 +186,7 @@ export function RecipeDetail({ recipe, isLoading }: RecipeDetailProps) {
               aria-label="Ver imagem em tamanho completo"
             >
               <Image
-                src={recipe.media[0].media.url || "/icone-receitas.webp"}
+                src={recipe.media[0]?.media.url || "/icone-receitas.webp"}
                 alt={recipe.title}
                 fill
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -244,7 +244,7 @@ export function RecipeDetail({ recipe, isLoading }: RecipeDetailProps) {
       <ImageLightbox
         images={[
           {
-            url: recipe.media[0].media.url || "/icone-receitas.webp",
+            url: recipe.media[0]?.media.url || "/icone-receitas.webp",
             alt: recipe.title,
           },
         ]}
