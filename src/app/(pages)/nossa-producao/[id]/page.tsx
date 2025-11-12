@@ -91,7 +91,7 @@ export default function Page({ params }: Props) {
                   >
                     <div className="relative aspect-square min-w-[100px]">
                       <Image
-                      src={media.media.url || "/product-placeholder.webp"}
+                      src={media.media.url || "/icone-produtos.webp"}
                         alt={data?.product_name || ""}
                         fill
                         className="object-cover transition-transform group-hover:scale-105"
@@ -119,7 +119,7 @@ export default function Page({ params }: Props) {
                 <Image
                   src={
                     data.media.at(selectedMedia)?.media.url ||
-                    "/product-placeholder.webp"
+                    "/icone-produtos.webp"
                   }
                   alt={data?.product_name || ""}
                   style={{ objectFit: "contain" }}
@@ -180,7 +180,7 @@ export default function Page({ params }: Props) {
         images={data.media
           .filter((media) => media.media.media_type === "IMAGE")
           .map((media) => ({
-            url: media.media.url || "/product-placeholder.webp",
+            url: media.media.url || "/icone-produtos.webp",
             alt: data.product_name,
           }))}
         initialIndex={selectedMedia}

@@ -7,7 +7,8 @@
       "WebFetch(domain:yet-another-react-lightbox.com)",
       "mcp__context7__resolve-library-id",
       "mcp__context7__get-library-docs",
-      "Bash(npm run lint:*)"
+      "Bash(npm run lint:*)",
+      "Bash(cwebp:*)"
     ],
     "deny": [],
     "ask": []

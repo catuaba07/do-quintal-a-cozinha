@@ -38,7 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <GridCard
       href={`/nossa-producao/${product.id}`}
-      imageUrl={product.media.at(0)?.media.url || "/product-placeholder.webp"}
+      imageUrl={product.media.at(0)?.media.url || "/icone-produtos.webp"}
       imageAlt={product.product_name}
       imageHeight="square"
     >

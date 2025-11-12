@@ -26,7 +26,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
   return (
     <GridCard
       href={`/nossas-receitas/${recipe.id}`}
-      imageUrl={recipe.media[0]?.media.url || "/placeholder.svg"}
+      imageUrl={recipe.media[0]?.media.url || "/icone-receitas.webp"}
       imageAlt={recipe.title}
       imageHeight="fixed"
     >
