@@ -25,15 +25,12 @@ export default function RecipesPage() {
   return (
     <div className="min-h-screen bg-background">
       <PageHeader
-        title="Sabores Tradicionais"
+        title="Nossas Receitas"
         subtitle="Descubra receitas autênticas e deliciosas da culinária brasileira"
         backgroundImage="/brazilian-feast-with-colorful-dishes-on-wooden-tab.webp"
       />
       <main className="container mx-auto px-4 py-8">
-        <RecipeSearch
-          searchQuery={searchQuery}
-          onSearchChange={handleSearchChange}
-        />
+        <RecipeSearch searchQuery={searchQuery} onSearchChange={handleSearchChange} />
         {!!searchQuery ? (
           <RecipeGrid
             recipes={recipes || []}
@@ -47,10 +44,7 @@ export default function RecipesPage() {
               featured_recipes={recipes ? recipes.slice(0, 2) : []}
               isLoading={isLoading}
             />
-            <RecipeGrid
-              recipes={recipes ? recipes.slice(2) : []}
-              isLoading={isLoading}
-            />
+            <RecipeGrid recipes={recipes ? recipes.slice(2) : []} isLoading={isLoading} />
           </>
         )}
       </main>

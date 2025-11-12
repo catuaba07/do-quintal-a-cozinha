@@ -21,25 +21,25 @@ export default function Home() {
             <Link href="/nosso-espaco">
               <HomeIcon
                 title="Nosso Espaço"
-                illustrationSrc="/icons/botton-espaco.svg"
+                illustrationSrc="/icons/botton-espaco.webp"
               ></HomeIcon>
             </Link>
             <Link href="/nossa-historia">
               <HomeIcon
                 title="Nossas Histórias"
-                illustrationSrc="/icons/botton-historias.svg"
+                illustrationSrc="/icons/botton-historias.webp"
               ></HomeIcon>
             </Link>
             <Link href="/nossa-producao">
               <HomeIcon
                 title="Nossa Produção"
-                illustrationSrc="/icons/botton-produtos.svg"
+                illustrationSrc="/icons/botton-produtos-plain.webp"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-receitas">
               <HomeIcon
                 title="Nossas Receitas"
-                illustrationSrc="/icons/botton-receitas.svg"
+                illustrationSrc="/icons/botton-receitas.webp"
               ></HomeIcon>
             </Link>
           </div>
