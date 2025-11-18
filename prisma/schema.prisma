@@ -98,10 +98,11 @@ model RecipeStep {
 
 model Story {
   id          String   @id
+  title       String
   name        String
   description String
   content     String
-  category    Category
+  category    StoryCategory
 
   region   Region @relation(fields: [regionId], references: [id])
   regionId String
@@ -135,6 +136,11 @@ enum Category {
   AGRICOLA
   ARTESANATO
   PROCESSADO
+}
+
+enum StoryCategory {
+  INSPIRADORA
+  AUTOBIOGRAFIA
 }
 
 enum RecipeDifficulty {
