@@ -25,7 +25,7 @@ export default function RecipesPage() {
   return (
     <div className="min-h-screen bg-background">
       <PageHeader
-        title="Nossas Receitas"
+        title="Nossas Receitas"
         subtitle="Descubra receitas autênticas e deliciosas da culinária brasileira"
         backgroundImage="/brazilian-feast-with-colorful-dishes-on-wooden-tab.webp"
       />
