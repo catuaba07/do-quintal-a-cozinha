@@ -20,6 +20,15 @@ export function MainNav() {
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
          <Link href="/sobre">Sobre</Link>
         <Link
+          href="/onde-estamos"
+          className={cn(
+            "transition-colors hover:text-foreground/80",
+            pathname === "/onde-estamos" ? "text-foreground" : "text-foreground/80"
+          )}
+        >
+          Onde Estamos
+        </Link>
+        <Link
           href="/nossa-historia"
           className={cn(
             "transition-colors hover:text-foreground/80",

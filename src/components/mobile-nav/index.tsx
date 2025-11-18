@@ -29,6 +29,13 @@ export function MobileNav() {
       <DrawerContent className="max-h-[80svh] p-0">
         <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">
+            <MobileLink href="/onde-estamos" onOpenChange={setOpen}>
+              Onde Estamos
+            </MobileLink>
+          </div>
+        </div>
+        <div className="overflow-auto p-6">
+          <div className="flex flex-col space-y-3">
             <MobileLink href="/nossa-historia" onOpenChange={setOpen}>
               Nossas Histórias
             </MobileLink>
