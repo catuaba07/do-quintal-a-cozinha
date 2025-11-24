@@ -102,10 +102,11 @@ model Story {
   name        String
   description String
   content     String
-  category    StoryCategory
+  storyCategory    StoryCategory @relation(fields: [storyCategoryId], references: [id], name: "CategoriesInStory")
+  storyCategoryId String
+  region      Region @relation(fields: [regionId], references: [id], name:"RegionStories")
+  regionId      String
 
-  region   Region @relation(fields: [regionId], references: [id])
-  regionId String
 
   media StoryMedia[]
 }
@@ -123,7 +124,13 @@ model StoryMedia {
 model Region {
   id    String  @id
   name  String
-  Story Story[]
+  stories Story[] @relation(name: "RegionStories")
+}
+
+model StoryCategory {
+  id String @id
+  title String
+  story Story[] @relation(name: "CategoriesInStory")
 }
 
 enum MediaType {
@@ -136,11 +143,6 @@ enum Category {
   AGRICOLA
   ARTESANATO
   PROCESSADO
-}
-
-enum StoryCategory {
-  INSPIRADORA
-  AUTOBIOGRAFIA
 }
 
 enum RecipeDifficulty {
