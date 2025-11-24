@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { ImageLightbox } from "@/components/image-lightbox";
 import { useGetProductById } from "@/hooks/use-get-product-by-id";
 import { useMobile } from "@/hooks/use-mobile";
 import { formatPrice } from "@/lib/utils";
@@ -21,6 +22,7 @@ export default function Page({ params }: Props) {
   const { id } = use(params);
   const { data, isLoading } = useGetProductById({ id });
   const [selectedMedia, setSelectedMedia] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const isMobile = useMobile();
 
   const handleNextMedia = useCallback(() => {
@@ -89,7 +91,7 @@ export default function Page({ params }: Props) {
                   >
                     <div className="relative aspect-square min-w-[100px]">
                       <Image
-                      src={media.media.url || "/product-placeholder.png"}
+                      src={media.media.url || "/icone-produtos.webp"}
                         alt={data?.product_name || ""}
                         fill
                         className="object-cover transition-transform group-hover:scale-105"
@@ -109,18 +111,22 @@ export default function Page({ params }: Props) {
               )}
             </div>
             <div>
-              <div className="relative aspect-video md:min-w-[500px]">
+              <button
+                onClick={() => setLightboxOpen(true)}
+                className="relative aspect-video md:min-w-[500px] cursor-zoom-in group"
+                aria-label="Ver imagem em tamanho completo"
+              >
                 <Image
                   src={
                     data.media.at(selectedMedia)?.media.url ||
-                    "/product-placeholder.png"
+                    "/icone-produtos.webp"
                   }
                   alt={data?.product_name || ""}
                   style={{ objectFit: "contain" }}
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
-              </div>
+              </button>
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -146,7 +152,7 @@ export default function Page({ params }: Props) {
               <p className="font-semibold text-base">Feito por</p>
               <div className="flex gap-5">
                 <Image
-                  src={"/profile-placeholder.png"}
+                  src={"/profile-placeholder.webp"}
                   alt={`Foto de perfil da ${data.profile.name}`}
                   width={100}
                   height={100}
@@ -169,6 +175,18 @@ export default function Page({ params }: Props) {
           </div>
         </div>
       </div>
+
+      <ImageLightbox
+        images={data.media
+          .filter((media) => media.media.media_type === "IMAGE")
+          .map((media) => ({
+            url: media.media.url || "/icone-produtos.webp",
+            alt: data.product_name,
+          }))}
+        initialIndex={selectedMedia}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
     </main>
   );
 }

@@ -39,7 +39,14 @@ export function Header() {
                 size="icon"
                 className="h-8 w-8 px-0 text-purple-600 hover:text-purple-800"
               >
-                <a href="mailto:mulheresruraisse@gmail.com">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('/api/email?subject=Contato via site', '_blank');
+                  }}
+                  className="cursor-pointer"
+                >
                   <MailOutlineIcon />
                   <span className="sr-only">Email</span>
                 </a>

@@ -23,6 +23,7 @@ model Profile {
   instagram    String?
 
   Product Product[]
+  Recipe  Recipe[]
 }
 
 model Product {
@@ -61,8 +62,8 @@ model RecipeMedia {
   recipeId String
   mediaId  String
 
-  recipe Recipe @relation(fields: [recipeId], references: [id])
-  media  Media  @relation(fields: [mediaId], references: [id])
+  recipe Recipe @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  media  Media  @relation(fields: [mediaId], references: [id], onDelete: Cascade)
 
   @@id([recipeId, mediaId])
 }
@@ -81,6 +82,9 @@ model Recipe {
   ingredients Json
   steps       RecipeStep[]
   media       RecipeMedia[]
+
+  profile    Profile @relation(fields: [profile_id], references: [id], onDelete: Cascade)
+  profile_id String
 }
 
 model RecipeStep {
