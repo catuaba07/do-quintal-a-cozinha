@@ -1,16 +1,20 @@
 import { PrismaClient } from "@prisma/client";
+import { seedStoryCategories } from "./storyCategories.js";
 import { seedStories } from "./stories.js";
 import { seedProducts } from "./products.js";
+import { seedRegions } from "./regions.js";
 
 const prisma = new PrismaClient();
 
 async function main() {
 
+  await seedRegions(prisma);
+  await seedStoryCategories(prisma);
   await seedStories(prisma);
   const allStories = await prisma.story.findMany();
-  console.log(`Seeded stories: ${allStories.length}`);
-  
-  await seedProducts();
+  console.log(`Seeds done: ${allStories.length}`);
+
+  await seedProducts(prisma);
   const allProducts = await prisma.product.findMany();
   console.log(`Seeded products: ${allProducts.length}`);
 } 
