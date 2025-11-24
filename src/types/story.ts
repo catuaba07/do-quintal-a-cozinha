@@ -1,10 +1,10 @@
-import { Category } from "@prisma/client";
+import { StoryCategory } from "@prisma/client";
 
 export type Region = ({
   id: string;
   name: string;
 })
-export type StoryCategory = Category;
+export type storyCategory = StoryCategory;
 
 export type StoryMedia = ({
     media: {
