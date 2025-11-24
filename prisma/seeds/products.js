@@ -1,4 +1,5 @@
-import { MediaType, Category } from '@prisma/client';
+import pkg from '@prisma/client';
+const { MediaType, Category } = pkg;
 import { v4 as uuidv4 } from 'uuid';
 
 const productsData = [
@@ -54,7 +55,9 @@ export async function seedProducts(prisma) {
         product_name: product.product_name,
         description: product.description,
         category: product.category,
-        profileId: createdProfile.id,
+        profile: {
+          connect: { id: createdProfile.id },
+        },
         media: {
           create: {
             media: {
@@ -70,5 +73,5 @@ export async function seedProducts(prisma) {
     });
   }
 
-  return prisma.product.findMany({ where: { profileId: createdProfile.id } });
+  return prisma.product.findMany({ where: { profile: { id: createdProfile.id } } });
 }
