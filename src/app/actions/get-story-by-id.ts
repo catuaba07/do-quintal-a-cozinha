@@ -13,7 +13,7 @@ export async function getStoryById(options: Options) {
             name: true,
             description: true,
             content: true,
-            category: true,
+            storyCategory: true,
             region: true,
             media: {
                 include: {

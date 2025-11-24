@@ -23,7 +23,7 @@ export async function getAllStories(options?: Options) {
             name: true,
             description: true,
 	    content: true,
-            category: true,
+            storyCategory: true,
             region: true,
             media: {
                 include: {
