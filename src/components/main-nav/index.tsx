@@ -3,6 +3,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 
 export function MainNav() {
   const pathname = usePathname();
@@ -17,60 +25,83 @@ export function MainNav() {
           width={32} 
         />
       </Link>
-      <nav className="flex items-center gap-4 text-sm xl:gap-6">
-         <Link href="/sobre">Sobre</Link>
-        <Link
-          href="/onde-estamos"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "/onde-estamos" ? "text-foreground" : "text-foreground/80"
-          )}
-        >
-          Onde Estamos
-        </Link>
-        <Link
-          href="/nossa-historia"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
-          )}
-        >
-          Nossas Histórias
-        </Link>
-        <Link
-          href="/nossa-producao"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/nossa-producao")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Nossa Produção
-        </Link>
-        <Link
-          href="/nossas-receitas"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/nossas-receitas")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Nossas Receitas
-        </Link>
-        <Link
-          href="/nosso-espaco"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/nosso-espaco")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Nosso Espaço
-        </Link>
-      </nav>
+	<NavigationMenu className="flex items-center gap-4 text-sm xl:gap-6">
+	  <NavigationMenuList>
+	    <NavigationMenuItem>
+	      <NavigationMenuTrigger>MMTR-SE</NavigationMenuTrigger>
+	      <NavigationMenuContent>
+	        <NavigationMenuLink
+       	            href="/sobre"
+       	            className={cn(
+       	              "transition-colors hover:text-foreground/80",
+       	              pathname === "/sobre" ? "text-foreground" : "text-foreground/80"
+       	            )}
+       	          >Sobre
+	        </NavigationMenuLink>
+	        <NavigationMenuLink
+       	            href="/onde-estamos"
+       	            className={cn(
+       	              "transition-colors hover:text-foreground/80",
+       	              pathname === "/onde-estamos" ? "text-foreground" : "text-foreground/80"
+       	            )}
+       	          >
+       	            Onde Estamos
+		</NavigationMenuLink>
+	      </NavigationMenuContent>
+	    </NavigationMenuItem>
+	    <NavigationMenuItem>
+	      <NavigationMenuLink
+                 href="/nossa-historia"
+                 className={cn(
+                   "transition-colors hover:text-foreground/80",
+                   pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
+                 )}
+        >       
+                 Nossas Histórias
+	      </NavigationMenuLink>
+	    </NavigationMenuItem>
+	    <NavigationMenuItem>
+	      <NavigationMenuLink
+                href="/nossa-producao"
+                className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname?.startsWith("/nossa-producao")
+                    ? "text-foreground"
+                    : "text-foreground/80"
+                )}
+                >
+                Nossa Produção
+	      </NavigationMenuLink>
+	    </NavigationMenuItem>
+	    <NavigationMenuItem>
+	      <NavigationMenuLink
+                href="/nossas-receitas"
+                className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname?.startsWith("/nossas-receitas")
+                    ? "text-foreground"
+                    : "text-foreground/80"
+                )}
+                >
+                Nossas Receitas
+	      </NavigationMenuLink>
+	    </NavigationMenuItem>
+	    <NavigationMenuItem>
+	      <NavigationMenuLink
+                href="/nosso-espaco"
+                className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname?.startsWith("/nosso-espaco")
+                    ? "text-foreground"
+                    : "text-foreground/80"
+                )}
+                >
+                Nosso Espaço
+	      </NavigationMenuLink>
+	    </NavigationMenuItem>
+	  </NavigationMenuList>
+        </NavigationMenu>
+
     </div>
   );
 }
