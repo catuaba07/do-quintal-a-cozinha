@@ -31,7 +31,7 @@ export function RecipeGrid({
             ? `${recipes.length} receita${
                 recipes.length !== 1 ? "s" : ""
               } encontrada${recipes.length !== 1 ? "s" : ""}`
-            : "Explore nossa coleção completa de receitas brasileiras"}
+            : "Explore nossa coleção completa de receitas"}
         </p>
       </div>
 
