@@ -19,6 +19,7 @@ export interface Story {
   title: string;
   name: string;
   description: string;
+  slug: string;
   content: string;
   category: StoryCategory;
   region: Region;

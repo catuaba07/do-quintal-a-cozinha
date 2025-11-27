@@ -12,6 +12,7 @@ export async function getStoryById(options: Options) {
             id: true,
             name: true,
             description: true,
+            slug: true,
             content: true,
             storyCategory: true,
             region: true,
