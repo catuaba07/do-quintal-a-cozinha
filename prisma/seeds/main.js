@@ -12,7 +12,7 @@ async function main() {
   await seedStoryCategories(prisma);
   await seedStories(prisma);
   const allStories = await prisma.story.findMany();
-  console.log(`Seeds done: ${allStories.length}`);
+  console.log(`Seeds stories done: ${allStories.length}`);
 
   await seedProducts(prisma);
   const allProducts = await prisma.product.findMany();

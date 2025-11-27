@@ -106,6 +106,7 @@ model Story {
   storyCategoryId String
   region      Region @relation(fields: [regionId], references: [id], name:"RegionStories")
   regionId      String
+  slug        String @unique
 
 
   media StoryMedia[]
