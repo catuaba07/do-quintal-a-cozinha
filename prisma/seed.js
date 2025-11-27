@@ -20,11 +20,38 @@ const recipes = [
     ],
     steps: [
       { step_number: 1, instruction: "Ralar os cocos" },
-      { step_number: 2, instruction: "Em um recipiente grande, misturar todos os ingredientes e esperar até que dessolvam e se tornem como uma massa de bolo" },
+      { step_number: 2, instruction: "Em um recipiente grande, misturar todos os ingredientes e esperar até que dissolvam e se tornem como uma massa de bolo" },
       { step_number: 3, instruction: "Limpar e cortar as folhas de bananeira em pedaços menores" },
       { step_number: 4, instruction: "Colocar um pouco da massa na folha de bananeira e dobrar" },
       { step_number: 5, instruction: "Colocar os pacotinhos de folha de bananeira em uma chapa grande de metal já aquecida" },
-      { step_number: 6, instruction: "Esperar até que os macasados estejam assados. Eles ficaram mais consistentes" },
+      { step_number: 6, instruction: "Esperar até que os macasados estejam assados. Leva em média uns 20 minutos." },
+    ]
+  },
+  {
+    title: "Pé de Moleque",
+    description:
+      "Receita caseira de pé de moleque fofinho, assado na folha de bananeira e taxo de metal",
+    image: "/receitas/pe-de-moleque.jpeg",
+    preparation_time_in_minutes: 50,
+    cooking_time_in_minutes: 20,
+    number_of_servings: 40,
+    difficulty: RecipeDifficulty.INTERMEDIARY,
+    ingredients: [
+      "15 kg de puba",
+      "10 coco ralado",
+      "500 g de tapioca",
+      "2 colher de sopa de margarina",
+      "3 kg de açúcar",
+      "1 sopa sal",
+      "água até dar o ponto"
+    ],
+    steps: [
+      { step_number: 1, instruction: "Ralar os cocos e bater com água" },
+      { step_number: 2, instruction: "Em um recipiente grande, misturar todos os ingredientes e esperar até que dissolvam e se tornem como uma massa de bolo" },
+      { step_number: 3, instruction: "Limpar e cortar as folhas de bananeira em pedaços menores" },
+      { step_number: 4, instruction: "Colocar um pouco da massa na folha de bananeira e enrolar" },
+      { step_number: 5, instruction: "Colocar os pacotinhos de folha de bananeira em uma chapa grande de metal já aquecida" },
+      { step_number: 6, instruction: "Esperar até que os pé de moleques estejam assados, em média 20 minutos. Eles ficarão mais consistentes" },
     ]
   },
 //  {
