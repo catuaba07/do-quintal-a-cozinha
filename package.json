@@ -11,6 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:deploy": "npx prisma migrate deploy && npx prisma generate",
+    "db:seed": "node prisma/seeds/main.js",
+    "db:backfill-slugs": "node prisma/scripts/backfill-slugs.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
