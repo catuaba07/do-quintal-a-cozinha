@@ -13,7 +13,7 @@ export default function Home() {
             fill
             priority
             style={{ objectFit: "cover" }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
           />
         </div>
         <div className="flex-1 flex items-center justify-center min-h-0 py-4 md:py-8">
