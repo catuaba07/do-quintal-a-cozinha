@@ -126,7 +126,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 ];
 
   export async function seedStories(prisma) {
-    for (const story of storiesData[2]) {
+    for (const story of storiesData) {
       let createdData = {
           id: story.id,
           title: story.title,
