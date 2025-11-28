@@ -3,7 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function StoryDetail({ story }: { story: any }) {
+interface StoryDetails {
+  story: Story;
+}
+
+export default function StoryDetail({ story }: StoryDetails) {
   const [imgSrc, setImgSrc] = useState(story.media?.[0]?.media?.url || "/placeholder.png");
 
   return (
