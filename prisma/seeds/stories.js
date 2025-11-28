@@ -93,36 +93,35 @@ Aprendi a cozinhar, a culinária, com a minha mãe, porque ela cozinhava muito b
     content:`
   <p>Quer inspiração? Então vamos conhecer um pouquinho da história de Raimunda Raquel da Cruz, 82 anos, mulher branca, moradora do povoado Matatas em Salgado (SE). Ela nos inspira pela simplicidade de enxergar a vida e as dificuldades que acreditamos difíceis de transpor. Não existem obstáculos para sua ocupação nos espaços, seja pela falta de leitura ou condição geracional. Sem ter frequentado escola formal, nos dar aula de sabedoria e nos inspira a superar nossas dificuldades. Onde tem marchas e atividade sempre está presente. Por isso, o aplicativo “Do quintal a cozinha” está  “femenageando” dando nome ao nosso chatbot de <strong>Dona Raimunda</strong>, facilitando a acessibilidade às nossas conversas.</p>
 
-  <p><i>Minha vida foi assim, desde pequena, com seis anos de idade, eu já trabalhava na roça com meus pais, e com sete anos já ganhava dinheiro, e graças a Deus, a minha vida é assim. Como meu pai e minha mãe me ensinaram, eu vou para a igreja, vou trabalhando. Não cheguei a frequenta a escola. </i></p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha vida foi assim, desde pequena, com seis anos de idade, eu já trabalhava na roça com meus pais, e com sete anos já ganhava dinheiro, e graças a Deus, a minha vida é assim. Como meu pai e minha mãe me ensinaram, eu vou para a igreja, vou trabalhando. Não cheguei a frequenta a escola.</p>
 
-  <p><i>Tive dezoito filhos, mas criei onze e criei dois netos. O tanto de netos, só dormindo pra contar. </i></p>
-  <p><i>Ainda hoje faço roça. Agora sou viúva.  Vivo na minha roça, trabalhando, batalhando a minha vida aqui e acolá. Pouco, porque hoje eu não posso mais [por causa da]  coluna, mais ainda. Graças a Deus, vivo na minha roça, na minha feira. Minha filha não quer mais que eu vá para a feira, mas eu vou, porque eu não estou aleijada. Eu vou para a minha feira, fazer minhas feiras, fazer meus pagamentos.</i></p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Tive dezoito filhos, mas criei onze e criei dois netos. O tanto de netos, só dormindo pra contar.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Ainda hoje faço roça. Agora sou viúva.  Vivo na minha roça, trabalhando, batalhando a minha vida aqui e acolá. Pouco, porque hoje eu não posso mais [por causa da]  coluna, mais ainda. Graças a Deus, vivo na minha roça, na minha feira. Minha filha não quer mais que eu vá para a feira, mas eu vou, porque eu não estou aleijada. Eu vou para a minha feira, fazer minhas feiras, fazer meus pagamentos.</p>
 
-  <h2>Homenagem – robochat-dona Raimunda</h2>
-  <p>Bom, fiquei feliz que botaram meu nome, porque acho que eu mereço, e gostaram de mim. Até hoje, minhas amigas, graças a Deus, fizeram isso comigo, porque estão achando que eu vou ser feliz.</p>
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Homenagem – robochat-dona Raimunda</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Bom, fiquei feliz que botaram meu nome, porque acho que eu mereço, e gostaram de mim. Até hoje, minhas amigas, graças a Deus, fizeram isso comigo, porque estão achando que eu vou ser feliz.</p>
 
-  <h2>Chegada no Movimento</h2>
-  <p>Fui chamada por Izaldira foi quem me botou lá dentro, no movimento. Graças a Deus, até hoje, elas me ajudam. Izaldira, Madalena, Vera, elas que me ajudam a levar eu até lá.  Eu vou para todo canto. Vou para Brasília, São Paulo, Pernambuco, Caruaru, pra todo canto.
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Chegada no Movimento</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fui chamada por Izaldira foi quem me botou lá dentro, no movimento. Graças a Deus, até hoje, elas me ajudam. Izaldira, Madalena, Vera, elas que me ajudam a levar eu até lá.  Eu vou para todo canto. Vou para Brasília, São Paulo, Pernambuco, Caruaru, pra todo canto.
 Todo canto que elas me levam, eu vou.
 </p>
 
-  <h2>As marchas</h2>
-  <p>Já fui pra todas as Marcha das Margaridas, foi muito bom, graças a Deus. Muitas amigas, muito conforto, tive muito conforto até hoje na minha vida com a Marcha das Margaridas, com o Movimento de Mulher Trabalhadeira Rural também, graças a Deus, fui muito feliz.
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">As marchas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Já fui pra todas as Marcha das Margaridas, foi muito bom, graças a Deus. Muitas amigas, muito conforto, tive muito conforto até hoje na minha vida com a Marcha das Margaridas, com o Movimento de Mulher Trabalhadeira Rural também, graças a Deus, fui muito feliz.
 Também fui pra Marcha de Mulheres em 2010, em São Paulo, caminhei 100 quilômetros, lembro que não cansei no caminho, graças a Deus. Foi muito o caminho, mas nunca desanimei porque Jesus me sustentava.
 </p>
-  <p>No outro encontro encontrei com Lula, (Brasília), conversei com ele e fiquei feliz. Ele foi muito bom comigo, graças a Deus, conversou comigo, me ajudou, me deu muita força na minha barraca. Ele disse que se eu precisasse de alguma coisa, podia mandar chamar ele, que ele vinha me ajudar. Mas, graças a Deus, não precisei, também não chamei ele, mas ele conversou muito comigo. Fiquei muito satisfeita com as palavras dele.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No outro encontro encontrei com Lula, (Brasília), conversei com ele e fiquei feliz. Ele foi muito bom comigo, graças a Deus, conversou comigo, me ajudou, me deu muita força na minha barraca. Ele disse que se eu precisasse de alguma coisa, podia mandar chamar ele, que ele vinha me ajudar. Mas, graças a Deus, não precisei, também não chamei ele, mas ele conversou muito comigo. Fiquei muito satisfeita com as palavras dele.</p>
 
-  <h2>Produção</h2>
-  <p>Faço artesanato. Faço bordado, vagonite, ponto cruz, puxadinho, escama de peixe e faço pano de prato, coberta de taco. Vendo na feira de Salgado. Onde tem, eu vou.
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Faço artesanato. Faço bordado, vagonite, ponto cruz, puxadinho, escama de peixe e faço pano de prato, coberta de taco. Vendo na feira de Salgado. Onde tem, eu vou.
 Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas agora já tenho mandioca plantada, tenho coco, tenho jaqueira e tenho pé de mangueira.
 </p>
 
-  <h2>Trabalho</h2>
-  <p>Minhas tarefas eu faço, de  vez em quando fazer uma faxina, mas é eu mesmo. Varro casa, cozinho e vou levando a vida assim mesmo. O meu trabalho é só dentro de casa, bordando, fazendo crochê, vou na roça, boto remédio na formiga e volto para casa.</p>
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Trabalho</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minhas tarefas eu faço, de  vez em quando fazer uma faxina, mas é eu mesmo. Varro casa, cozinho e vou levando a vida assim mesmo. O meu trabalho é só dentro de casa, bordando, fazendo crochê, vou na roça, boto remédio na formiga e volto para casa.</p>
 
-  <h2>Território</h2>
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
   <p><strong>Minha casa é aqui e acho bom  porque graças a Deus até hoje eu moro e vivo feliz.</strong></p>
->>>>>>> db328b9 (Adds Raimunda's content)
   `},
 ];
 
