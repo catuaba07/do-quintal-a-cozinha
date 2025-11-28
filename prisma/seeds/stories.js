@@ -12,7 +12,7 @@ export const storiesData = [
     slug: "rosa",
     storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
-    mediaUrl: "/images/rosa.jpg",
+    mediaUrl: "/historias/rosa.jpg",
     content:`
   <p>Nada é mais contagiante que um sorriso, e esse é o convite para conhecer a história de Rosa, ou Rosivania Farias, 58 anos, mãe de três filhos e duas netas. Dona de risadas soltas que contagiam quem está ao redor, divide sua vida entre Sergipe e Alagoas.</p>
 
@@ -62,7 +62,7 @@ export const storiesData = [
     slug: "ivanilde",
     storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
-    mediaUrl: "/images/ivanilde.jpg",
+    mediaUrl: "/historias/ivanilde.jpg",
   content: `
   <p>Ivanilde Maria de Souza, 61 anos, é mulher negra, agricultora, benzedeira e diretora do MMTR-NE. Vive no Povoado São Bento, em Sergipe.</p>
 
@@ -122,7 +122,7 @@ export const storiesData = [
           },
         }
         let updatedData = {
-          slug: story.slug, 
+          slug: story.slug,
           title: story.title,
           name: story.name,
           description: story.description,
@@ -138,5 +138,5 @@ export const storiesData = [
     }
     const allStories = await prisma.story.findMany();
     console.log('Story model fields:', prisma._dmmf?.modelMap?.Story?.fields.map(f => f.name));
-    return allStories;   
+    return allStories;
   }
