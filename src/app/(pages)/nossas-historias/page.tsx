@@ -2,23 +2,11 @@ export const dynamic = "force-static";
 
 const people = [
   {
-    name: "Ivanilde Maria de Souza",
-    description: "Benzedeira, trabalhadora rural e diretora do MMTR-NE. Moradora do Povoado São Bento (SE).",
-    image: "/images/stories/ivanilde.png",
-    href: "/nossas-historias/2", 
-  },
-  {
-    name: "Rosa (Rosivania Farias)",
-    description: "Doceira, agricultora e símbolo de alegria. Vive entre Sergipe e Alagoas.",
-    image: "/images/stories/rosa.png",
-    href: "/nossas-historias/1", 
-  },
-  {
-    name: "Maria Renilde de Santana",
-    description:`Maria Renilde de Santana, 69 anos. povoado Matatas, Salgado (SE) de cor parda, mãe de sete filhos e viúva duas vezes, ela nos relata uma vida de muito trabalho desde criança, da dor pela perda trágica dos seus, mas sem perder a alegria e disposição de trabalhar, viver em comunidade e servindo a quem a procura, está nas rodas de mulheres. Orgulhosa do seu roçado cheio de fruteiras e de vida.`, 
-    image: "/images/stories/renilde.png",
+    name: "Dona Raimunda",
+    description: "Exemplo de vida e como seguir com garra o que ela te apresenta. Sempre presente.",
+    image: "/images/stories/raimunda.png",
     href: "/nossas-historias/3", 
-  }
+  },
 ];
 
 export default function HomePage() {
