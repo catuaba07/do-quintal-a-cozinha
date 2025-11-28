@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Story } from "@/types/story";
 
 interface StoryDetails {
   story: Story;
@@ -18,12 +19,14 @@ export default function StoryDetail({ story }: StoryDetails) {
           alt={story.name}
           fill
           style={{ objectFit: "cover" }}
-          onError={() => setImgSrc("/placeholder.png")} // agora funciona
+          onError={() => setImgSrc("/placeholder.png")}
           className="rounded-lg"
         />
       </div>
       <h1 className="text-4xl font-bold mb-6">{story.title ?? story.name}</h1>
-      <div dangerouslySetInnerHTML={{ __html: story.content }} />
+      <div className="story-detail-content"
+      dangerouslySetInnerHTML={{ __html: story.content }}
+      />
     </main>
   );
 }
