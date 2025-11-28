@@ -89,7 +89,7 @@ Aprendi a cozinhar, a culinária, com a minha mãe, porque ela cozinhava muito b
     slug: "raimunda",
     storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
-    mediaUrl: "/images/stories/rosa.jpg",
+    mediaUrl: "/images/stories/raimunda.png",
     content:`
   <p>Quer inspiração? Então vamos conhecer um pouquinho da história de Raimunda Raquel da Cruz, 82 anos, mulher branca, moradora do povoado Matatas em Salgado (SE). Ela nos inspira pela simplicidade de enxergar a vida e as dificuldades que acreditamos difíceis de transpor. Não existem obstáculos para sua ocupação nos espaços, seja pela falta de leitura ou condição geracional. Sem ter frequentado escola formal, nos dar aula de sabedoria e nos inspira a superar nossas dificuldades. Onde tem marchas e atividade sempre está presente. Por isso, o aplicativo “Do quintal a cozinha” está  “femenageando” dando nome ao nosso chatbot de <strong>Dona Raimunda</strong>, facilitando a acessibilidade às nossas conversas.</p>
 
@@ -126,7 +126,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 ];
 
   export async function seedStories(prisma) {
-    for (const story of storiesData) {
+    for (const story of storiesData[2]) {
       let createdData = {
           id: story.id,
           title: story.title,
