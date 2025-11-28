@@ -79,46 +79,50 @@ Aprendi a cozinhar, a culinária, com a minha mãe, porque ela cozinhava muito b
 <p>Meu quintalzinho de lado a minha roça é pouca, mas suficiente para mim, planto, minhas cebolinhas, meus coentrinhos, meus tomatinhos, aqui no quintalzinho. Meus chás de remédio. Também faço crochê.</p>
 <h2>Minha casa </h2>
 <p>Era uma casinha pequena com um quarto e um banheiro. Cresci mais a casa, graças a Deus, mais um espaço, e meu quintalzinho que tem tudo. O que me motiva aqui é porque aqui é muito calmo, e gosto muito daqui, do meu território aqui. Acho calmo, gosto muito daqui”. </p>
-`
-},
-// ------------------------------------------------------------------
+ `},
   {
     id: "3",
-    title: "Eu posso servir a alguém",
-    name: "Maria Renilde de Santana",
-    description:"Eu posso servir a alguém Maria Renilde de  Santana, 69 anos. povoado Matatas, Salgado (SE) de cor parda, mãe de sete filhos e viúva duas vezes, ela  anos relata vida de muito trabalho desde criança, da  dor pela perda trágica dos seus, mas sem perder a alegria e disposição de trabalhar, viver em comunidade e servindo a quem a procura, está nas rodas de mulheres. Orgulhosa do seu roçado cheio de fruteiras e de vida.",
-    slug: "renilde",
+    title: "Encontrei com Lula, conversei com ele e fiquei feliz",
+    name: "Dona Raimunda",
+    description:
+      "Artesã, agricultora e matriarca da família que vive em Mattas. Segue com a lida e sua vida, sendo inspiração para muitas gerações.",
+    slug: "raimunda",
     storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
-    mediaUrl: "/images/renilde.png",
-  content: `<div class="flex flex-col items-center mb-10">
-    <img
-      src="/images/renilde.png"
-      alt="Foto de Maria Renilde de Santana"
-      class=" w-full max-w-xl rounded-xl shadow-md object-cover"/>
-  </div>
-  <p>”O povo daqui me conhece bem, tem quarenta e dois anos que moro aqui, sou amiga de todo mundo aqui graças a Deus, não tenho inimigos  porque eu posso servir a alguém.</p>
-  <p>Participo da Associação da comunidade dos grupos. Eu morava em Poço Verde (SE) mas com vinte e sete anos eu vim pra cá e estou aqui. Vai ser bom as pessoas conhecerem minha história.</p>
-  <p>Desde criança,  dos meus dez anos, trabalhava com meus pais na roça, trabalhavam muito. Depois, quando eu tinha dezesseis anos, me casei.</p>
-  <p>Já fui trabalhar com  meus pais e meu marido na  roça. Depois disso, com vinte e quatro anos, perdi meu marido. Os cigarros mataram, na minha casa. Balearam ele, levei pra hospital em Salvador, passou um mês e oito dias sofrendo.</p>
-  <p>Fiquei grávida, com quatro meses de grávida. Meu filho nasceu, graças a Deus, com todo o sofrimento, ele nasceu. Fiquei com três filhos, dois já tinham nascidos e um na barriga e fui vivendo.</p>
-  <p>Três anos depois  me casei outra vez e vim embora pra cá. Tá com quarenta anos que eu moro aqui. Aqui, graças a Deus, fui vivendo, trabalhei muito. Além dos três filhos que vieram comigo tive mais quatro, então tive sete filhos. Agora está com três anos que o marido morreu, e estou viúva outra vez. Duas vezes.</p>
-  <p>Trabalhei muito aqui, ainda hoje faço umas besteirinhas,  mais cansada, com dores nos braços, nas pernas, mas tô indo Meu filho ia pra feira em São Cristóvão (SE) vender as coisa, às vezes eu ia junto, mas três, quatro vezes,  mas também mataram meu filho lá, outra dor. Depois disso nunca mais fui lá</p>
-  <h2>O MMTR</h2>
-  <p>As meninas daqui que participam, me levavam e   fiquei gostando, depois, saí, comecei a não ir. Agora vou só para igreja aqui. Estou cansada.</p>
-  <h2>Minha roça</h2>
-  <p>Minha roça aqui mesmo na Matatas, a minha terra era  lá no sertão (Poço Verde) mas lá era muito seco. Mas sempre tinha um inverninho,  a gente fazia muita plantação de milho, feijão, batata, amendoim, mandioca, tudo que a gente fazia lá.</p>
-  <p>Depois eu vim embora pra cá e a gente ficava fazendo a mesma coisa. O meu marido mesmo aqui plantava muita macaxeira. Plantava roça de milho, feijão, batata. O terreno aqui é pouco, não chega a três tarefas, então plantava aqui e plantava no terreno do vizinho. No meu terreno tenho macaxeira, tem banana, tem jenipapo, tem mandioca, milho, feijão, abacate, tem laranja, tem caju, tem coco e tem mangueira.</p>
-  <h2>Acesso as TICs</h2>
-  <p>Não uso muito essas coisas da internet ( redes sociais)  porque eu não sei ler.  Mas uso telefone e tenho WI-FI. Eu procuro muita coisa no telefone, vejo muita coisa. Sem saber ler,</p>
-  <p>eu entendo um bocado de coisa, mas não leio porque eu não sei ler,  procuro as minhas coisas e eu assisto, porque pra eu ler mesmo, eu não sei ler.</p>
-  <h2>As sementes.</h2>
-  <p>A gente pegava as frutas que a gente comia, plantava e nascia. As laranjas a gente comprava pra plantar. E a maioria foi nascida aí dentro. Os coqueiros foram plantados também.</p>
-  <p>No verão a gente não faz plantação porque é muito quente essas coisas dão no inverno, em tempos de chuva.</p>
-  <h2>Tarefas</h2>
-  <p>Em casa por enquanto faço tudo, mas já estou cansada e pensando em procurar  uma pessoa para me ajudar. Já trabalhei muito. Trabalhei muito pra criar meus  filhos. Quando eu cheguei pra aqui, eu tinha uns 27 anos.</p>
-  <p>Gostei daqui. E pra eu sair daqui mesmo só quando Deus quiser, na horinha dele, eu vou”.</p>
+    mediaUrl: "/images/stories/rosa.jpg",
+    content:`
+  <p>Quer inspiração? Então vamos conhecer um pouquinho da história de Raimunda Raquel da Cruz, 82 anos, mulher branca, moradora do povoado Matatas em Salgado (SE). Ela nos inspira pela simplicidade de enxergar a vida e as dificuldades que acreditamos difíceis de transpor. Não existem obstáculos para sua ocupação nos espaços, seja pela falta de leitura ou condição geracional. Sem ter frequentado escola formal, nos dar aula de sabedoria e nos inspira a superar nossas dificuldades. Onde tem marchas e atividade sempre está presente. Por isso, o aplicativo “Do quintal a cozinha” está  “femenageando” dando nome ao nosso chatbot de <strong>Dona Raimunda</strong>, facilitando a acessibilidade às nossas conversas.</p>
 
+  <p><i>Minha vida foi assim, desde pequena, com seis anos de idade, eu já trabalhava na roça com meus pais, e com sete anos já ganhava dinheiro, e graças a Deus, a minha vida é assim. Como meu pai e minha mãe me ensinaram, eu vou para a igreja, vou trabalhando. Não cheguei a frequenta a escola. </i></p>
+
+  <p><i>Tive dezoito filhos, mas criei onze e criei dois netos. O tanto de netos, só dormindo pra contar. </i></p>
+  <p><i>Ainda hoje faço roça. Agora sou viúva.  Vivo na minha roça, trabalhando, batalhando a minha vida aqui e acolá. Pouco, porque hoje eu não posso mais [por causa da]  coluna, mais ainda. Graças a Deus, vivo na minha roça, na minha feira. Minha filha não quer mais que eu vá para a feira, mas eu vou, porque eu não estou aleijada. Eu vou para a minha feira, fazer minhas feiras, fazer meus pagamentos.</i></p>
+
+  <h2>Homenagem – robochat-dona Raimunda</h2>
+  <p>Bom, fiquei feliz que botaram meu nome, porque acho que eu mereço, e gostaram de mim. Até hoje, minhas amigas, graças a Deus, fizeram isso comigo, porque estão achando que eu vou ser feliz.</p>
+
+  <h2>Chegada no Movimento</h2>
+  <p>Fui chamada por Izaldira foi quem me botou lá dentro, no movimento. Graças a Deus, até hoje, elas me ajudam. Izaldira, Madalena, Vera, elas que me ajudam a levar eu até lá.  Eu vou para todo canto. Vou para Brasília, São Paulo, Pernambuco, Caruaru, pra todo canto.
+Todo canto que elas me levam, eu vou.
+</p>
+
+  <h2>As marchas</h2>
+  <p>Já fui pra todas as Marcha das Margaridas, foi muito bom, graças a Deus. Muitas amigas, muito conforto, tive muito conforto até hoje na minha vida com a Marcha das Margaridas, com o Movimento de Mulher Trabalhadeira Rural também, graças a Deus, fui muito feliz.
+Também fui pra Marcha de Mulheres em 2010, em São Paulo, caminhei 100 quilômetros, lembro que não cansei no caminho, graças a Deus. Foi muito o caminho, mas nunca desanimei porque Jesus me sustentava.
+</p>
+  <p>No outro encontro encontrei com Lula, (Brasília), conversei com ele e fiquei feliz. Ele foi muito bom comigo, graças a Deus, conversou comigo, me ajudou, me deu muita força na minha barraca. Ele disse que se eu precisasse de alguma coisa, podia mandar chamar ele, que ele vinha me ajudar. Mas, graças a Deus, não precisei, também não chamei ele, mas ele conversou muito comigo. Fiquei muito satisfeita com as palavras dele.</p>
+
+  <h2>Produção</h2>
+  <p>Faço artesanato. Faço bordado, vagonite, ponto cruz, puxadinho, escama de peixe e faço pano de prato, coberta de taco. Vendo na feira de Salgado. Onde tem, eu vou.
+Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas agora já tenho mandioca plantada, tenho coco, tenho jaqueira e tenho pé de mangueira.
+</p>
+
+  <h2>Trabalho</h2>
+  <p>Minhas tarefas eu faço, de  vez em quando fazer uma faxina, mas é eu mesmo. Varro casa, cozinho e vou levando a vida assim mesmo. O meu trabalho é só dentro de casa, bordando, fazendo crochê, vou na roça, boto remédio na formiga e volto para casa.</p>
+
+  <h2>Território</h2>
+  <p><strong>Minha casa é aqui e acho bom  porque graças a Deus até hoje eu moro e vivo feliz.</strong></p>
+>>>>>>> db328b9 (Adds Raimunda's content)
   `},
 ];
 
