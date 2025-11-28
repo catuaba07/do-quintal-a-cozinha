@@ -13,7 +13,7 @@ export default function StoryDetail({ story }: StoryDetails) {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
-      <div className="w-full mb-10">
+      <div className="h-96 w-48 relative flex-shrink-0">
         <Image
           src={imgSrc}
           alt={story.name}
@@ -21,6 +21,7 @@ export default function StoryDetail({ story }: StoryDetails) {
           style={{ objectFit: "cover" }}
           onError={() => setImgSrc("/placeholder.png")}
           className="rounded-lg"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
         />
       </div>
       <h1 className="text-4xl font-bold mb-6">{story.title ?? story.name}</h1>
