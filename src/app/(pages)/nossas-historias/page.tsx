@@ -3,18 +3,22 @@ export const dynamic = "force-static";
 const people = [
   {
     name: "Ivanilde Maria de Souza",
-    description:
-      "Benzedeira, trabalhadora rural e diretora do MMTR-NE. Moradora do Povoado São Bento (SE).",
-    image: "/ivanilde.jpg",
+    description: "Benzedeira, trabalhadora rural e diretora do MMTR-NE. Moradora do Povoado São Bento (SE).",
+    image: "/images/ivanilde.png",
     href: "/nossas-historias/2", 
   },
   {
     name: "Rosa (Rosivania Farias)",
-    description:
-      "Doceira, agricultora e símbolo de alegria. Vive entre Sergipe e Alagoas.",
-    image: "/rosa.jpg",
+    description: "Doceira, agricultora e símbolo de alegria. Vive entre Sergipe e Alagoas.",
+    image: "/images/rosa.png",
     href: "/nossas-historias/1", 
   },
+  {
+    name: "Maria Renilde de Santana",
+    description:`Maria Renilde de Santana, 69 anos. povoado Matatas, Salgado (SE) de cor parda, mãe de sete filhos e viúva duas vezes, ela nos relata uma vida de muito trabalho desde criança, da dor pela perda trágica dos seus, mas sem perder a alegria e disposição de trabalhar, viver em comunidade e servindo a quem a procura, está nas rodas de mulheres. Orgulhosa do seu roçado cheio de fruteiras e de vida.`, 
+    image: "/images/renilde.png",
+    href: "/nossas-historias/3", 
+  }
 ];
 
 export default function HomePage() {
@@ -48,7 +52,7 @@ export default function HomePage() {
             <img
               src={person.image}
               alt={`Foto de ${person.name}`}
-              className="h-56 w-full object-cover"
+              className="h-96 w-full object-cover"
             />
 
             <div className="p-6 flex flex-col flex-grow">
