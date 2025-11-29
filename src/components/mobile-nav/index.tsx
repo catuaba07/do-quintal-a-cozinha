@@ -27,6 +27,13 @@ export function MobileNav() {
         </Button>
       </DrawerTrigger>
       <DrawerContent className="max-h-[80svh] p-0">
+           <div className="overflow-auto p-6">
+          <div className="flex flex-col space-y-3">
+            <MobileLink href="/" onOpenChange={setOpen}>
+             Home
+            </MobileLink>
+          </div>
+        </div>
         <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">
             <MobileLink href="/onde-estamos" onOpenChange={setOpen}>
@@ -36,7 +43,7 @@ export function MobileNav() {
         </div>
         <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">
-            <MobileLink href="/nossa-historia" onOpenChange={setOpen}>
+            <MobileLink href="/nossas-historias" onOpenChange={setOpen}>
               Nossas Histórias
             </MobileLink>
           </div>
