@@ -7,6 +7,12 @@ const people = [
     image: "/images/stories/raimunda.png",
     href: "/nossas-historias/3", 
   },
+  {
+    name: "Silvia Helena",
+    description: "Exemplo de vida e como seguir com garra o que ela te apresenta. Sempre presente.",
+    image: "/images/stories/dita.jpg",
+    href: "/nossas-historias/4", 
+  },
 ];
 
 export default function HomePage() {
@@ -40,7 +46,7 @@ export default function HomePage() {
             <img
               src={person.image}
               alt={`Foto de ${person.name}`}
-              className="h-96 w-full object-cover"
+              className="h-9/12 w-full object-cover"
             />
 
             <div className="p-6 flex flex-col flex-grow">
