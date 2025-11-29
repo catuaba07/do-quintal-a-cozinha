@@ -1,7 +1,6 @@
 import { Cooking } from '@/components/cooking';
 import { getAllStories, getStoryBySlug } from '@/lib/stories';
 import StoryDetail from "@/components/nossas-historias/story-detail-client";
-import { notFound } from 'next/navigation';
 
 export const dynamic = 'force-static';
 
