@@ -51,7 +51,7 @@ export function MainNav() {
 	    </NavigationMenuItem>
 	    <NavigationMenuItem>
 	      <NavigationMenuLink
-                 href="/nossa-historia"
+                 href="/nossas-historias"
                  className={cn(
                    "transition-colors hover:text-foreground/80",
                    pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "prisma": {
-    "seed": "node ./prisma/seed.js"
+    "seed": "node ./prisma/seeds/main.js"
   },
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:deploy": "npx prisma migrate deploy && npx prisma generate",
+    "db:seed": "node prisma/seeds/main.js",
+    "db:backfill-slugs": "node prisma/scripts/backfill-slugs.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -59,6 +61,7 @@
     "@storybook/experimental-nextjs-vite": "^8.6.12",
     "@storybook/react": "^8.6.12",
     "@storybook/test": "^8.6.12",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

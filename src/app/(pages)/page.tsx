@@ -24,7 +24,7 @@ export default function Home() {
                 illustrationSrc="/icons/botton-espaco.webp"
               ></HomeIcon>
             </Link>
-            <Link href="/nossa-historia">
+            <Link href="/nossas-historias">
               <HomeIcon
                 title="Nossas Histórias"
                 illustrationSrc="/icons/botton-historias.webp"

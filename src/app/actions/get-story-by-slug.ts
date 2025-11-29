@@ -3,17 +3,18 @@
 import { prisma } from "@/lib/prisma";
 
 interface Options {
-  id: string;
+  slug: string;
 }
 
-export async function getStoryById(options: Options) {
+export async function getStoryBySlug(options: Options) {
     return await prisma.story.findUnique({
         select: {
             id: true,
             name: true,
+            title: true,
             description: true,
-            content: true,
-            category: true,
+            slug: true,
+	    content: true,
             region: true,
             media: {
                 include: {
@@ -26,7 +27,7 @@ export async function getStoryById(options: Options) {
             }
         },
         where: {
-            id: options.id,
+            slug: options.slug,
         },
     });
 }   
