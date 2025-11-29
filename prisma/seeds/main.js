@@ -1,6 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { seedStories } from "./stories.js";
 import { seedProducts } from "./products.js";
+import { seedRecipes } from "./recipes.js";
 import { seedRegions } from "./regions.js";
 
 const prisma = new PrismaClient();
@@ -15,7 +16,11 @@ async function main() {
   await seedProducts(prisma);
   const allProducts = await prisma.product.findMany();
   console.log(`Seeded products: ${allProducts.length}`);
-} 
+
+  await seedRecipes(prisma);
+  const allRecipes = await prisma.recipe.findMany();
+  console.log(`Seeded recipes: ${allRecipes.length}`);
+}
 main()
 .catch((e) => {
   console.error(e);
