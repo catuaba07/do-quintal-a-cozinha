@@ -60,7 +60,7 @@ export default function HomePage() {
 
               <a
                 href={person.href}
-                className="inline-block w-full bg-blue-600 text-white text-center py-2.5 rounded-lg font-medium hover:bg-blue-700 transition focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-300"
+                className="inline-block w-full bg-purple-700 text-white text-center py-2.5 rounded-lg font-medium hover:bg-purple-700 transition focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-300"
                 aria-label={`Saiba mais sobre ${person.name}`}
               >
                 Saiba mais
