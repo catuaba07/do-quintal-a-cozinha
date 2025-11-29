@@ -1,9 +1,9 @@
 "use client";
 
-import { Cooking } from '@/components/cooking';
 import { useGetStoryBySlug } from "@/hooks/use-get-story-by-slug";
 import StoryDetail from "@/components/nossas-historias/story-detail-client";
 import { use } from "react";
+import { notFound } from 'next/navigation';
 
 interface StoryPageProps {
   params: Promise<{
@@ -18,7 +18,7 @@ export default function StoryPage({ params }: StoryPageProps) {
   const { data: story, isLoading } = useGetStoryBySlug({ slug });
   
   if (!story) {
-     return <Cooking />;
+     return notFound();
     }
 
   return <StoryDetail story={story} isLoading={isLoading} />;

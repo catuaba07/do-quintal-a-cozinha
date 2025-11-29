@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ImageLightbox } from "@/components/image-lightbox";
 import Image from "next/image";
 import { Story } from "@/types/story";
-import { Cooking } from "@/components/cooking";
+import { notFound } from "next/navigation";
 
 
 interface StoryDetailProps {
@@ -17,10 +17,10 @@ export function StoryDetail({ story, isLoading }: StoryDetailProps) {
     const [lightboxOpen, setLightboxOpen] = useState(false);
 
     if (isLoading) {
-    return <Cooking />;
+    return <p>Carregando...</p>;
     }
     if (!story) {
-    return <div>História não encontrada.</div>;
+    return notFound();
     }
 
     return (
