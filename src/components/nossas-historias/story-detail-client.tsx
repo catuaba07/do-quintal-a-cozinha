@@ -13,7 +13,7 @@ export default function StoryDetail({ story }: StoryDetails) {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
-      <div className="h-96 w-48 relative flex-shrink-0">
+      <div className="h-[44rem] max-w-lg cover relative flex-shrink-0">
         <Image
           src={imgSrc}
           alt={story.name}
