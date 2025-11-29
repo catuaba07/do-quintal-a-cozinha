@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { seedStoryCategories } from "./storyCategories.js";
 import { seedStories } from "./stories.js";
 import { seedProducts } from "./products.js";
 import { seedRegions } from "./regions.js";
@@ -9,7 +8,6 @@ const prisma = new PrismaClient();
 async function main() {
 
   await seedRegions(prisma);
-  await seedStoryCategories(prisma);
   await seedStories(prisma);
   const allStories = await prisma.story.findMany();
   console.log(`Seeds stories done: ${allStories.length}`);

@@ -96,8 +96,6 @@ model Story {
   name        String
   description String
   content     String
-  storyCategory    StoryCategory @relation(fields: [storyCategoryId], references: [id], name: "CategoriesInStory")
-  storyCategoryId String
   region      Region @relation(fields: [regionId], references: [id], name:"RegionStories")
   regionId      String
   slug        String @unique
@@ -120,12 +118,6 @@ model Region {
   id    String  @id
   name  String
   stories Story[] @relation(name: "RegionStories")
-}
-
-model StoryCategory {
-  id String @id
-  title String
-  story Story[] @relation(name: "CategoriesInStory")
 }
 
 enum MediaType {

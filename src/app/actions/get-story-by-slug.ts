@@ -14,8 +14,7 @@ export async function getStoryBySlug(options: Options) {
             title: true,
             description: true,
             slug: true,
-            content: true,
-            storyCategory: true,
+	    content: true,
             region: true,
             media: {
                 include: {

@@ -4,7 +4,6 @@ export type Region = ({
   id: string;
   name: string;
 })
-export type storyCategory = StoryCategory;
 
 export type StoryMedia = ({
     media: {
@@ -21,7 +20,6 @@ export interface Story {
   description: string;
   slug: string;
   content: string;
-  storyCategory: StoryCategory;
   region: Region;
   media: StoryMedia[];
 }

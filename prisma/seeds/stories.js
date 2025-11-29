@@ -10,7 +10,6 @@ export const storiesData = [
     description:
       "Artesã, agricultora e matriarca da família que vive em Mattas. Segue com a lida e sua vida, sendo inspiração para muitas gerações.",
     slug: "raimunda",
-    storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
     mediaUrl: "/images/stories/raimunda.png",
     content:`
@@ -53,7 +52,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     name: "Silvia Helena",
     description:"Mulher negra, agricultora não assentada, moradora há mais de 30 anos do Assentamento.",
     slug: "silvia-helena",
-    storyCategoryId: "INSPIRADORA",
     regionId: "ARA",
     mediaUrl: "/images/stories/dita.jpg",
     content:`
@@ -116,9 +114,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           description: story.description,
           slug: story.slug,
           content: story.content,
-          storyCategory: {
-            connect: { id: story.storyCategoryId }
-          },
           region: {
             connect: { id: story.regionId }
           },
@@ -140,7 +135,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           name: story.name,
           description: story.description,
           content: story.content,
-          storyCategory: { connect: { id: story.storyCategoryId } },
           region: { connect: { id: story.regionId } },
         }
       await prisma.story.upsert({

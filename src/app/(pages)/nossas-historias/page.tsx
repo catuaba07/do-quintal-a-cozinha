@@ -5,13 +5,13 @@ const people = [
     name: "Dona Raimunda",
     description: "Exemplo de vida e como seguir com garra o que ela te apresenta. Sempre presente.",
     image: "/images/stories/raimunda.png",
-    href: "/nossas-historias/3", 
+    href: "/nossas-historias/raimunda", 
   },
   {
     name: "Silvia Helena",
     description: "Exemplo de vida e como seguir com garra o que ela te apresenta. Sempre presente.",
     image: "/images/stories/dita.jpg",
-    href: "/nossas-historias/4", 
+    href: "/nossas-historias/silvia-helena", 
   },
 ];
 
