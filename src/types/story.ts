@@ -21,7 +21,7 @@ export interface Story {
   description: string;
   slug: string;
   content: string;
-  category: StoryCategory;
+  storyCategory: StoryCategory;
   region: Region;
   media: StoryMedia[];
 }

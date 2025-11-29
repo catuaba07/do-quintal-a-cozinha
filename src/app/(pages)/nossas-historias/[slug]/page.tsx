@@ -1,16 +1,21 @@
+"use client";
+
 import { Cooking } from '@/components/cooking';
-import { getAllStories, getStoryBySlug } from '@/lib/stories';
+import { useGetStoryBySlug } from "@/hooks/use-get-story-by-slug";
 import StoryDetail from "@/components/nossas-historias/story-detail-client";
+import { use } from "react";
+
+interface StoryPageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 
 export const dynamic = 'force-static';
 
-export async function generateStaticParams() {
-  const stories = await getAllStories();
-  return stories.map(s => ({ slug: s.id })); 
-}
-
-export default async function StoryPage({ params }: { params: { slug: string } }) {
-  const story = await getStoryBySlug(params.slug);
+export default function StoryPage({ params }: StoryPageProps) {
+  const { slug } = use(params);
+  const { data: story } = useGetStoryBySlug({ slug });
   
   if (!story) {
      return <Cooking />;
