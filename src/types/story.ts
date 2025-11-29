@@ -1,5 +1,3 @@
-import { StoryCategory } from "@prisma/client";
-
 export type Region = ({
   id: string;
   name: string;

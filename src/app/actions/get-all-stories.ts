@@ -24,7 +24,6 @@ export async function getAllStories(options?: Options) {
             description: true,
             slug: true,
             content: true,
-            storyCategory: true,
             region: true,
             media: {
                 include: {
