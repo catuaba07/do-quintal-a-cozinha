@@ -5,83 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 export const storiesData = [
   {
     id: "1",
-    title: "Venha o que vier, mas eu estou sempre sorrindo",
-    name: "Rosa — Rosivania Bezerra Dias de Farias",
-    description:
-      "Doceira, agricultora e mulher sempre sorridente que vive entre Sergipe e Alagoas. Mantém tradições culinárias herdadas da mãe e fortalece sua renda com doces gourmet.",
-    slug: "rosa",
-    storyCategoryId: "INSPIRADORA",
-    regionId: "ARA",
-    mediaUrl: "/images/stories/rosa.jpg",
-    content:`
-  <p>Nada é mais contagiante que um sorriso, e esse é o convite para conhecer a história de Rosa, ou Rosivania Farias, 58 anos, mãe de três filhos e duas netas. Dona de risadas soltas que contagiam quem está ao redor, divide sua vida entre Sergipe e Alagoas.</p>
-
-  <p class="text-lg leading-relaxed text-gray-800 mb-6">
-    Doceira de mão cheia, conta que herdou o gosto pela cozinha de sua mãe, cozinheira experiente com especialidade em comidas típicas alagoanas. também
-excelente cozinheira, com especialidade para comidas típicas Alagoana. Hoje vive dividida entre Sergipe e Alagoas.</p>
-
-  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sobre si mesma</h2>
-  <p class="text-lg leading-relaxed text-gray-800 mb-6">
-    “Rosa é uma pessoa amigueira, sorridente, rio com o vento. Adoro fazer amizade, conhecer pessoas, interagir. E estou sempre feliz. Venha o que vier, mas eu estou sempre sorrindo. E tenho três filhos, o Jefferson foi o primeiro depois do Jefferson veio a Aline, depois o Jonathan, que é uma benção, ele é filho do coração. Mas que eu amo da mesma forma, não tem diferença. E são minhas três joias raras. E agora duas netas que Deus me deu de presente agora. A Alice e a Maya.
-    Sou agricultora e faço e vendo doces e salgados. Também vendo roupas, trabalho com vendas. E sempre estou buscando uma ajuda financeira, porque depois que a gente se aposenta é aquela quantia contada. E agradecer a Deus por ter. Mas a gente tem que sempre estar buscando, trabalhando para ter uma rendinha, não só depender daquele salariozinho.”</p>
-  <h2>MMTR</h2>
-  <p>Quando eu cheguei aqui, em Sergipe, que sou alagoana, mas nunca tinha participado de nada desses projetos. Quando cheguei aqui em Sergipe, conheci Madalena. E através de Madalena, foi que me engajei nesses projetos. Tive conhecimento do MMTR, comecei a participar de reuniões, viajar com elas, conhecer o dia-a-dia de outras pessoas fora. E assim fui me apegando a participar de todas as coisas que surgiam, que pudesse participar, estava presente. E me trouxe conhecimento enorme, eu achava que a mulher era só ser dona de casa, trabalhar, cozinhar, lavar, passar. E através do movimento eu tive outra visão da vida, que não só é isso, a mulher tem seus direitos, tem seus sonhos. E quando a gente busca, tem que batalhar para conseguir as coisas, realizar os sonhos. E através do MMTR a gente tem muitos conhecimentos, sabemos nossos direitos, os deveres. E assim, a cada dia, a cada encontro, a gente vai se aperfeiçoando, ganhando conhecimento. E foi assim que eu aprendi muitas coisas.</p>
-  <h2>Uso da tecnologia da comunicação</h2>
-  <p>É importante as agricultoras aprenderem a usar as tecnologias porque facilita a vida. Como eu já falei, era difícil expor as coisas da agricultura, o que a gente vendesse, alguma coisa. E hoje em dia, com a tecnologia, as coisas ficam tudo mais fáceis. Você posta, divulga e vender os produtos.</p>
-  <h2>Produção/Herança de mãe</h2>
-  <p>Estou trabalhando com doces, doces caseiros.
-Aprendi a cozinhar, a culinária, com a minha mãe, porque ela cozinhava muito bem e eu peguei o gosto pela cozinha, porque eu estando dentro de uma cozinha, eu me realizo. Então, eu acho que foi isso, pelo gosto pela culinária da minha mãe. Ela fazia muito bem, buchada, que é um prato típico lá de Alagoas, o povo gosta muito, e o doce de mamão com coco.</p>
-<h2>Assentamento</h2>
-<p>Agora, no Assentamento Vitória da União, está com muito sol e as está plantações estão penando, no momento, tem fruteiras, abacate, laranja, mexerica, quando eu cheguei, aí só tinha, no local, tinha muitas acerolas, só que dono antigo, cortou. Aí a gente foi replantando, aí plantamos as fruteiras que tem hoje, pé de coco, coco d'água, e, como é, bananeira, e as outras coisas que já tinha, que era o abacateiro e o Genipapo. Vejo muitas melhoras, o calçamento, que facilitou a vida das pessoas, por não ter as estradas. Melhoraram muito. E cada dia, aos poucos, está melhorando.</p>
-<h2>Adaptações ao clima</h2>
-<p>Eu vejo que as chuvas, principalmente esse ano, no tempo da plantação foi pouquinha, mas depois ela já chegou. Então, o tempo está mudando.</p>
-<h2>Divisão de tarefas</h2>
-<p>Eu faço tudo em casa, costumo fazer tudo. Os filhos só levantam, forram a cama e pronto. Mas as outras coisas eu tenho mania de fazer tudo só. Eu não gosto muito de botar eles para fazer, mas eles sabem como são os deveres deles e sempre que pode ajuda.</p>
-<h2>Venda no aplicativo</h2>
-<p>Então, quero sim. Vou achar os meus produtos que eu estou vendendo agora, os meus doces gourmet. A comunidade já comprou, e gostam. Ultimamente eu estou fazendo doce gourmet, que é o doce de leite saborizado com morango, ameixa, geleia de maracujá, geleia de abacaxi. Então, eu estou fazendo agora esses doces. São fáceis. Você faz o doce batido e depois você saboriza com a geleia.</p>
-<h2>Território</h2>
-<p>Quando a gente vem para um lugar morar, que a gente encontra pessoas boas, encontrar amigas, fazer amizade. sempre tem aquela motivação de continuar naquele lugar, para crescer com aquelas pessoas, buscar sempre as melhoras para a nossa comunidade, participar das coisas, principalmente das coisas da igreja, das coisas que Deus nos propõe a cada dia, que é servir ao nosso próximo. <strong>E estar sempre engajada em todas as coisas que surgem, buscando dar o melhor para a nossa comunidade”</strong>.</p>
-`
-  },
-
-  // ------------------------------------------------------------------
-  {
-    id: "2",
-    title: "Sou benzedeira, minha avó me ensinou",
-    name: "Ivanilde Maria de Souza",
-    description:"Mulher negra, benzedeira, trabalhadora rural e diretora do MMTR-NE. Superou uma infância marcada por dificuldades e hoje vive no Povoado São Bento, onde planta, benze e participa do movimento.",
-    slug: "ivanilde",
-    storyCategoryId: "INSPIRADORA",
-    regionId: "ARA",
-    mediaUrl: "/images/stories/ivanilde.png",
-  content: `
-  <div class="flex flex-col items-center mb-10">
-    <img
-      src="/images/ivanilde.png"
-      alt="Foto de Ivanilde"
-      class=" w-full max-w-xl rounded-xl shadow-md object-cover"/>
-  </div>
-  <p>Ivanilde Maria de Souza, tenho 61 anos. Mulher negra, moradora do Povoado São Bento, estrada do Riacho Seco em Salgado (SE). Dona de uma história com tantas perdas familiares desde partida de sua mãe ainda criança, encontrou acolhimento e junto a sua comunidade ajudando com sua herança de benzedeira e construindo sua família unipessoal.
-“Sou uma trabalhadora rural. Não tenho terra, mas eu tenho meu quintalzinho aqui, trabalho no meu quintal. Me aposentei como trabalhadora rural. Sou benzedeira, minha avó me ensinou a rezar, ela rezava e fui aprendendo. Participo de vários grupos, da associação, da igreja, da Mãe Rainha. E atualmente sou diretora do MMTR-Ne, esse meu segundo mandato.</p>
-
-<h2>Minha infância.</h2>
- <p>A minha história é muito sofrida, mas superei.  Eu nasci num lugar chamado Pé da Preta em Lagarto (SE). Desse lugar do Pé da Preta, saí de lá na faixa dos dois anos e sete meses. Vim pra um lugar chamado Teiú, lá comecei a me criar. Nesse Teiú a gente viveu na fome. Não tinha o que comer. Pra gente comer, ia pra o riacho  que chamava Alvoroço pescar. E pegava os peixes, milho, torrava e fazia farinha, fubá, para comer com os peixes.  Depois, com dois anos minha mãe engravidou de novo. Dessa gravidez, ela passou muito tempo doente, durante a gravidez. Não tinha médico nessa época. E ela teve uma menina. No parto ficou mais mal ainda que não despachou. A parteira não teve como despachar. Não conseguia. Meu avô, pai de meu pai, morava em Riachão do Dantas, e de lá, ele soube e pegou e veio buscar ela. E levou ela pra Riachão. Ela e minha irmã. Minha avó quando soube mandou vir buscar a gente. Quando chegou lá em Riachão, minha irmã só passou dois dias de nascida. Aí, a gente veio-se embora, junto com a minha avó, que se chamava Ilara, que é a mãe que eu conheci. Eu e meu irmão Rael que ficou se arrastando.  Quando mãe foi liberada pra vir pra casa, viemos. Mãe chegou, como hoje, no Teiú, com três dias, piorou. Eu ia fazer três anos, mas lembro desse dia. Eu estava tomando banho no  riacho Alvoroço, que passava na frente de  minha casa,  e o povo lá, lutando com ela, depois, chegou uma pessoa e me pegou. Minha filha, vamos pra cá.  Quando chegou lá dentro, a mãe me pediu um beijo.  Meu avô, a mãe do meu pai, que me falou tudinho isso. Aí, me pegaram e me baixaram perto dela e dei um beijo.  Aí, ali mesmo, foi a despedida. Deus levou ela. Fiquei morando com minha avó, a mãe do meu pai, Ilara. Meu pai não vinha quase em casa ver a gente. Pai não queria que eu estudasse. Não era pra estudar, mãe (avó) dizia, enquanto eu estiver viva, eles vão estudar. Só depois que eu morrer agora, aí você pode fazer o que você quiser com seus filhos, que eu não vou estar, é seu. Aí, continuo estudando no Tanque. Depois do Tanque, minha mãe (avô) adoeceu e faleceu.
-</p>
-<h2>Adolescência</h2>
-<p>Fui morar no Açu (Lagarto) com meu pai e a madrasta, estava casado com uma mulher chamada Zefa. Foi aí que começou meu inferno, era explorada, tudo que fazia reclamava. Pra roça não prestava, pra dentro de casa não prestava. Era escrava. Tiveram dez filhos e os dez filhos foram todos eu que criei. Trabalhava, mas não pegava o dinheiro. Quem pegava o dinheiro era ela.  E a roupa era duas roupas, uma no couro e uma no arame. Pra de tardezinha tirar aquela do arame e tomar banho e vestir. Para resumir, depois de uma briga feia com ela e meu pai ficou do lado dela, fugir, mas se não fujo, se não fujo de casa tinha sido estuprada pelo irmão dela, comecei a contar e ela disse que era mentira o irmão contou que era mentira. Vim morar no Treze, também em Lagarto com uma tia, Judite era irmã da minha avó Ilara, aí fiquei na casa da tia Judite, quando eu tinha uns 20 anos, Deus levou. E desta forma vim morar no São Bento, Salgado.  Fiquei trabalhando de doméstica em Aracaju, mãe Luzia me deu um terreno, um chão de casa lá embaixo (no povoado), mas tio Joãozinho lá embaixo não dar certo e em conversa com os filhos me deu esse chão, onde construir minha casa, eu não os amigos, construir através de mutirão, muitas pessoas ajudaram, agradeço a Deus primeiramente e abençoe todas as pessoas que me ajudaram e ainda que vem me ajudando uma palavra até com uma palavra.
-</p>
-<h2>O Movimento</h2>
-<p> Minha história com Movimento, começa depois que estou aqui no São Bento, foi através de Izaldira, ela me chamou pra cozinhar, eu e Marta, nesta etapa de cozinha então a Marta ficava brincando vai se aposentar como cozinheira, depois fui participando de outros momentos e foi uma superação, de cozinheira passei diretora, estou diretora do MMTR-NE pela segunda vez. Vim tendo espaço para contar histórias, comecei a escutar as outras e foi como uma terapia e fui superando principalmente medo de falar.
-</p>
-<h2>Tecnologia</h2>
-<p>Muita coisa a gente que é agricultora precisa saber de tecnologia. Temos condições de mostrar que estamos aprendendo tudo, tanto ver a gente aprender. Apostar na nossa capacidade. </p>
-<h2>Quintal</h2>
-<p>Meu quintalzinho de lado a minha roça é pouca, mas suficiente para mim, planto, minhas cebolinhas, meus coentrinhos, meus tomatinhos, aqui no quintalzinho. Meus chás de remédio. Também faço crochê.</p>
-<h2>Minha casa </h2>
-<p>Era uma casinha pequena com um quarto e um banheiro. Cresci mais a casa, graças a Deus, mais um espaço, e meu quintalzinho que tem tudo. O que me motiva aqui é porque aqui é muito calmo, e gosto muito daqui, do meu território aqui. Acho calmo, gosto muito daqui”. </p>
- `},
-  {
-    id: "3",
     title: "Encontrei com Lula, conversei com ele e fiquei feliz",
     name: "Dona Raimunda",
     description:
@@ -122,6 +45,65 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
   <p><strong>Minha casa é aqui e acho bom  porque graças a Deus até hoje eu moro e vivo feliz.</strong></p>
+  `},
+  // ------------------------------------------------------------------
+  {
+    id: "2",
+    title: "Sou uma guerreira, trabalho todos os dias na roça",
+    name: "Silvia Helena",
+    description:"Mulher negra, agricultora não assentada, moradora há mais de 30 anos do Assentamento.",
+    slug: "silvia-helena",
+    storyCategoryId: "INSPIRADORA",
+    regionId: "ARA",
+    mediaUrl: "/images/stories/dita.jpg",
+    content:`
+  <p class="text-lg leading-relaxed text-gray-800 mb-6>Vamos conhecer a história de vida de Silvia Helena, 56 anos, ou Dita como é conhecida, mulher negra moradora há mais de 30 do Assentamento Vitória da União, no município de Santa Luzia do Itanhy (SE). Arupemba Dita é agricultora não assentada, fez sua vida trabalhando na terra de sua mãe e irmãos assentados, passou por uma infância difícil e a superação veio na conquista de sua autonomia. Ela nos conta com orgulho tudo que conquistou com a organização coletiva. 
+  Sócia e militante do MMTR-SE, ela ocupa a  diretoria da Associação do seu  Assentamento. 
+</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">“Já tem mais de 30 anos que a gente mora aqui no assentamento Vitória da União. Consegui ter uma roça, sou agricultora. Filha de agricultora assentada, tenho irmãos assentados. Não sou assentada  e  trabalho todos os dias na roça. No inverno planto muita verdura. Trabalho muito com mandioca, macaxeira. Planto feijão de corda, feijão de arranca, milho, bananeiras, fava. Também tenho gado. Adquiri um pouco de gado. Tem de tudo pouco. Verduras, a gente planta bastante, hortaliça. E tenho minhas plantas ornamentais. Algumas ervas pra fazer chá. Crio galinha. Várias coisas. Sou uma guerreira. Levanto cedo pra batalhar, trabalhar. Tenho a minha casa pra tomar de conta. Tenho os bichos pra tomar de conta. Também participo de uma feirinha da agricultura familiar nas quartas-feiras na cidade.".</p>
+  
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Então, a gente quase não teve infância. Começamos a trabalhar cedo. Cedo, cedo, cedo. Eu me lembro que com 9 anos já estava na luta, na roça mais meu pai plantando e cuidando de fumo que era muito, trabalhava bastante com fumo. Também com o negócio brincar era pouco. Trabalhava bastante. Estudava, a gente ia pra escola, sim. Tinha aquelas dificuldades, o colégio era longe. Mas nunca deixei de ir pra escola, sempre que a gente podia, a gente ia pra escola. Mas foi uma infância difícil. A gente trabalhou bastante. Tinha negócio de brinquedo não. Naquela época não tinha celular, não tinha bicicleta. Boneca pra brincar, nada disso. Era trabalho mesmo. Mas foi uma infância feliz, a gente tinha os irmãos, os primos, os avós. Tudo morava junto, próximo um do outro, a gente estava ali, naquela animação, naquela festa, naquela época não tinha energia. Não tinha televisão. Tinha um rádio de pilha. </p>
+  
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sobre seus antepassados</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha avó, eu pedi muito cedo, mas lembro que minha avó rezava. E sempre ia dizer, não comam isso que faz mal. Do meu pai aqui na minha casa tem muito, esse negócio de fazer chá de cidreira. Tem a babosa aqui também. Eles lavavam a cabeça com babosa. De criança, eu já lavava a cabeça com babosa, ainda hoje tenho aqui em casa babosa.</p>
+ 
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">As sementes</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A gente planta e todo ano tem que guardar um pouquinho pra ter pro próximo ano. Eu ganhei uma semente de milho crioulo no Seminário de Biodiversidade em Aracaju (fev. 2025) que participei junto ao MMTR-SE, que plantei esse ano. Se a gente colhe uma abóbora, a gente corta a abóbora. A semente a gente já guarda. Põe pra secar e já guarda pro ano que vem. Mesma coisa é o quiabo, a mesma coisa é a macaxeira... Você tem que deixar pra semente pro próximo ano.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Uso da água</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A água daqui do assentamento é poço, e a associação faz a gestão. Mas todo mundo tem água encanada em casa. No verão tem mudança na distribuição pra não faltar de forma nenhuma. O assentamento cresceu e hoje tem muitos moradores, muitas casas e no verão o gasto é maior.  E aí a gente tem mais dificuldade. Tem que saber economizar.</p>
+  
+    <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sobre as mudanças climáticas</h2>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Ano passado teve uma seca que eu não tinha visto antes. Essa seca, diz minha mãe que há uns 20 anos atrás aconteceu a mesma coisa. Foi seca mesmo, uma seca que a gente perdeu até gado. Então, no verão tem que ter menos planta. E tem que aproveitar as águas, tem que tá pegando as águas que você usa, e tá colocando nas plantas. </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Divisão de tarefas </h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu faço tudo sozinha. É raro meu companheiro lavar uma xícara. É raro ele colocar água na planta.  Ultimamente ele vai mais pra roça e eu estou indo menos. Mas a gente já trabalhou de igual pra igual na roça. E quando eu chegava em casa, eu tinha que fazer as coisas dele em casa. Buscar lenha, era uma tarefa minha. Mas lenha eu vou buscar de carroça, de galinhota, fecho na cabeça.  Racho lenha até hoje, eu racho lenha. 
+</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Jornada diária </h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Trabalho da hora que eu levanto até a hora que eu vou deitar, eu tô fazendo as coisas. Não tem assim, quantidade de horas. Não tenho descanso, é o dia todo fazendo uma coisa ou outra, uma coisa ou outra, não paro.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Trabalho</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Por exemplo, eu limpava o terreiro, eu não sabia que o terreiro era um trabalho. Pra mim que era um terreiro que fazia parte da casa. E não é. Quer dizer, dar comida a um animal, um bicho, é um trabalho também. Doméstico, no caso cria galinha, você vai dar comida pra galinha, colocar água pra galinha. É um trabalho também.  Eu pensei que fosse fazer parte da casa, tudo, mas não é. O movimento ajudou a abrir os olhos. A gente aprende muita coisa com o Movimento.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sua produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Quando a gente tiver o aplicativo e a gente vai colocar os produtos, eu acho uma excelente ideia. Vamos poder vender para além da comunidade. A associação já faz venda também em grupo.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Participação </h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No Movimento já tenho  mais de 15 anos. Mas eu não sou uma pessoa, assim, do Movimento que fico na frente. Eu sou sempre, assim, mais atrás, mais calada, mais escutando. Eu gosto de participar das reuniões, de algumas viagens. Tem reunião ali, eu vou. Uma viagem ali, se puder, eu vou. Foi assim que eu cheguei, devagarzinho, devagarzinho. E continuo aí no Movimento, no que eu puder ajudar. O Movimento pra mim tem muita importância, você assistindo, acompanhando o Movimento, as reuniões, você aprende muita coisa. Muita coisa que estava lá, adormecida, você vai lembrando. É importante a gente participar pra viver com os nossos direitos, nossas obrigações. </p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Sem tecnologia você não vai a lugar nenhum. Pra quem gosta tem que correr atrás. Eu sou muito preguiçosa pra aprender, mas é importante. Tem que acompanhar o mundo. </p>
+  
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Pronto, eu vim pra cá jovem, com meu pai, com minha mãe, com meus irmãos, que são assentados. E aqui fui ficando. Casei, construí minha casa, minha família. Tenho meu trabalho. Eu planto roça no terreno da minha mãe, dos meus irmãos.
+  Quando chegamos aqui era uma mata, diz o povo que tinha até onça. Não tinha nada. Só mata mesmo. <i>Devagarzinho</i> foi mudando. Logo chegou energia, depois a  água encanada, Colégio para as crianças estudarem, e  foi melhorando. Se tem coisas boas, também tem coisas ruins no assentamento. Em qualquer lugar que você mora tem coisas boas.
+</p>
+  <p><strong>Aqui é um lugar bom de se morar. Eu gosto daqui. Eu não penso em sair daqui de forma nenhuma. </strong></p>
+
   `},
 ];
 
