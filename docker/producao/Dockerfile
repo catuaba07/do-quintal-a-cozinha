@@ -7,9 +7,8 @@ WORKDIR /app
 
 COPY package.json package-lock.json* ./
 
-# Install production dependencies (prisma is now in dependencies for Prisma Client availability)
-RUN npm ci  --omit=dev
-
+# Install all dependencies (prisma is now in dependencies, not devDependencies)
+RUN npm ci --omit=dev
 
 FROM base AS builder
 WORKDIR /app
@@ -17,6 +16,7 @@ COPY --from=deps /usr/bin/dumb-init /usr/bin/dumb-init
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Generate Prisma Client and build Next.js
 RUN npm run build
 
 FROM base AS runner
