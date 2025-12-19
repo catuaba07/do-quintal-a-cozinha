@@ -30,6 +30,7 @@ jobs:
           npm run build --if-present
         env:
           GROQ_API_KEY: "some-key"
+          ADMIN_JWT_SECRET: "another-key"
   deploy:
     name: Servindo para testar
     environment: Patio
