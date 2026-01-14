@@ -33,16 +33,16 @@ export function MainNav() {
 	        <NavigationMenuLink
        	            href="/sobre"
        	            className={cn(
-       	              "transition-colors hover:text-foreground/80",
-       	              pathname === "/sobre" ? "text-foreground" : "text-foreground/80"
+       	              "transition-colors hover:text-primary",
+       	              pathname === "/sobre" ? "text-foreground font-semibold" : "text-foreground"
        	            )}
        	          >Sobre
 	        </NavigationMenuLink>
 	        <NavigationMenuLink
        	            href="/onde-estamos"
        	            className={cn(
-       	              "transition-colors hover:text-foreground/80",
-       	              pathname === "/onde-estamos" ? "text-foreground" : "text-foreground/80"
+       	              "transition-colors hover:text-primary",
+       	              pathname === "/onde-estamos" ? "text-foreground font-semibold" : "text-foreground"
        	            )}
        	          >
        	            Onde Estamos
@@ -53,10 +53,10 @@ export function MainNav() {
 	      <NavigationMenuLink
                  href="/nossas-historias"
                  className={cn(
-                   "transition-colors hover:text-foreground/80",
-                   pathname === "/nossa-historia" ? "text-foreground" : "text-foreground/80"
+                   "transition-colors hover:text-primary",
+                   pathname?.startsWith("/nossas-historias") ? "text-foreground font-semibold" : "text-foreground"
                  )}
-        >       
+        >
                  Nossas Histórias
 	      </NavigationMenuLink>
 	    </NavigationMenuItem>
@@ -64,10 +64,10 @@ export function MainNav() {
 	      <NavigationMenuLink
                 href="/nossa-producao"
                 className={cn(
-                  "transition-colors hover:text-foreground/80",
+                  "transition-colors hover:text-primary",
                   pathname?.startsWith("/nossa-producao")
-                    ? "text-foreground"
-                    : "text-foreground/80"
+                    ? "text-foreground font-semibold"
+                    : "text-foreground"
                 )}
                 >
                 Nossa Produção
@@ -77,10 +77,10 @@ export function MainNav() {
 	      <NavigationMenuLink
                 href="/nossas-receitas"
                 className={cn(
-                  "transition-colors hover:text-foreground/80",
+                  "transition-colors hover:text-primary",
                   pathname?.startsWith("/nossas-receitas")
-                    ? "text-foreground"
-                    : "text-foreground/80"
+                    ? "text-foreground font-semibold"
+                    : "text-foreground"
                 )}
                 >
                 Nossas Receitas
@@ -90,10 +90,10 @@ export function MainNav() {
 	      <NavigationMenuLink
                 href="/nosso-espaco"
                 className={cn(
-                  "transition-colors hover:text-foreground/80",
+                  "transition-colors hover:text-primary",
                   pathname?.startsWith("/nosso-espaco")
-                    ? "text-foreground"
-                    : "text-foreground/80"
+                    ? "text-foreground font-semibold"
+                    : "text-foreground"
                 )}
                 >
                 Nosso Espaço
