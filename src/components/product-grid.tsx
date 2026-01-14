@@ -46,9 +46,9 @@ export function ProductGrid({ products, isLoading }: ProductGridProps) {
         <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-6">
           <ShoppingBag className="h-10 w-10 text-muted-foreground" />
         </div>
-        <h3 className="text-xl font-semibold text-foreground mb-2">
+        <p className="text-xl font-semibold text-foreground mb-2">
           Nenhum produto disponível
-        </h3>
+        </p>
         <p className="text-muted-foreground">
           Não há produtos para mostrar no momento.
         </p>

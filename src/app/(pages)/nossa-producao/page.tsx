@@ -24,15 +24,16 @@ export default function Page() {
         subtitle="Conheça os produtos cultivados com amor e tradição"
         backgroundImage="/mmtr-sobre-2.webp"
       />
-      <main className="container-wrapper">
+      <div className="container-wrapper">
         <div className="container flex flex-col gap-6 mt-6">
+          <h2 className="sr-only">Lista de produtos</h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
               <ProductGrid products={data ?? []} isLoading={isLoading} />
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
