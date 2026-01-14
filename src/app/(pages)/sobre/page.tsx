@@ -44,7 +44,6 @@ export default function Sobre() {
       <PageHeader
         title="Sobre Nós"
         subtitle="Movimento de Mulheres Trabalhadoras Rurais de Sergipe"
-        backgroundImage="/mmtr-sobre-3.webp"
       />
       <main className="container-wrapper">
         <div className="container flex flex-col gap-6 py-8">
