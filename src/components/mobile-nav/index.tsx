@@ -5,7 +5,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -27,6 +27,8 @@ export function MobileNav() {
         </Button>
       </DrawerTrigger>
       <DrawerContent className="max-h-[80svh] p-0">
+        <DrawerTitle className="sr-only">Menu de navegação</DrawerTitle>
+        <nav aria-label="Navegação mobile">
            <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">
             <MobileLink href="/" onOpenChange={setOpen}>
@@ -69,6 +71,7 @@ export function MobileNav() {
             </MobileLink>
           </div>
         </div>
+        </nav>
       </DrawerContent>
     </Drawer>
   );

@@ -4,19 +4,21 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="container-wrapper h-full">
+    <div className="container-wrapper h-full">
       <div className="container flex flex-col h-full py-4 md:py-6 gap-4 md:gap-6">
+        <h1 className="sr-only">Do Quintal à Cozinha - Página Inicial</h1>
         <div className="h-150 w-full relative flex-shrink-0">
           <Image
             src="/home-image.webp"
-            alt="Description of my image"
+            alt="Mulheres trabalhadoras rurais do MMTR-SE"
             fill
             priority
             style={{ objectFit: "cover" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
           />
         </div>
-        <div className="flex-1 flex items-center justify-center min-h-0 py-4 md:py-8">
+        <nav className="flex-1 flex items-center justify-center min-h-0 py-4 md:py-8" aria-label="Seções do site">
+          <h2 className="sr-only">Explore nossas seções</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-30 place-items-center w-fit">
             <Link href="/nosso-espaco">
               <HomeIcon
@@ -43,8 +45,8 @@ export default function Home() {
               ></HomeIcon>
             </Link>
           </div>
-        </div>
+        </nav>
       </div>
-    </main>
+    </div>
   );
 }

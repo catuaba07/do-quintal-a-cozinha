@@ -14,10 +14,11 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-yellow-400/95 backdrop-blur supports-[backdrop-filter]:bg-yellow-400/60">
       <div className="container-wrapper">
         <div className="container flex h-14 items-center gap-2 md:gap-4">
+          <h2 className="sr-only">Navegação do site</h2>
           <MainNav />
           <MobileNav />
           <div className="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
-            <nav className="flex items-center gap-0.5">
+            <nav className="flex items-center gap-0.5" aria-label="Contato">
               <Button
                 asChild
                 variant="ghost"
