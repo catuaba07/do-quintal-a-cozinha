@@ -17,10 +17,10 @@ export function MainNav() {
 
   return (
     <nav className="mr-4 hidden md:flex" aria-label="Navegação principal">
-      <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
+      <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6" aria-label="Voltar à página inicial">
         <Image 
           src="/logo.webp" 
-          alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe e voltar ao ínicio da página" 
+          alt="Logo do MMTR-SE" 
           height={32} 
           width={32} 
         />

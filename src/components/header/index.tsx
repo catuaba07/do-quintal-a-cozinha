@@ -29,9 +29,10 @@ export function Header() {
                   href={siteConfig.links.ig}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Visitar página do MMTR-SE no Instagram (abre em nova aba)"
                 >
-                  <InstagramIcon />
-                  <span className="sr-only">Instagram</span>
+                  <InstagramIcon aria-hidden="true" />
+                  <span className="sr-only">Visitar página do MMTR-SE no Instagram (abre em nova aba)</span>
                 </Link>
               </Button>
               <Button
@@ -47,9 +48,10 @@ export function Header() {
                     window.open('/api/email?subject=Contato via site', '_blank');
                   }}
                   className="cursor-pointer"
+                  aria-label="Enviar email para o MMTR-SE (abre em nova aba)"
                 >
-                  <MailOutlineIcon />
-                  <span className="sr-only">Email</span>
+                  <MailOutlineIcon aria-hidden="true" />
+                  <span className="sr-only">Enviar email para o MMTR-SE (abre em nova aba)</span>
                 </a>
               </Button>
             </nav>
