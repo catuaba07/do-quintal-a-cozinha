@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raimunda Raquel",
+  title: "Do Quintal à Cozinha",
   description:
     "Descubra produtos artesanais únicos feitos por mulheres artesãs do interior de Sergipe",
 };
