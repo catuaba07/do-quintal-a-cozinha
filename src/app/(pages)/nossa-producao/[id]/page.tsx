@@ -45,7 +45,7 @@ export default function Page({ params }: Props) {
     return (
       <main className="container-wrapper">
         <div className="container flex flex-col gap-6">
-          <h1 className="text-2xl font-bold">Produto não encontrado</h1>
+          <h2 className="text-2xl font-bold">Produto não encontrado</h2>
           <Link
             href="/nossa-producao"
             className="text-primary hover:underline mt-4 inline-block"
