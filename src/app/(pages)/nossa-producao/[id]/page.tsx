@@ -45,7 +45,7 @@ export default function Page({ params }: Props) {
     return (
       <main className="container-wrapper">
         <div className="container flex flex-col gap-6">
-          <h1 className="text-2xl font-bold">Produto não encontrado</h1>
+          <h2 className="text-2xl font-bold">Produto não encontrado</h2>
           <Link
             href="/nossa-producao"
             className="text-primary hover:underline mt-4 inline-block"
@@ -72,7 +72,7 @@ export default function Page({ params }: Props) {
               {isMobile && (
                 <div
                   onClick={handlePrevMedia}
-                  className="bg-gray-200 hover:bg-orange-500 cursor-pointer"
+                  className="bg-gray-700 hover:bg-orange-600 cursor-pointer rounded"
                 >
                   <KeyboardArrowLeft style={{ fontSize: 32, color: "white" }} />
                 </div>
@@ -102,7 +102,7 @@ export default function Page({ params }: Props) {
               {isMobile && (
                 <div
                   onClick={handleNextMedia}
-                  className="bg-gray-200 hover:bg-orange-500 cursor-pointer"
+                  className="bg-gray-700 hover:bg-orange-600 cursor-pointer rounded"
                 >
                   <KeyboardArrowRight
                     style={{ fontSize: 32, color: "white" }}
@@ -132,8 +132,8 @@ export default function Page({ params }: Props) {
           <div className="flex flex-col gap-4">
             <h1 className="text-5xl font-bold">{data?.product_name}</h1>
             <div>
-              <div className="inline text-[#e49bd3] border border-[#e49bd3] rounded-[8px] py-[5.5px] px-2">
-                <p className="inline text-base/[0]">
+              <div className="inline text-primary border border-primary rounded-lg py-1.5 px-2">
+                <p className="inline text-base leading-none">
                   {data.category.charAt(0) +
                     data.category.slice(1, data.category.length).toLowerCase()}
                 </p>
