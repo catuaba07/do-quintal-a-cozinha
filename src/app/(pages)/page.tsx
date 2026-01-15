@@ -10,7 +10,7 @@ export default function Home() {
         <div className="h-150 w-full relative flex-shrink-0">
           <Image
             src="/home-image.webp"
-            alt="Mulheres trabalhadoras rurais do MMTR-SE"
+            alt="Foto de grupo de mulheres trabalhadoras rurais do MMTR-SE reunidas em frente a uma casa rural, segurando faixas e bandeiras que celebram os 30 anos do movimento e a Marcha Mundial das Mulheres"
             fill
             priority
             style={{ objectFit: "cover" }}
