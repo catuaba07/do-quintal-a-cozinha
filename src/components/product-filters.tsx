@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -10,6 +10,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const categories = [
@@ -32,7 +33,7 @@ export function ProductFilters() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedPriceRanges, setSelectedPriceRanges] = useState<string[]>([]);
 
-  const resolvePath = useCallback(() => {
+  const applyFilters = useCallback(() => {
     const params = new URLSearchParams();
     const search = searchParams.get("search");
     if (search) {
@@ -43,11 +44,16 @@ export function ProductFilters() {
     router.push(pathname + "?" + params.toString());
   }, [searchParams, selectedCategories, selectedPriceRanges, pathname, router]);
 
-  useEffect(resolvePath, [
-    selectedCategories,
-    selectedPriceRanges,
-    resolvePath,
-  ]);
+  const clearFilters = () => {
+    setSelectedCategories([]);
+    setSelectedPriceRanges([]);
+    const params = new URLSearchParams();
+    const search = searchParams.get("search");
+    if (search) {
+      params.set("search", search);
+    }
+    router.push(pathname + "?" + params.toString());
+  };
 
   const toggleCategory = (id: string) => {
     setSelectedCategories((prev) =>
@@ -60,6 +66,8 @@ export function ProductFilters() {
       prev.includes(id) ? prev.filter((p) => p !== id) : [...prev, id]
     );
   };
+
+  const hasFilters = selectedCategories.length > 0 || selectedPriceRanges.length > 0;
 
   return (
     <div className="space-y-6">
@@ -118,6 +126,17 @@ export function ProductFilters() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+      <div className="flex flex-col gap-2 pt-4">
+        <Button onClick={applyFilters}>
+          Filtrar
+        </Button>
+        {hasFilters && (
+          <Button variant="outline" onClick={clearFilters}>
+            Limpar filtros
+          </Button>
+        )}
+      </div>
     </div>
   );
 }

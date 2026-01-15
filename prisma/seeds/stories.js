@@ -1,6 +1,8 @@
 import pkg from '@prisma/client';
-const { MediaType, StoryCategory } = pkg;
+const { MediaType } = pkg;
 import { v4 as uuidv4 } from 'uuid';
+
+const STORY_CATEGORY_ID = "mulheres-rurais";
 
 export const storiesData = [
   {
@@ -106,6 +108,13 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 ];
 
   export async function seedStories(prisma) {
+    // Create the story category first
+    await prisma.storyCategory.upsert({
+      where: { id: STORY_CATEGORY_ID },
+      update: { title: "Mulheres Trabalhadoras Rurais" },
+      create: { id: STORY_CATEGORY_ID, title: "Mulheres Trabalhadoras Rurais" },
+    });
+
     for (const story of storiesData) {
       let createdData = {
           id: story.id,
@@ -116,6 +125,9 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           content: story.content,
           region: {
             connect: { id: story.regionId }
+          },
+          storyCategory: {
+            connect: { id: STORY_CATEGORY_ID }
           },
           media: {
             create: {
@@ -136,6 +148,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           description: story.description,
           content: story.content,
           region: { connect: { id: story.regionId } },
+          storyCategory: { connect: { id: STORY_CATEGORY_ID } },
         }
       await prisma.story.upsert({
         where: { id: story.id },
