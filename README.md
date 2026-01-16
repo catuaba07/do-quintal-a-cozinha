@@ -1,23 +1,23 @@
 # Do Quintal a Cozinha
 
-  Aplicativo desenvolvido pelas e paras as mulheres do MMTR-SE
-
-![](https://md.coolab.org/uploads/upload_122e84e11ea4901d32b1e0307c692e01.png)
-
-
-Aplicativo desenvolvido pelas mulheres do MMTR-SE (Movimento da Mulher Trabalhadora Rural de Sergipe).
+Do Quintal a Cozinha é uma aplicação de software livre, desenvolvido pelas e para as mulheres do MMTR-SE (Movimento da Mulher Trabalhadora Rural de Sergipe) em parceria com [Intervozes](https://intervozes.org.br/), [Coolab](https://coolab.org) e muitas mão e corações.
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é uma iniciativa do MMTR-SE para conectar produtoras rurais com consumidores, promovendo a comercialização direta de produtos do quintal à cozinha.
+Este projeto é uma iniciativa do MMTR-SE para dar visibilidade à lida das mulheres do movimento em muitos campos.
+Amostra para mundo as suas histórias, suas criações, suas produções e inspirações, onde se possa ter um cantinho para fuxicar além de contar com a ajuda de uma ajudante virtual, conectando o que elas querem inserir ao site de uma forma mais inclusiva
 
 ## 🛠️ Tecnologias
+
+Estamos utilizando nesse projeto:
 
 - Next.js
 - Node.js
 - Prisma (ORM)
 - SQLite (Banco de dados)
 - Docker (opcional)
+
+Caso queira saber mais informações sobre como nosso código está estruturado, visite nossa [wiki](https://github.com/catuaba07/do-quintal-a-cozinha/wiki/Estrutura-do-c%C3%B3digo)
 
 ## 📋 Pré-requisitos
 
@@ -89,6 +89,45 @@ O site estará disponível em: http://localhost:3001
 
 > **Observação:** O Docker está configurado com hot-reload, ou seja, as alterações no código serão automaticamente refletidas no site.
 
+
+## Como funciona
+
+![](https://md.coolab.org/uploads/upload_122e84e11ea4901d32b1e0307c692e01.png)
+
+A aplicação está dividida em 4 grandes sessões:
+- Nossa Produção
+- Nossas Histórias
+- Nossas Receitas
+- Nosso Espaço
+
+### Nossa Produção
+Está é uma sessão publica, que lista a produção feita pelas mulheres. O cadastro dos produtos é feito via API. Estamos usando o projeto
+[typebot](https://typebot.io/) como ferramenta de CMS, onde uma conversa entre a produtora e um bot hospedado na nossa infraestrutura captura e preenche o banco de dados com as informações.
+O typebot está conectado com esta outra ferramenta, [typebot-client-whatsapp](https://github.com/Luisotee/typebot-client-whatsapp), que a cada etapa da conversa envia os dados para API de **Nossa Produçao**.
+Mais detalhes na wiki.
+
+### Nossas Histórias
+
+Assim como **Nossa Produçao** visa amostrar a produção, **Nossas Histórias** tem o intuito de amostrar as histórias das mulheres que fazem parte do movimento para assim inspirar outras mulheres além de ser uma ferramenta de documentação e empoderamento. Contar e ouvir nossa própria história nos ajuda a rever o caminho por onde passamos, como foi o desdobramento e isso é um alicerce para o futuro.
+Os dados apresentados nessa sessão também segue a linha de **Nossa Produção**, os dados são enviados via API através de uma conversa com a ajudante virtual (chatbot)
+Veja na wiki como configurar o chatbot.
+Seguimos trabalhando em uma interface de CMS agnostica ao chatbot.
+
+### Nossas Receitas
+
+Este é um espaço dedicado para apresentar as receitas selecionadas pelas mulheres do movimento.
+Receitas caseiras e tradicionais, pertencente às suas famílias e ao território que elas ocupam.
+No mesmo princípio de facilitar a inserção dos dados, essas receitas são alimentadas via chatbot e também prevemos uma interface de CMS separada do bot.
+
+### Nosso Espaço
+
+Ainda em processo de exploração e testes, esta sessão incorporará um software externo à plataforma, oferecendo um espaço privado para a fuxicagem. Uma área onde a interação possa ser dada tanto através da voz quanto por texto. Um lugar onde possa ser um porto fora do uso do WhatsApp.
+
+## Licença
+
+Este projeto esta sob a licença [AGPL](https://pt.wikipedia.org/wiki/GNU_Affero_General_Public_License)
+Fique a vontade em baixar, reproduzir, alterar e distribuir.
+
 ## 🤝 Contribuidores
 
 Agradecemos a todas as pessoas que contribuíram para este projeto:
@@ -97,6 +136,7 @@ Agradecemos a todas as pessoas que contribuíram para este projeto:
 - [@gustavogalo](https://github.com/gustavogalo)
 - [@Luisotee](https://github.com/Luisotee)
 - Jullie
-- hmohr
+- [henmohr](https://github.com/henmohr)
 - Cris
 - telemias
+
