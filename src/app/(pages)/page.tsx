@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className="container-wrapper h-full">
       <div className="container flex flex-col h-full py-4 md:py-6 gap-4 md:gap-6">
-        <h1 className="sr-only">Do Quintal à Cozinha - Página Inicial</h1>
         <div className="h-150 w-full relative flex-shrink-0">
           <Image
             src="/home-image.webp"
