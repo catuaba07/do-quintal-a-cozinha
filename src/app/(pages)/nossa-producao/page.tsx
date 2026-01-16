@@ -22,7 +22,6 @@ export default function Page() {
       <PageHeader
         title="Nossa Produção"
         subtitle="Conheça os produtos cultivados com amor e tradição"
-        backgroundImage="/mmtr-sobre-2.webp"
       />
       <div className="container-wrapper">
         <div className="container flex flex-col gap-6 mt-6">

@@ -27,7 +27,6 @@ export default function RecipesPage() {
       <PageHeader
         title="Nossas Receitas"
         subtitle="Descubra receitas autênticas e deliciosas da culinária brasileira"
-        backgroundImage="/brazilian-feast-with-colorful-dishes-on-wooden-tab.webp"
       />
       <main className="container mx-auto px-4 py-8">
         <RecipeSearch searchQuery={searchQuery} onSearchChange={handleSearchChange} />
