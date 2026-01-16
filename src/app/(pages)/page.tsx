@@ -10,7 +10,7 @@ export default function Home() {
         <div className="h-150 w-full relative flex-shrink-0">
           <Image
             src="/home-image.webp"
-            alt="Foto de grupo de mulheres trabalhadoras rurais do MMTR-SE reunidas em frente a uma casa rural, segurando faixas e bandeiras que celebram os 30 anos do movimento e a Marcha Mundial das Mulheres"
+            alt="Foto de grupo de mulheres trabalhadoras rurais do MMTR-SE reunidas em frente a uma casa, segurando faixas e bandeiras que celebram os 30 anos do movimento e a Marcha Mundial das Mulheres"
             fill
             priority
             style={{ objectFit: "cover" }}
@@ -24,24 +24,28 @@ export default function Home() {
               <HomeIcon
                 title="Nosso Espaço"
                 illustrationSrc="/icons/botton-espaco.webp"
+                altText="Ilustração de duas mãos se cumprimentando, representando o espaço de interação e comunidade do MMTR-SE"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-historias">
               <HomeIcon
                 title="Nossas Histórias"
                 illustrationSrc="/icons/botton-historias.webp"
+                altText="Ilustração de livro aberto, representando as histórias das mulheres trabalhadoras rurais"
               ></HomeIcon>
             </Link>
             <Link href="/nossa-producao">
               <HomeIcon
                 title="Nossa Produção"
                 illustrationSrc="/icons/botton-produtos-plain.webp"
+                altText="Ilustração de cesta com alimentos, representando os produtos da agricultura familiar"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-receitas">
               <HomeIcon
                 title="Nossas Receitas"
                 illustrationSrc="/icons/botton-receitas.webp"
+                altText="Ilustração de panela no fogão, representando as receitas tradicionais da culinária rural"
               ></HomeIcon>
             </Link>
           </div>
