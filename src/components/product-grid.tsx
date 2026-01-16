@@ -14,15 +14,6 @@ interface ProductGridProps {
 export function ProductGrid({ products, isLoading }: ProductGridProps) {
   return (
     <section>
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-foreground mb-4">
-          Nossos Produtos
-        </h2>
-        <p className="text-muted-foreground text-lg">
-          Explore nossa seleção de produtos artesanais
-        </p>
-      </div>
-
       {isLoading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Array.from({ length: 6 }).map((_, index) => (
