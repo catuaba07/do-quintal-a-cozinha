@@ -18,12 +18,7 @@ interface PageHeaderProps {
 export function PageHeader({ title, subtitle }: PageHeaderProps) {
   return (
     <header className="relative h-96 overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('${backgroundImage}')`,
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center" />
       {/* Dark scrim for consistent text contrast regardless of background image */}
       <div className="absolute inset-0 bg-black/50" />
 
