@@ -15,11 +15,11 @@ export const dynamic = 'force-static';
 
 export default function StoryPage({ params }: StoryPageProps) {
   const { slug } = use(params);
-  const { data: story, isLoading } = useGetStoryBySlug({ slug });
+  const { data: story } = useGetStoryBySlug({ slug });
   
   if (!story) {
      return notFound();
     }
 
-  return <StoryDetail story={story} isLoading={isLoading} />;
+  return <StoryDetail story={story} />;
 }

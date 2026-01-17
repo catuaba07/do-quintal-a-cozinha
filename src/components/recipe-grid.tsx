@@ -69,11 +69,11 @@ export function RecipeGrid({
         </div>
       ) : recipes.length === 0 ? (
         <div className="text-center py-16">
-          <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-6">
+          <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-6" role="img" aria-label={searchQuery ? "Ícone de lupa representando busca" : "Ícone de chapéu de chef representando receitas"}>
             {searchQuery ? (
-              <Search className="h-10 w-10 text-muted-foreground" />
+              <Search className="h-10 w-10 text-muted-foreground" aria-hidden="true" />
             ) : (
-              <ChefHat className="h-10 w-10 text-muted-foreground" />
+              <ChefHat className="h-10 w-10 text-muted-foreground" aria-hidden="true" />
             )}
           </div>
 

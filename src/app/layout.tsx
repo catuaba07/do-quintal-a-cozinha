@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raimunda Raquel",
+  title: "Do Quintal à Cozinha",
   description:
     "Descubra produtos artesanais únicos feitos por mulheres artesãs do interior de Sergipe",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>

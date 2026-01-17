@@ -33,7 +33,7 @@ export async function POST(request: Request) {
         name: body.name,
         phone_number: body.phone_number,
         social_name: body.social_name || null,
-        instagram: body.social_name || null,
+        instagram: body.instagram || null,
       },
     });
 

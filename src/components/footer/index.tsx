@@ -10,10 +10,10 @@ export function Footer() {
       <div className="container-wrapper">
         <div className="container flex flex-col my-4 gap-2 md:gap-4">
           <div className="flex justify-center items-center gap-4 md:gap-8 flex-col md:flex-row">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2" aria-label="Voltar à página inicial">
               <Image
                 src="/logo.webp"
-                alt="Logo do Movimento da Mulher Trabalhadora Rural de Sergipe"
+                alt="Logo do MMTR-SE"
                 height={64}
                 width={64}
               />
@@ -28,8 +28,9 @@ export function Footer() {
                     window.open('/api/email?subject=Contato via site', '_blank');
                   }}
                   className="hover:underline cursor-pointer flex items-center gap-1 justify-center md:justify-start"
+                  aria-label="Enviar email para o MMTR-SE (abre em nova aba)"
                 >
-                  <MailOutlineIcon />
+                  <MailOutlineIcon aria-hidden="true" />
                   Enviar email
                 </a>
               </p>
