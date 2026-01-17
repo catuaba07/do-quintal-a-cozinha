@@ -23,28 +23,28 @@ export default function Home() {
               <HomeIcon
                 title="Nosso Espaço"
                 illustrationSrc="/icons/botton-espaco.webp"
-                altText="Ilustração de duas mãos se cumprimentando, representando o espaço de interação e comunidade do MMTR-SE"
+                altText="Ilustração de duas mãos se cumprimentando formando um coração, representando o espaço de interação e comunidade do MMTR-SE"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-historias">
               <HomeIcon
                 title="Nossas Histórias"
                 illustrationSrc="/icons/botton-historias.webp"
-                altText="Ilustração de livro aberto, representando as histórias das mulheres trabalhadoras rurais"
+                altText="Ilustração de uma fotografia de 2 mulheres, representando as histórias das mulheres trabalhadoras rurais"
               ></HomeIcon>
             </Link>
             <Link href="/nossa-producao">
               <HomeIcon
                 title="Nossa Produção"
                 illustrationSrc="/icons/botton-produtos-plain.webp"
-                altText="Ilustração de cesta com alimentos, representando os produtos da agricultura familiar"
+                altText="Ilustração de uma rama de coentro, representando os produtos da agricultura familiar"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-receitas">
               <HomeIcon
                 title="Nossas Receitas"
                 illustrationSrc="/icons/botton-receitas.webp"
-                altText="Ilustração de panela no fogão, representando as receitas tradicionais da culinária rural"
+                altText="Ilustração de panela e colher de pau, representando as receitas tradicionais da das mulheres do movimento"
               ></HomeIcon>
             </Link>
           </div>
