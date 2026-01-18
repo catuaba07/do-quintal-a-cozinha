@@ -1,41 +1,41 @@
-# Architecture
+# Arquitetura
 
-## High-level flow
+## Fluxo de alto nivel
 
-Client page (React, App Router)
-  -> React Query hook
+Pagina client (React, App Router)
+  -> hook do React Query
   -> Server Action ("use server")
   -> Prisma query
   -> SQLite DB
 
 ```mermaid
 flowchart LR
-  A[Page or component] --> B[React Query hook]
+  A[Pagina ou componente] --> B[Hook do React Query]
   B --> C[Server Action]
   C --> D[Prisma Client]
   D --> E[(SQLite)]
 ```
 
-This pattern is used for product, recipe, and story listings and details.
+Esse fluxo e usado para listagens e detalhes de produtos, receitas e historias.
 
-## Runtime boundaries
+## Limites de runtime
 
-- Client Components: interactive pages and components (marked "use client").
-- Server Actions: fetch data for client components.
-- API Routes: external integration points and CRUD endpoints (protected by API_KEY).
-- Prisma: database access layer.
+- Client Components: paginas e componentes interativos ("use client").
+- Server Actions: buscam dados para os clients.
+- API Routes: pontos de integracao e CRUD (protegidas por API_KEY).
+- Prisma: camada de acesso ao banco.
 
-## Key directories
+## Diretorios chave
 
-- `src/app/(pages)`: public routes (home, sections, detail pages).
-- `src/app/actions`: server actions consumed by hooks.
-- `src/app/api`: REST endpoints used by chatbot/integrations.
-- `src/hooks`: React Query hooks wrapping server actions.
-- `src/components`: UI components and feature modules.
-- `prisma/schema.prisma`: data model.
+- `src/app/(pages)`: rotas publicas (home, secoes, detalhes).
+- `src/app/actions`: server actions consumidas por hooks.
+- `src/app/api`: endpoints REST usados por chatbot/integracoes.
+- `src/hooks`: React Query hooks.
+- `src/components`: UI e componentes de feature.
+- `prisma/schema.prisma`: modelo de dados.
 
-## Cross-cutting concerns
+## Pontos transversais
 
-- API auth: middleware checks `API_KEY` header for most `/api/*` routes.
-- Decimal serialization: Prisma Decimal must be converted to number in server actions.
-- Media links: product/recipe/story media are modeled via join tables.
+- Autenticacao API: middleware checa `API_KEY` na maioria das rotas `/api/*`.
+- Serializacao Decimal: Prisma Decimal deve virar number nas server actions.
+- Midia: produto/receita/historia usam tabelas de juncao.

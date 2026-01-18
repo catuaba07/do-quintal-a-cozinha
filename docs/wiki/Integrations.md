@@ -1,25 +1,25 @@
-# Integrations
+# Integracoes
 
 ## WhatsApp redirect
 
-- Route: `GET /api/whatsapp?product={id}` or `?profile={id}`
-- Behavior: finds the profile phone number and redirects to `https://wa.me/{phone}?text=...`
-- File: `src/app/api/whatsapp/route.ts`
+- Rota: `GET /api/whatsapp?product={id}` ou `?profile={id}`
+- Busca o telefone do perfil e redireciona para `https://wa.me/{phone}?text=...`
+- Arquivo: `src/app/api/whatsapp/route.ts`
 
 ## Email redirect
 
-- Route: `GET /api/email?subject=...`
-- Behavior: redirects to `mailto:{siteConfig.mail}`
-- File: `src/app/api/email/route.ts`
+- Rota: `GET /api/email?subject=...`
+- Redireciona para `mailto:{siteConfig.mail}`
+- Arquivo: `src/app/api/email/route.ts`
 
-## Audio transcription (Groq)
+## Transcricao de audio (Groq)
 
-- Route: `POST /api/transcription`
+- Rota: `POST /api/transcription`
 - Body: `{ url: string, language?: string }`
-- Uses Groq Whisper model `whisper-large-v3-turbo`
-- Requires `GROQ_API_KEY`
-- File: `src/app/api/transcription/route.ts`
+- Modelo: `whisper-large-v3-turbo`
+- Requer `GROQ_API_KEY`
+- Arquivo: `src/app/api/transcription/route.ts`
 
-## Typebot (external)
+## Typebot (externo)
 
-The project expects data to be ingested via Typebot conversations and sent to the API endpoints (product, recipe, profile). Details live in project docs/wiki or repository wiki (see README references).
+O projeto espera ingestao via conversas do Typebot e envio para as rotas de API (product, recipe, profile). Detalhes adicionais ficam na wiki/README do projeto.

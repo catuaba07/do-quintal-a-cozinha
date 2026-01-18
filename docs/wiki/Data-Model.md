@@ -1,22 +1,22 @@
-# Data Model (Prisma)
+# Modelo de Dados (Prisma)
 
-File: `prisma/schema.prisma`
+Arquivo: `prisma/schema.prisma`
 
-## ER diagram
+## Diagrama ER
 
 ```mermaid
 erDiagram
-  Profile ||--o{ Product : produces
-  Profile ||--o{ Recipe : creates
-  Product ||--o{ ProductMedia : has
-  Recipe ||--o{ RecipeMedia : has
-  Story ||--o{ StoryMedia : has
-  Media ||--o{ ProductMedia : links
-  Media ||--o{ RecipeMedia : links
-  Media ||--o{ StoryMedia : links
-  Recipe ||--o{ RecipeStep : steps
-  Region ||--o{ Story : region
-  StoryCategory ||--o{ Story : category
+  Profile ||--o{ Product : produz
+  Profile ||--o{ Recipe : cria
+  Product ||--o{ ProductMedia : tem
+  Recipe ||--o{ RecipeMedia : tem
+  Story ||--o{ StoryMedia : tem
+  Media ||--o{ ProductMedia : liga
+  Media ||--o{ RecipeMedia : liga
+  Media ||--o{ StoryMedia : liga
+  Recipe ||--o{ RecipeStep : passos
+  Region ||--o{ Story : regiao
+  StoryCategory ||--o{ Story : categoria
 
   Profile {
     String id
@@ -89,7 +89,7 @@ erDiagram
   }
 ```
 
-## Core models
+## Modelos principais
 
 ### Profile
 - id: String (UUID)
@@ -114,7 +114,7 @@ erDiagram
 - preparation_time_in_minutes, cooking_time_in_minutes: Int
 - number_of_servings: Int
 - difficulty: RecipeDifficulty (enum)
-- ingredients: Json (array stored as JSON)
+- ingredients: Json (array armazenado como JSON)
 - created_at, updated_at: DateTime
 - profile_id: String (FK -> Profile)
 - relations: steps (RecipeStep), media (via RecipeMedia)
@@ -149,7 +149,7 @@ erDiagram
 - media_type: MediaType (enum)
 - relations: ProductMedia, RecipeMedia, StoryMedia
 
-## Join tables
+## Tabelas de juncao
 
 - ProductMedia (productId + mediaId)
 - RecipeMedia (recipeId + mediaId)
@@ -161,7 +161,7 @@ erDiagram
 - MediaType: AUDIO | IMAGE | VIDEO
 - RecipeDifficulty: EASY | INTERMEDIARY | HARD
 
-## Notes
+## Notas
 
-- All FKs use cascade delete.
-- Decimal values (price) must be serialized to number for client use.
+- FKs com cascade delete.
+- Decimal (price) deve virar number nas server actions.

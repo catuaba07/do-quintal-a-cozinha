@@ -1,22 +1,22 @@
 # Do Quintal a Cozinha - Wiki
 
-This wiki documents the codebase for the MMTR-SE platform (Next.js + Prisma + SQLite).
+Esta wiki documenta o codigo do MMTR-SE (Next.js + Prisma + SQLite).
 
-## Pages
+## Paginas
 
-- Architecture: data flow, major components, and runtime boundaries.
-- API: endpoints, payloads, validations, and examples.
-- Data Model: Prisma schema and relationships.
-- Frontend: App Router, pages, and UI patterns.
-- Backend: server actions, API routes, middleware.
-- Integrations: WhatsApp, email, audio transcription, Typebot notes.
-- Dev-Deploy: local setup, env vars, and scripts.
+- Arquitetura: fluxo de dados, componentes principais e limites de runtime.
+- API: endpoints, payloads, validacoes e exemplos.
+- Modelo de dados: schema Prisma e relacionamentos.
+- Frontend: App Router, paginas e padroes de UI.
+- Backend: server actions, rotas API, middleware.
+- Integracoes: WhatsApp, email, transcricao de audio, notas do Typebot.
+- Dev-Deploy: setup local, variaveis de ambiente e scripts.
 
-## Quick Map
+## Mapa rapido
 
-- App Router pages: `src/app/(pages)`
-- API routes: `src/app/api`
+- Paginas App Router: `src/app/(pages)`
+- Rotas API: `src/app/api`
 - Server actions: `src/app/actions`
 - React Query hooks: `src/hooks`
-- Prisma schema: `prisma/schema.prisma`
-- Components: `src/components`
+- Schema Prisma: `prisma/schema.prisma`
+- Componentes: `src/components`

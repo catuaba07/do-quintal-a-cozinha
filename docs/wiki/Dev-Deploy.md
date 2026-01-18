@@ -1,23 +1,23 @@
-# Dev and Deploy
+# Dev e Deploy
 
-## Requirements
+## Requisitos
 
 - Node.js 18+
 - npm
 
-## Install
+## Instalar
 
 ```bash
 npm install
 ```
 
-## Local dev
+## Rodar local
 
 ```bash
 npm run dev
 ```
 
-## Database (Prisma + SQLite)
+## Banco (Prisma + SQLite)
 
 ```bash
 npx prisma migrate dev
@@ -25,9 +25,9 @@ npx prisma generate
 npx prisma studio
 ```
 
-## Environment variables
+## Variaveis de ambiente
 
-Create `.env.local`:
+Crie `.env.local`:
 
 ```
 DATABASE_URL="file:./prisma/dev.db"
@@ -35,9 +35,9 @@ API_KEY="your-api-key"
 GROQ_API_KEY="your-groq-key"
 ```
 
-Notes:
-- `API_KEY` protects most `/api/*` routes (see middleware).
-- `GROQ_API_KEY` is required for `/api/transcription`.
+Notas:
+- `API_KEY` protege a maioria das rotas `/api/*`.
+- `GROQ_API_KEY` e obrigatoria em `/api/transcription`.
 
 ## Scripts
 
@@ -47,10 +47,10 @@ Notes:
 - `npm run lint`
 - `npm run storybook`
 
-## Docker (optional)
+## Docker (opcional)
 
 ```bash
 docker compose -f docker/desenvolvimento/docker-compose.yml up -d
 ```
 
-Dev server: http://localhost:3001
+Servidor: http://localhost:3001

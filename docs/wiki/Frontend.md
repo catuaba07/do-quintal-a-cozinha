@@ -1,39 +1,39 @@
 # Frontend
 
-## App Router pages
+## Paginas App Router
 
 - Home: `src/app/(pages)/page.tsx`
-- Sections:
+- Secoes:
   - `src/app/(pages)/nossa-producao/page.tsx`
   - `src/app/(pages)/nossas-receitas/page.tsx`
   - `src/app/(pages)/nossas-historias/page.tsx`
   - `src/app/(pages)/nosso-espaco/page.tsx`
   - `src/app/(pages)/onde-estamos/page.tsx`
   - `src/app/(pages)/sobre/page.tsx`
-- Detail pages:
-  - Product: `src/app/(pages)/nossa-producao/[id]/page.tsx`
-  - Recipe: `src/app/(pages)/nossas-receitas/[id]/page.tsx`
-  - Story: `src/app/(pages)/nossas-historias/[slug]/page.tsx`
+- Detalhes:
+  - Produto: `src/app/(pages)/nossa-producao/[id]/page.tsx`
+  - Receita: `src/app/(pages)/nossas-receitas/[id]/page.tsx`
+  - Historia: `src/app/(pages)/nossas-historias/[slug]/page.tsx`
 
-## Data fetching pattern
+## Padrao de busca de dados
 
-- Page uses a React Query hook (e.g. `useGetAllProducts`).
-- Hook calls a server action (e.g. `getAllProducts`).
-- Server action executes Prisma queries.
+- Pagina usa hook do React Query (ex: `useGetAllProducts`).
+- Hook chama server action (ex: `getAllProducts`).
+- Server action faz query no Prisma.
 
-Files:
+Arquivos:
 - Hooks: `src/hooks/*`
 - Actions: `src/app/actions/*`
 
-## UI components
+## Componentes de UI
 
-- Product listing: `src/components/product-grid.tsx`, `src/components/product-card.tsx`
-- Recipe listing/detail: `src/components/recipe-grid.tsx`, `src/components/recipe-detail.tsx`
-- Story detail: `src/components/nossas-historias/story-detail-client.tsx`
-- Common: `src/components/page-header`, `src/components/ui/*`
+- Listagem de produtos: `src/components/product-grid.tsx`, `src/components/product-card.tsx`
+- Listagem e detalhe de receitas: `src/components/recipe-grid.tsx`, `src/components/recipe-detail.tsx`
+- Detalhe de historias: `src/components/nossas-historias/story-detail-client.tsx`
+- Comuns: `src/components/page-header`, `src/components/ui/*`
 
-## Notes
+## Notas
 
-- Client components are marked with "use client".
-- Loading states use Skeleton components.
-- Media lightbox for products/recipes uses `src/components/image-lightbox.tsx`.
+- Componentes client tem "use client".
+- Loading usa Skeleton.
+- Lightbox de midia em `src/components/image-lightbox.tsx`.

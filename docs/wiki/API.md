@@ -1,19 +1,19 @@
 # API
 
-Base: `/api/*` (Next.js route handlers)
+Base: `/api/*` (route handlers do Next.js)
 
 ## Auth
 
-All API routes require header `API_KEY` except:
+Todas as rotas exigem header `API_KEY`, exceto:
 - `GET /api/email`
 - `GET /api/whatsapp`
 
 Middleware: `src/middleware.ts`
 
-## Common response shape
+## Formato de resposta
 
-- Success: JSON payload, 200/201
-- Error: `{ "error": "Message" }` with 4xx/5xx
+- Sucesso: JSON, 200/201
+- Erro: `{ "error": "Mensagem" }` com 4xx/5xx
 
 ## Endpoints
 
@@ -21,17 +21,17 @@ Middleware: `src/middleware.ts`
 
 - `POST /api/profile`
   - Body: `{ "phone_number": string, "name": string, "social_name"?: string, "instagram"?: string }`
-  - Creates a profile, rejects duplicate phone_number.
+  - Cria perfil, rejeita `phone_number` duplicado.
 
 - `GET /api/profile/{phone_number}`
-  - Returns profile by phone.
+  - Retorna perfil pelo telefone.
 
 - `PUT /api/profile/{phone_number}`
-  - Body: partial `{ name?, social_name?, instagram? }`
-  - Updates existing profile.
+  - Body parcial: `{ name?, social_name?, instagram? }`
+  - Atualiza perfil.
 
 - `DELETE /api/profile/{phone_number}`
-  - Deletes profile by phone.
+  - Remove perfil.
 
 ### Product
 
@@ -47,23 +47,23 @@ Middleware: `src/middleware.ts`
       "media": [{ "url": "string", "media_type": "IMAGE | AUDIO | VIDEO" }]
     }
     ```
-  - Validates required fields, category, and price.
+  - Valida obrigatorios, categoria e preco.
 
 - `GET /api/product?phone_number=...`
-  - Lists products for a profile.
+  - Lista produtos do perfil.
 
 - `GET /api/product?product_id=...`
-  - Returns a product by id.
+  - Retorna produto por id.
 
 - `PUT /api/product/{product_id}`
-  - Body: partial product fields.
-  - Supports `replace_media` boolean.
+  - Body parcial.
+  - Suporta `replace_media`.
 
 - `DELETE /api/product/{product_id}`
-  - Deletes a product.
+  - Remove produto.
 
 - `DELETE /api/product/{product_id}/{media_id}`
-  - Deletes a media item.
+  - Remove midia.
 
 ### Recipe
 
@@ -83,49 +83,49 @@ Middleware: `src/middleware.ts`
       "media": [{ "url": "string", "media_type": "IMAGE | AUDIO | VIDEO" }]
     }
     ```
-  - Validates numeric fields, ingredients array, and steps ordering.
+  - Valida campos numericos, ingredientes e passos.
 
 - `GET /api/recipe?phone_number=...`
-  - Lists recipes for a profile.
+  - Lista receitas do perfil.
 
 - `GET /api/recipe?recipe_id=...`
-  - Returns a recipe by id.
+  - Retorna receita por id.
 
 - `PUT /api/recipe/{recipe_id}`
-  - Body: partial recipe fields.
-  - Supports `replace_media` boolean.
-  - Steps are merged by `step_number` (update if exists, create if missing).
+  - Body parcial.
+  - Suporta `replace_media`.
+  - Passos fazem merge por `step_number`.
 
 - `DELETE /api/recipe/{recipe_id}`
-  - Deletes a recipe.
+  - Remove receita.
 
 - `DELETE /api/recipe/{recipe_id}/{media_id}`
-  - Deletes a media item.
+  - Remove midia.
 
 ### WhatsApp redirect
 
 - `GET /api/whatsapp?product={productId}`
 - `GET /api/whatsapp?profile={profileId}`
 
-Builds a `wa.me` URL using the profile phone number and redirects.
+Monta URL `wa.me` com o telefone do perfil e redireciona.
 
 ### Email redirect
 
 - `GET /api/email?subject=...`
 
-Redirects to a `mailto:` URL using `siteConfig.mail`.
+Redireciona para `mailto:` usando `siteConfig.mail`.
 
-### Audio transcription
+### Transcricao de audio
 
 - `POST /api/transcription`
   - Body: `{ "url": "https://...", "language"?: "pt" }`
-  - Uses Groq Whisper `whisper-large-v3-turbo`.
+  - Usa Groq Whisper `whisper-large-v3-turbo`.
 
-## Examples
+## Exemplos
 
 ### Profile
 
-Create:
+Criar:
 ```bash
 curl -X POST http://localhost:3000/api/profile \
   -H "Content-Type: application/json" \
@@ -137,7 +137,7 @@ curl -X POST http://localhost:3000/api/profile \
     "instagram": "@mariadasdores"
   }'
 ```
-Response:
+Resposta:
 ```json
 {
   "message": "Profile created successfully",
@@ -151,24 +151,24 @@ Response:
 }
 ```
 
-Get by phone:
+Buscar por telefone:
 ```bash
 curl http://localhost:3000/api/profile/%2B557999999999 \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "profile": { "id": "uuid", "name": "Maria das Dores", "phone_number": "+557999999999" } }
 ```
 
-Update:
+Atualizar:
 ```bash
 curl -X PUT http://localhost:3000/api/profile/%2B557999999999 \
   -H "Content-Type: application/json" \
   -H "API_KEY: $API_KEY" \
   -d '{ "instagram": "@maria_mmtr" }'
 ```
-Response:
+Resposta:
 ```json
 {
   "message": "Profile edited with successfully",
@@ -176,19 +176,19 @@ Response:
 }
 ```
 
-Delete:
+Deletar:
 ```bash
 curl -X DELETE http://localhost:3000/api/profile/%2B557999999999 \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "message": "Profile deleted successfully" }
 ```
 
 ### Product
 
-Create:
+Criar:
 ```bash
 curl -X POST http://localhost:3000/api/product \
   -H "Content-Type: application/json" \
@@ -202,7 +202,7 @@ curl -X POST http://localhost:3000/api/product \
     "media": [{ "url": "https://example.com/geleia.jpg", "media_type": "IMAGE" }]
   }'
 ```
-Response:
+Resposta:
 ```json
 {
   "message": "Product created successfully",
@@ -216,61 +216,61 @@ Response:
 }
 ```
 
-List by profile phone:
+Listar por telefone:
 ```bash
 curl "http://localhost:3000/api/product?phone_number=%2B557999999999" \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "data": [{ "id": "uuid", "product_name": "Geleia de caju" }] }
 ```
 
-Get by id:
+Buscar por id:
 ```bash
 curl "http://localhost:3000/api/product?product_id=PRODUCT_ID" \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "data": { "id": "PRODUCT_ID", "product_name": "Geleia de caju" } }
 ```
 
-Update:
+Atualizar:
 ```bash
 curl -X PUT http://localhost:3000/api/product/PRODUCT_ID \
   -H "Content-Type: application/json" \
   -H "API_KEY: $API_KEY" \
   -d '{ "price": 30, "replace_media": true, "media": [] }'
 ```
-Response:
+Resposta:
 ```json
 { "message": "Product successfully updated", "data": { "id": "PRODUCT_ID" }, "added_media_count": 0 }
 ```
 
-Delete product:
+Deletar produto:
 ```bash
 curl -X DELETE http://localhost:3000/api/product/PRODUCT_ID \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "message": "Product deleted successfully" }
 ```
 
-Delete product media:
+Deletar midia:
 ```bash
 curl -X DELETE http://localhost:3000/api/product/PRODUCT_ID/MEDIA_ID \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "message": "Media deleted successfully" }
 ```
 
 ### Recipe
 
-Create:
+Criar:
 ```bash
 curl -X POST http://localhost:3000/api/recipe \
   -H "Content-Type: application/json" \
@@ -288,7 +288,7 @@ curl -X POST http://localhost:3000/api/recipe \
     "media": [{ "url": "https://example.com/bolo.jpg", "media_type": "IMAGE" }]
   }'
 ```
-Response:
+Resposta:
 ```json
 {
   "message": "Recipe created successfully",
@@ -296,54 +296,54 @@ Response:
 }
 ```
 
-List by profile phone:
+Listar por telefone:
 ```bash
 curl "http://localhost:3000/api/recipe?phone_number=%2B557999999999" \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "data": [{ "id": "uuid", "title": "Bolo de macaxeira" }] }
 ```
 
-Get by id:
+Buscar por id:
 ```bash
 curl "http://localhost:3000/api/recipe?recipe_id=RECIPE_ID" \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "data": { "id": "RECIPE_ID", "title": "Bolo de macaxeira" } }
 ```
 
-Update:
+Atualizar:
 ```bash
 curl -X PUT http://localhost:3000/api/recipe/RECIPE_ID \
   -H "Content-Type: application/json" \
   -H "API_KEY: $API_KEY" \
   -d '{ "difficulty": "INTERMEDIARY", "steps": [{ "step_number": 1, "instruction": "Atualizado." }] }'
 ```
-Response:
+Resposta:
 ```json
 { "message": "Recipe successfully updated", "data": { "id": "RECIPE_ID" }, "added_media_count": 0 }
 ```
 
-Delete recipe:
+Deletar receita:
 ```bash
 curl -X DELETE http://localhost:3000/api/recipe/RECIPE_ID \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "message": "Recipe deleted successfully" }
 ```
 
-Delete recipe media:
+Deletar midia:
 ```bash
 curl -X DELETE http://localhost:3000/api/recipe/RECIPE_ID/MEDIA_ID \
   -H "API_KEY: $API_KEY"
 ```
-Response:
+Resposta:
 ```json
 { "message": "Media deleted successfully" }
 ```
@@ -353,7 +353,7 @@ Response:
 ```bash
 curl -I "http://localhost:3000/api/whatsapp?product=PRODUCT_ID"
 ```
-Response:
+Resposta:
 ```
 HTTP/1.1 307 Temporary Redirect
 Location: https://wa.me/557999999999?text=Ol%C3%A1%21%20Estou%20interessado%28a%29...
@@ -364,13 +364,13 @@ Location: https://wa.me/557999999999?text=Ol%C3%A1%21%20Estou%20interessado%28a%
 ```bash
 curl -I "http://localhost:3000/api/email?subject=Contato"
 ```
-Response:
+Resposta:
 ```
 HTTP/1.1 307 Temporary Redirect
 Location: mailto:mulheresruraisse@gmail.com?subject=Contato
 ```
 
-### Audio transcription
+### Transcricao de audio
 
 ```bash
 curl -X POST http://localhost:3000/api/transcription \
@@ -378,7 +378,7 @@ curl -X POST http://localhost:3000/api/transcription \
   -H "API_KEY: $API_KEY" \
   -d '{ "url": "https://example.com/audio.mp3", "language": "pt" }'
 ```
-Response:
+Resposta:
 ```json
 {
   "message": "Audio transcribed successfully",
@@ -386,11 +386,11 @@ Response:
 }
 ```
 
-Method not allowed:
+Metodo nao permitido:
 ```bash
 curl http://localhost:3000/api/transcription
 ```
-Response:
+Resposta:
 ```json
 { "error": "Method not allowed. Use POST instead." }
 ```
