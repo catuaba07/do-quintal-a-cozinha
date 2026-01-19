@@ -128,7 +128,9 @@ Ainda em processo de exploração e testes, esta sessão incorporará um softwar
 Este projeto esta sob a licença [AGPL](https://pt.wikipedia.org/wiki/GNU_Affero_General_Public_License)
 Fique a vontade em baixar, reproduzir, alterar e distribuir.
 
-## 🤝 Contribuidores
+## 🤝 Contribuições
+
+Quer mexer no código? Adicionar alguma funcionalidade? Encontrou algo quebrado? Da uma olhada na documentação na nossa wiki. 
 
 Agradecemos a todas as pessoas que contribuíram para este projeto:
 
