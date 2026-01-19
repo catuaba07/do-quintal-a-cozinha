@@ -8,6 +8,9 @@ interface StoryCardProps {
   story: Story;
 }
 
+/**
+ * Displays stories in a grid with images, titles, and read more links.
+ */
 export function StoryCard({ story }: StoryCardProps) {
   return (
     <GridCard

@@ -8,6 +8,9 @@ import { ProductGrid } from "@/components/product-grid";
 import { PageHeader } from "@/components/page-header";
 import { SearchBar } from "@/components/search-bar";
 
+/**
+ * Product listing page with search and filter support via URL params.
+ */
 export default function Page() {
   const [search, setSearch] = useState("");
   const { data, isLoading } = useGetAllProducts({});
