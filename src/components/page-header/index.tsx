@@ -24,9 +24,9 @@ export function PageHeader({ title, subtitle }: PageHeaderProps) {
 
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-        <h1 className="text-4xl font-bold text-gray-900 text-center leading-tight">
+        <h2 className="text-4xl font-bold text-gray-900 text-center leading-tight">
           {title}
-        </h1>
+        </h2>
         <p className="text-lg text-gray-700 text-center max-w-2xl leading-relaxed">
           {subtitle}
         </p>

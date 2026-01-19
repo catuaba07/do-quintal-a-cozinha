@@ -9,7 +9,7 @@ export default function Home() {
         <div className="h-150 w-full relative flex-shrink-0">
           <Image
             src="/home-image.webp"
-            alt="Foto de grupo de mulheres trabalhadoras rurais do MMTR-SE reunidas em frente a uma casa, segurando faixas e bandeiras que celebram os 30 anos do movimento e a Marcha Mundial das Mulheres"
+            alt="Foto de mulheres do MMTR-SE com faixas e bandeiras pelos 30 anos e a Marcha Mundial"
             fill
             priority
             style={{ objectFit: "cover" }}
@@ -23,7 +23,7 @@ export default function Home() {
               <HomeIcon
                 title="Nosso Espaço"
                 illustrationSrc="/icons/botton-espaco.webp"
-                altText="Ilustração de duas mãos se cumprimentando formando um coração, representando o espaço de interação e comunidade do MMTR-SE"
+                altText="Ilustração de duas mãos se cumprimentando formando um coração"
               ></HomeIcon>
             </Link>
             <Link href="/nossas-historias">
