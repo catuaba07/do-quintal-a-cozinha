@@ -13,7 +13,7 @@ export default function StoryDetail({ story }: StoryDetails) {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold mb-6">{story.title ?? story.name}</h1>
+      <h2 className="text-4xl font-bold mb-6">{story.title ?? story.name}</h2>
       <div className="h-[44rem] max-w-lg cover relative flex-shrink-0">
       	<Image
       	  src={imgSrc}

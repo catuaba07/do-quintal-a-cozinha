@@ -25,7 +25,6 @@ export default function Page() {
       />
       <div className="container-wrapper">
         <div className="container flex flex-col gap-6 mt-6">
-          <h2 className="sr-only">Lista de produtos</h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
               <ProductGrid products={data ?? []} isLoading={isLoading} />
