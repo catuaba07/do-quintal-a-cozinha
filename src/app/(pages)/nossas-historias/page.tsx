@@ -1,5 +1,7 @@
 export const dynamic = "force-static";
 
+import Image from "next/image";
+
 const people = [
   {
     name: "Dona Raimunda",
@@ -43,11 +45,15 @@ export default function HomePage() {
             className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden flex flex-col focus-within:ring-4 focus-within:ring-blue-300"
           >
             {/* Imagem */}
-            <img
-              src={person.image}
-              alt={`Foto de ${person.name}`}
-              className="h-9/12 w-full object-cover"
-            />
+            <div className="relative w-full aspect-[4/3]">
+              <Image
+                src={person.image}
+                alt={`Foto de ${person.name}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
 
             <div className="p-6 flex flex-col flex-grow">
               <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-snug">

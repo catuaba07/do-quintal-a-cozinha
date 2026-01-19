@@ -56,9 +56,9 @@ export function FeaturedRecipes({
   return (
     <section className="mb-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-foreground mb-4">
+        <h3 className="text-3xl font-bold text-foreground mb-4">
           Receitas em Destaque
-        </h2>
+        </h3>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
           Nossas receitas mais populares e bem avaliadas pela comunidade
         </p>
@@ -78,9 +78,9 @@ export function FeaturedRecipes({
               </div>
 
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h4 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {recipe.title}
-                </h3>
+                </h4>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {recipe.description}
                 </p>
