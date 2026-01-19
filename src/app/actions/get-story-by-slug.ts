@@ -2,6 +2,10 @@
 
 import { prisma } from "@/lib/prisma";
 
+/**
+ * Fetches story by slug for SEO-friendly URLs and better social sharing.
+ */
+
 interface Options {
   slug: string;
 }

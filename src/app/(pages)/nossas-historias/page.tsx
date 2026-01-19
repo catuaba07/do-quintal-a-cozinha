@@ -2,6 +2,10 @@ export const dynamic = "force-static";
 
 import Image from "next/image";
 
+/**
+ * Stories listing page with static producer profile cards.
+ */
+
 const people = [
   {
     name: "Dona Raimunda",

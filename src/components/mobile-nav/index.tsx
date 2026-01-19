@@ -16,6 +16,9 @@ import { Button } from "@/components/ui/button";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
+/**
+ * Mobile drawer navigation triggered by hamburger menu icon.
+ */
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
 

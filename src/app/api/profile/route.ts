@@ -1,3 +1,8 @@
+/**
+ * Creates producer profiles with duplicate prevention.
+ * Phone number is unique identifier (used for WhatsApp integration).
+ */
+
 import { prisma } from "@/lib/prisma";
 import { v4 as uuidv4 } from "uuid";
 
@@ -47,6 +52,7 @@ export async function POST(request: Request) {
       }
     );
   } catch (error) {
+    console.error("Error creating profile:", error);
     return new Response(
       JSON.stringify({
         error: "Internal Server Error",

@@ -12,6 +12,9 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
+/**
+ * Desktop horizontal navigation menu with active route highlighting.
+ */
 export function MainNav() {
   const pathname = usePathname();
 

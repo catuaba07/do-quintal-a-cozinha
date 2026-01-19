@@ -2,6 +2,9 @@ import Image from "next/image";
 import { HomeIcon } from "@/components/home-icon";
 import Link from "next/link";
 
+/**
+ * Homepage with hero image and 4-section navigation grid.
+ */
 export default function Home() {
   return (
     <div className="container-wrapper h-full">

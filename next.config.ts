@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
+  // Standalone mode for Docker deployment (reduces image size ~50%)
   output: "standalone",
+
+  // Trailing slashes for consistent SEO and social sharing URLs
   trailingSlash: true,
+
+  // CORS headers for external API access (Typebot, WhatsApp integration)
   headers: async () => [
     {
       source: "/api/:path*",
@@ -23,6 +27,8 @@ const nextConfig: NextConfig = {
       ],
     },
   ],
+
+  // Whitelisted domains for Next.js Image optimization
   images: {
     remotePatterns: [
       {

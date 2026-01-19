@@ -9,6 +9,10 @@ import { MobileNav } from "@/components/mobile-nav";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
+/**
+ * Sticky site header with navigation and social contact links.
+ */
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-yellow-400/95 backdrop-blur supports-[backdrop-filter]:bg-yellow-400/60">

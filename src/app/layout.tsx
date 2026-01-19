@@ -6,6 +6,10 @@ import { Suspense } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
+/**
+ * Root layout with providers, fonts, metadata, and skip-to-content link.
+ */
+
 const montserratSans = Montserrat({
   variable: "--font-montserrat-sans",
   subsets: ["latin"],

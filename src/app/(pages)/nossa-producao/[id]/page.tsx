@@ -18,6 +18,9 @@ interface Props {
   }>;
 }
 
+/**
+ * Product detail page with image gallery, producer info, and WhatsApp contact.
+ */
 export default function Page({ params }: Props) {
   const { id } = use(params);
   const { data, isLoading } = useGetProductById({ id });
