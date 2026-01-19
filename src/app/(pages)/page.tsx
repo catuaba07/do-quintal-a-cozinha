@@ -30,7 +30,7 @@ export default function Home() {
               <HomeIcon
                 title="Nossas Histórias"
                 illustrationSrc="/icons/botton-historias.webp"
-                altText="Ilustração de uma fotografia de 2 mulheres, representando as histórias das mulheres trabalhadoras rurais"
+                altText="Ilustração de 2 mulheres, representando as histórias das mulheres trabalhadoras rurais"
               ></HomeIcon>
             </Link>
             <Link href="/nossa-producao">
@@ -44,7 +44,7 @@ export default function Home() {
               <HomeIcon
                 title="Nossas Receitas"
                 illustrationSrc="/icons/botton-receitas.webp"
-                altText="Ilustração de panela e colher de pau, representando as receitas tradicionais da das mulheres do movimento"
+                altText="Ilustração de panela e colher de pau, representando as receitas tradicionais"
               ></HomeIcon>
             </Link>
           </div>
