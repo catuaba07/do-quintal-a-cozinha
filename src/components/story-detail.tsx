@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { notFound } from "next/navigation"
 import { Story } from "@/types/story";
+import { notFound } from "next/navigation";
 
 interface StoryDetail {
   story: Story | null | undefined;
@@ -11,6 +11,7 @@ interface StoryDetail {
 
 export default function StoryDetail({ story, isLoading }: StoryDetail) {
   if (isLoading) return (<p>Carregando</p>);
+
   if (!story) return notFound();
 
   return (
