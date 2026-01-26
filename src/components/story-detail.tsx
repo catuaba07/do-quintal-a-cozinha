@@ -11,7 +11,7 @@ interface StoryDetailProps {
 /**
  * Full story view with image, title, description, and HTML content.
  */
-export function StoryDetail({ story, isLoading }: StoryDetailProps) {
+export default function StoryDetail({ story, isLoading }: StoryDetailProps) {
   if (isLoading) return (<p>Carregando</p>);
 
   return (
