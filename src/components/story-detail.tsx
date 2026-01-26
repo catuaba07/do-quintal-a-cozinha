@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { Story } from "@/types/story";
+import { notFound } from "next/navigation";
 
 interface StoryDetailProps {
   story: Story | null | undefined;
-    isLoading: boolean;
+  isLoading: boolean;
 }
 
 /**
@@ -13,6 +14,8 @@ interface StoryDetailProps {
  */
 export default function StoryDetail({ story, isLoading }: StoryDetailProps) {
   if (isLoading) return (<p>Carregando</p>);
+
+  if (!story) return notFound();
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
