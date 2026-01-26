@@ -12,6 +12,9 @@ interface RecipeGridProps {
   onClearSearch?: () => void;
 }
 
+/**
+ * Displays recipes in a responsive grid with loading, empty, and search result states.
+ */
 export function RecipeGrid({
   recipes,
   isLoading,

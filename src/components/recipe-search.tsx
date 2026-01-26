@@ -10,6 +10,9 @@ interface RecipeSearchProps {
   onSearchChange: (query: string) => void;
 }
 
+/**
+ * Search bar for recipe filtering with icon and submit button.
+ */
 export function RecipeSearch({
   searchQuery,
   onSearchChange,

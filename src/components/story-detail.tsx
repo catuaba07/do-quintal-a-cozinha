@@ -7,12 +7,14 @@ import Image from "next/image";
 import { Story } from "@/types/story";
 import { notFound } from "next/navigation";
 
-
 interface StoryDetailProps {
   story: Story | null | undefined;
     isLoading: boolean;
 }
 
+/**
+ * Full story view with image, title, description, and HTML content.
+ */
 export function StoryDetail({ story, isLoading }: StoryDetailProps) {
     const [lightboxOpen, setLightboxOpen] = useState(false);
 

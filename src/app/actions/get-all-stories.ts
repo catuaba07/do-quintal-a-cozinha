@@ -3,6 +3,10 @@
 
 import { prisma } from "@/lib/prisma";
 
+/**
+ * Fetches community stories with optional search filtering.
+ */
+
 interface Options {
   search?: string;
   tags?: string[];
@@ -10,7 +14,8 @@ interface Options {
 }
 
 export async function getAllStories(options?: Options) {
-    const where: any = {}; 
+    const where: any = {};
+
     if (options?.search) {
         where.name = {
             contains: options.search,

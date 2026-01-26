@@ -5,6 +5,9 @@ import { useGetAllProducts } from "@/hooks/use-get-all-products";
 import { ProductGrid } from "@/components/product-grid";
 import { PageHeader } from "@/components/page-header";
 
+/**
+ * Product listing page with search and filter support via URL params.
+ */
 export default function Page() {
   const searchParams = useSearchParams();
   const search = searchParams.get("search");

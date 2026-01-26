@@ -13,6 +13,11 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
+/**
+ * Filter sidebar for products with category and price range controls.
+ * Updates URL params on apply, preserving existing search query.
+ */
+
 const categories = [
   { id: "AGRICOLA", label: "Agricola" },
   { id: "ARTESANATO", label: "Artesanato" },

@@ -1,10 +1,8 @@
-// components/story-card.tsx
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image";
 import { Story } from "@/types/story";
 import { Tag } from "./tag";
-
 
 interface StoryCardProps {
   stories: Story[];
@@ -13,6 +11,9 @@ interface StoryCardProps {
   onClearSearch?: () => void;
 }
 
+/**
+ * Displays stories in a grid with images, titles, and read more links.
+ */
 export function StoryCard({ stories, isLoading, searchQuery }: StoryCardProps) {
   return (
     <section>

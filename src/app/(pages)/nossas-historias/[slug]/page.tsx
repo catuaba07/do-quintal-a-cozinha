@@ -13,6 +13,9 @@ interface StoryPageProps {
 
 export const dynamic = 'force-static';
 
+/**
+ * Story detail page fetched by slug route parameter.
+ */
 export default function StoryPage({ params }: StoryPageProps) {
   const { slug } = use(params);
   const { data: story } = useGetStoryBySlug({ slug });

@@ -11,6 +11,9 @@ interface ProductGridProps {
   isLoading: boolean;
 }
 
+/**
+ * Displays products in a responsive grid with loading and empty states.
+ */
 export function ProductGrid({ products, isLoading }: ProductGridProps) {
   return (
     <section>

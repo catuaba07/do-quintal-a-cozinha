@@ -2,6 +2,11 @@
 
 import { prisma } from "@/lib/prisma";
 
+/**
+ * Fetches single product by ID with complete details.
+ * CRITICAL: Converts Prisma Decimal price to number for client serialization.
+ */
+
 interface Options {
   id: string
 }
@@ -32,7 +37,7 @@ export async function getProductById(options: Options) {
     return null;
   }
 
-  // Convert Decimal to number for client component serialization
+  // CRITICAL: Convert Decimal to number for Next.js client serialization
   return {
     ...product,
     price: product.price ? Number(product.price) : null

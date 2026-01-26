@@ -14,6 +14,9 @@ interface FeaturedRecipesProps {
   isLoading: boolean;
 }
 
+/**
+ * Displays featured recipes in a 2-column grid with larger cards and hover effects.
+ */
 export function FeaturedRecipes({
   featured_recipes,
   isLoading,

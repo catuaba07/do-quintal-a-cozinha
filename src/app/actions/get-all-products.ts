@@ -3,6 +3,11 @@
 import { prisma } from "@/lib/prisma";
 import { Category } from "@prisma/client";
 
+/**
+ * Fetches products with filtering by category, price range, and search.
+ * CRITICAL: Converts Prisma Decimal prices to numbers for client serialization.
+ */
+
 interface Options {
   search?: string
   categories?: string[]
@@ -26,15 +31,6 @@ interface Where {
   OR?: Array<{ price: PriceCondition }>
 }
 
-/**
- * Retrieves all products with optional filtering.
- *
- * BUSINESS RULE: Price filtering uses OR logic to support multiple ranges.
- * Price ranges: under-50, 50-100, 100-200, over-200
- *
- * @param options - Filter options (search, categories, price ranges)
- * @returns Array of products matching the criteria
- */
 export async function getAllProducts(options?: Options) {
   const where = {} as Where;
 
@@ -50,7 +46,7 @@ export async function getAllProducts(options?: Options) {
     }
   }
 
-  // Implement price range filtering
+  // OR logic allows users to select multiple price brackets
   if (options?.price && options.price.length > 0) {
     const priceConditions: Array<{ price: PriceCondition }> = [];
 
@@ -101,7 +97,7 @@ export async function getAllProducts(options?: Options) {
     where
   });
 
-  // Convert Decimal to number for client component serialization
+  // CRITICAL: Convert Decimal to number for Next.js client serialization
   return products.map(product => ({
     ...product,
     price: product.price ? Number(product.price) : null

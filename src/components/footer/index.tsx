@@ -4,6 +4,9 @@ import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
+/**
+ * Site footer with logo, site name, and email contact link.
+ */
 export function Footer() {
   return (
     <footer className="w-full bg-yellow-400/95 backdrop-blur supports-[backdrop-filter]:bg-yellow-400/60">

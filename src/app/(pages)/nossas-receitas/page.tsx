@@ -7,6 +7,9 @@ import { RecipeGrid } from "@/components/recipe-grid";
 import { useGetAllRecipes } from "@/hooks/use-get-all-recipes";
 import { useState } from "react";
 
+/**
+ * Recipe listing page with search bar, featured section, and full recipe grid.
+ */
 export default function RecipesPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
