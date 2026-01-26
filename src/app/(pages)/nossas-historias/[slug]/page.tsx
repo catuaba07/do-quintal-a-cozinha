@@ -11,15 +11,9 @@ interface StoryPageProps {
   }>;
 }
 
-export const dynamic = 'force-static';
-
 export default function StoryPage({ params }: StoryPageProps) {
   const { slug } = use(params);
-  const { data: story } = useGetStoryBySlug({ slug });
-  
-  if (!story) {
-     return notFound();
-    }
-
-  return <StoryDetail story={story} />;
+  const { data: story, isLoading } = useGetStoryBySlug({ slug });
+ 
+  return <StoryDetail story={story} isLoading={isLoading} />;
 }

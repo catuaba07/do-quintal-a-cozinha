@@ -2,8 +2,6 @@ import pkg from '@prisma/client';
 const { MediaType } = pkg;
 import { v4 as uuidv4 } from 'uuid';
 
-const STORY_CATEGORY_ID = "mulheres-rurais";
-
 export const storiesData = [
   {
     id: "1",
@@ -57,30 +55,30 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     regionId: "ARA",
     mediaUrl: "/images/stories/dita.jpg",
     content:`
-  <p class="text-lg leading-relaxed text-gray-800 mb-6>Vamos conhecer a história de vida de Silvia Helena, 56 anos, ou Dita como é conhecida, mulher negra moradora há mais de 30 do Assentamento Vitória da União, no município de Santa Luzia do Itanhy (SE). Arupemba Dita é agricultora não assentada, fez sua vida trabalhando na terra de sua mãe e irmãos assentados, passou por uma infância difícil e a superação veio na conquista de sua autonomia. Ela nos conta com orgulho tudo que conquistou com a organização coletiva. 
-  Sócia e militante do MMTR-SE, ela ocupa a  diretoria da Associação do seu  Assentamento. 
+  <p class="text-lg leading-relaxed text-gray-800 mb-6>Vamos conhecer a história de vida de Silvia Helena, 56 anos, ou Dita como é conhecida, mulher negra moradora há mais de 30 do Assentamento Vitória da União, no município de Santa Luzia do Itanhy (SE). Arupemba Dita é agricultora não assentada, fez sua vida trabalhando na terra de sua mãe e irmãos assentados, passou por uma infância difícil e a superação veio na conquista de sua autonomia. Ela nos conta com orgulho tudo que conquistou com a organização coletiva.
+  Sócia e militante do MMTR-SE, ela ocupa a  diretoria da Associação do seu  Assentamento.
 </p>
 
   <p class="text-lg leading-relaxed text-gray-800 mb-6">“Já tem mais de 30 anos que a gente mora aqui no assentamento Vitória da União. Consegui ter uma roça, sou agricultora. Filha de agricultora assentada, tenho irmãos assentados. Não sou assentada  e  trabalho todos os dias na roça. No inverno planto muita verdura. Trabalho muito com mandioca, macaxeira. Planto feijão de corda, feijão de arranca, milho, bananeiras, fava. Também tenho gado. Adquiri um pouco de gado. Tem de tudo pouco. Verduras, a gente planta bastante, hortaliça. E tenho minhas plantas ornamentais. Algumas ervas pra fazer chá. Crio galinha. Várias coisas. Sou uma guerreira. Levanto cedo pra batalhar, trabalhar. Tenho a minha casa pra tomar de conta. Tenho os bichos pra tomar de conta. Também participo de uma feirinha da agricultura familiar nas quartas-feiras na cidade.".</p>
-  
+
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Infância</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Então, a gente quase não teve infância. Começamos a trabalhar cedo. Cedo, cedo, cedo. Eu me lembro que com 9 anos já estava na luta, na roça mais meu pai plantando e cuidando de fumo que era muito, trabalhava bastante com fumo. Também com o negócio brincar era pouco. Trabalhava bastante. Estudava, a gente ia pra escola, sim. Tinha aquelas dificuldades, o colégio era longe. Mas nunca deixei de ir pra escola, sempre que a gente podia, a gente ia pra escola. Mas foi uma infância difícil. A gente trabalhou bastante. Tinha negócio de brinquedo não. Naquela época não tinha celular, não tinha bicicleta. Boneca pra brincar, nada disso. Era trabalho mesmo. Mas foi uma infância feliz, a gente tinha os irmãos, os primos, os avós. Tudo morava junto, próximo um do outro, a gente estava ali, naquela animação, naquela festa, naquela época não tinha energia. Não tinha televisão. Tinha um rádio de pilha. </p>
-  
+
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sobre seus antepassados</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha avó, eu pedi muito cedo, mas lembro que minha avó rezava. E sempre ia dizer, não comam isso que faz mal. Do meu pai aqui na minha casa tem muito, esse negócio de fazer chá de cidreira. Tem a babosa aqui também. Eles lavavam a cabeça com babosa. De criança, eu já lavava a cabeça com babosa, ainda hoje tenho aqui em casa babosa.</p>
- 
+
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">As sementes</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">A gente planta e todo ano tem que guardar um pouquinho pra ter pro próximo ano. Eu ganhei uma semente de milho crioulo no Seminário de Biodiversidade em Aracaju (fev. 2025) que participei junto ao MMTR-SE, que plantei esse ano. Se a gente colhe uma abóbora, a gente corta a abóbora. A semente a gente já guarda. Põe pra secar e já guarda pro ano que vem. Mesma coisa é o quiabo, a mesma coisa é a macaxeira... Você tem que deixar pra semente pro próximo ano.</p>
 
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Uso da água</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">A água daqui do assentamento é poço, e a associação faz a gestão. Mas todo mundo tem água encanada em casa. No verão tem mudança na distribuição pra não faltar de forma nenhuma. O assentamento cresceu e hoje tem muitos moradores, muitas casas e no verão o gasto é maior.  E aí a gente tem mais dificuldade. Tem que saber economizar.</p>
-  
+
     <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Sobre as mudanças climáticas</h2>
 
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Ano passado teve uma seca que eu não tinha visto antes. Essa seca, diz minha mãe que há uns 20 anos atrás aconteceu a mesma coisa. Foi seca mesmo, uma seca que a gente perdeu até gado. Então, no verão tem que ter menos planta. E tem que aproveitar as águas, tem que tá pegando as águas que você usa, e tá colocando nas plantas. </p>
 
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Divisão de tarefas </h2>
-  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu faço tudo sozinha. É raro meu companheiro lavar uma xícara. É raro ele colocar água na planta.  Ultimamente ele vai mais pra roça e eu estou indo menos. Mas a gente já trabalhou de igual pra igual na roça. E quando eu chegava em casa, eu tinha que fazer as coisas dele em casa. Buscar lenha, era uma tarefa minha. Mas lenha eu vou buscar de carroça, de galinhota, fecho na cabeça.  Racho lenha até hoje, eu racho lenha. 
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu faço tudo sozinha. É raro meu companheiro lavar uma xícara. É raro ele colocar água na planta.  Ultimamente ele vai mais pra roça e eu estou indo menos. Mas a gente já trabalhou de igual pra igual na roça. E quando eu chegava em casa, eu tinha que fazer as coisas dele em casa. Buscar lenha, era uma tarefa minha. Mas lenha eu vou buscar de carroça, de galinhota, fecho na cabeça.  Racho lenha até hoje, eu racho lenha.
 </p>
 
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Jornada diária </h2>
@@ -97,7 +95,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Sem tecnologia você não vai a lugar nenhum. Pra quem gosta tem que correr atrás. Eu sou muito preguiçosa pra aprender, mas é importante. Tem que acompanhar o mundo. </p>
-  
+
   <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Pronto, eu vim pra cá jovem, com meu pai, com minha mãe, com meus irmãos, que são assentados. E aqui fui ficando. Casei, construí minha casa, minha família. Tenho meu trabalho. Eu planto roça no terreno da minha mãe, dos meus irmãos.
   Quando chegamos aqui era uma mata, diz o povo que tinha até onça. Não tinha nada. Só mata mesmo. <i>Devagarzinho</i> foi mudando. Logo chegou energia, depois a  água encanada, Colégio para as crianças estudarem, e  foi melhorando. Se tem coisas boas, também tem coisas ruins no assentamento. Em qualquer lugar que você mora tem coisas boas.
@@ -108,12 +106,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 ];
 
   export async function seedStories(prisma) {
-    // Create the story category first
-    await prisma.storyCategory.upsert({
-      where: { id: STORY_CATEGORY_ID },
-      update: { title: "Mulheres Trabalhadoras Rurais" },
-      create: { id: STORY_CATEGORY_ID, title: "Mulheres Trabalhadoras Rurais" },
-    });
 
     for (const story of storiesData) {
       let createdData = {
@@ -125,9 +117,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           content: story.content,
           region: {
             connect: { id: story.regionId }
-          },
-          storyCategory: {
-            connect: { id: STORY_CATEGORY_ID }
           },
           media: {
             create: {
@@ -148,7 +137,6 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
           description: story.description,
           content: story.content,
           region: { connect: { id: story.regionId } },
-          storyCategory: { connect: { id: STORY_CATEGORY_ID } },
         }
       await prisma.story.upsert({
         where: { id: story.id },

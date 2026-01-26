@@ -99,16 +99,8 @@ model Story {
   region          Region        @relation(fields: [regionId], references: [id], name: "RegionStories")
   regionId        String
   slug            String        @unique
-  storyCategory   StoryCategory @relation(fields: [storyCategoryId], references: [id])
-  storyCategoryId String
 
   media StoryMedia[]
-}
-
-model StoryCategory {
-  id      String  @id
-  title   String
-  stories Story[]
 }
 
 model StoryMedia {
