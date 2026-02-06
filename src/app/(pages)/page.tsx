@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { HeroImage } from "@/components/hero-image";
 import { HomeIcon } from "@/components/home-icon";
 import Link from "next/link";
 
@@ -9,16 +9,7 @@ export default function Home() {
   return (
     <div className="container-wrapper h-full">
       <div className="container flex flex-col h-full py-4 md:py-6 gap-4 md:gap-6">
-        <div className="h-150 w-full relative flex-shrink-0">
-          <Image
-            src="/home-image.webp"
-            alt="Foto de mulheres do MMTR-SE com faixas e bandeiras pelos 30 anos e a Marcha Mundial"
-            fill
-            priority
-            style={{ objectFit: "cover" }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
-          />
-        </div>
+        <HeroImage />
         <nav className="flex-1 flex items-center justify-center min-h-0 py-4 md:py-8" aria-label="Seções do site">
           <h2 className="sr-only">Explore nossas seções</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-30 place-items-center w-fit">
