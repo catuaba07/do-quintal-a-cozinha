@@ -266,6 +266,46 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 
   <p><strong>E estar sempre engajada em todas as coisas que surgem, buscando dar o melhor para a nossa comunidade.</strong></p>
   `},
+  // ------------------------------------------------------------------
+  {
+    id: "6",
+    title: "Me descobri a mulher que sou, me descobri como feminista",
+    name: "Alba Rafaela",
+    description: "Agroecóloga de 42 anos, moradora do Povoado Barro Vermelho em Nossa Senhora de Lourdes. Produtora de queijo artesanal e feminista.",
+    slug: "alba-rafaela",
+    regionId: "NLO",
+    mediaUrl: "/images/stories/alba.png",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Filha do semiárido e moradora do povoado Barro Vermelho, no Alto Sertão sergipano. Nasceu e cresceu na comunidade, onde viveu sua infância inteira e começou, ainda aos 12 anos, a trabalhar na roça junto à família.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Meu nome é Alba Rafaela de Andrade, tenho 42 anos solteiros, sou do município de Nossa Senhora de Lourdes, no Alto Sertão sergipano. Nasci e cresci nesse lugar. Vivi toda minha infância aqui, sempre muito ligada à roça e ao trabalho da terra.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na minha família, a gente cultivava em um sistema parecido com agrofloresta, onde tudo era cultivado no mesmo espaço, feijão, milho, abóbora, quiabo, macaxeira. Todo esse cultivo era para o nosso próprio sustento. Aos 30 anos, eu saí da comunidade para morar na capital, buscando estudo. Fiz faculdade de Agroecologia no Instituto Federal de Sergipe. Foram quatro anos de estudo e mais um tempo de trabalho na capital, embora não tenha trabalhado diretamente na área. Há cerca de seis meses, retornei para o campo, para meu município, onde trabalho na agroecologia e também na produção de queijo artesanal, um trabalho feito em família."</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha chegada ao MMTR</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Entrei no MMTR através de Gisélia, que conheci em um encontro da ASA. Foi ela quem me apresentou ao movimento. Desde 2010 participo dos espaços do MMTR. O movimento foi transformador na minha vida, me mostrou caminhos que eu não conhecia, me fez descobrir a mulher que eu sou e me descobrir como feminista. Para outras mulheres também é muito importante, porque ajuda a revelar nossa capacidade, dentro e fora de casa, e a importância da nossa liberdade e autonomia.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">A importância das tecnologias para nós, mulheres agricultoras</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Hoje, a tecnologia é essencial. Ela facilita divulgar nossos produtos, falar com familiares distantes, aprender coisas novas, acessar direitos e oportunidades. Mas também é importante saber usar, ter limite e usar a tecnologia ao nosso favor.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Sobre o aplicativo que o MMTR está lançando junto com o Intervozes, acredito que ele vai ajudar muito as mulheres a conhecerem melhor as ferramentas, divulgar sua produção e enxergar a tecnologia como algo que pode fortalecer nosso trabalho e nossa autonomia.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No meu dia a dia uso WhatsApp, Instagram, Gmail, aplicativos de banco, sites de compras e outros que facilitam a rotina. Eu gosto muito de ler livros, não online. Para estudar, prefiro o livro físico. Pelo celular, gosto de assistir vídeos, ouvir coisas, usar aplicativos.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Nossa maior renda é o leite, criamos galinhas para consumo e venda de ovos. Não participamos atualmente de feiras, mas já vendemos produtos no PNAE anos atrás. Os queijos são vendidos por encomenda, na porta de casa ou para atravessadores. Temos sementes de abobora, fava e feijão de corda.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Terra, sementes, água e mudanças climáticas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A terra onde vivemos veio de herança. São cerca de 30 tarefas que eram usadas mais para o gado, e a roça nós fazíamos em terras de um fazendeiro, em troca de plantar palma para ele. Depois minha irmã comprou um terreno maior e a partir dai começamos produzir na nossa própria terra.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">O território como um todo melhorou muito. Hoje é um território forte na bacia leiteira na agricultura. Quase todo mundo tem um pedacinho de terra e uma vaquinha. O lado negativo é a monocultura do milho, que tomou conta e devastou a caatinga. Antes tinha diversidade de plantas e animais silvestre, hoje, o solo estar descoberto, muito uso de adubo químico que acaba prejudicando um todo.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A maioria das sementes a gente acabou perdendo principalmente o milho crioulo hoje a gente pega com vizinho, ou com minha tia, mais hoje plantamos pouco, atualmente estamos comprando milho para ração animal porque vimos que comprar sai mais em conta o custo é menor pra produzir hoje o milho é necessário alto investimento. O que mantemos mais é a semente da palma. A água chega encanada, vinda do Rio São Francisco. Para os animais usamos água de chuva guardada em barreiros. Temos cisterna e, quando necessário, também dependemos de carro-pipa. O clima mudou muito. Há anos de muita chuva e anos de pouca. Este ano choveu até setembro, o que é raro no semiárido.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Divisão de tarefas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na nossa família somos três mulheres e um homem. Meu irmão é agente de saúde e mora em outro povoado, mas vem para tirar o leite. Depois disso, todo o trabalho na produção é feito por nós, as três mulheres. Minhas irmãs Renata e Rosimeire cuidam dos animais e da produção do leite. Eu fico mais com os cuidados da casa e do quintal. A produção do queijo começou por iniciativa da minha irmã mais velha, Rosimeire. Antes, a gente só vendia o leite. Ela decidiu começar a produzir o queijo para agregar valor ao produto, e deu certo. Minha irmã também cuida da roça e dos animais. Eu e minha irmã mais nova cuidamos da casa, limpar, cozinhar e ela também faz o queijo e administra a propriedade junto com minha irmã mais velha. Eu sou a única que não faço queijo, mas eu sei fazer, só não faço no momento. No meu caso, sou mais do cuidado com os afazeres de casa lavar cozinhar. Todas nós trabalhamos cerca de 10 horas por dia das cinco da manhã ate a cinco da tarde.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">O que me motiva é a família e o desejo de produzir alimentos orgânicos, oferecer comida de qualidade para as pessoas, especialmente para quem enfrenta problemas de saúde, pois a nossa alimentação é a nossa base para uma vida saudável. Também tenho o sonho de trabalhar com turismo rural.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">São ideias que precisam de estrutura e apoio, mas que guardo com carinho.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No momento estou no interior também porque estou desempregada. Se surgir uma boa oportunidade de trabalho fora, posso sair de novo, porém enquanto estou lá, sigo acreditando no potencial do território, da agroecologia e nas possibilidades que ainda posso construir no campo.</p>
+  `},
 ];
 
   export async function seedStories(prisma) {
