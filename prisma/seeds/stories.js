@@ -11,7 +11,7 @@ export const storiesData = [
       "Artesã, agricultora e matriarca da família que vive em Mattas. Segue com a lida e sua vida, sendo inspiração para muitas gerações.",
     slug: "raimunda",
     regionId: "ARA",
-    mediaUrl: "/images/stories/raimunda.png",
+    mediaUrl: "/images/stories/raimunda.webp",
     content:`
   <p>Quer inspiração? Então vamos conhecer um pouquinho da história de Raimunda Raquel da Cruz, 82 anos, mulher branca, moradora do povoado Matatas em Salgado (SE). Ela nos inspira pela simplicidade de enxergar a vida e as dificuldades que acreditamos difíceis de transpor. Não existem obstáculos para sua ocupação nos espaços, seja pela falta de leitura ou condição geracional. Sem ter frequentado escola formal, nos dar aula de sabedoria e nos inspira a superar nossas dificuldades. Onde tem marchas e atividade sempre está presente. Por isso, o aplicativo “Do quintal a cozinha” está  “femenageando” dando nome ao nosso chatbot de <strong>Dona Raimunda</strong>, facilitando a acessibilidade às nossas conversas.</p>
 
@@ -53,7 +53,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description:"Mulher negra, agricultora não assentada, moradora há mais de 30 anos do Assentamento.",
     slug: "silvia-helena",
     regionId: "ARA",
-    mediaUrl: "/images/stories/dita.jpg",
+    mediaUrl: "/images/stories/dita.webp",
     content:`
   <p class="text-lg leading-relaxed text-gray-800 mb-6>Vamos conhecer a história de vida de Silvia Helena, 56 anos, ou Dita como é conhecida, mulher negra moradora há mais de 30 do Assentamento Vitória da União, no município de Santa Luzia do Itanhy (SE). Arupemba Dita é agricultora não assentada, fez sua vida trabalhando na terra de sua mãe e irmãos assentados, passou por uma infância difícil e a superação veio na conquista de sua autonomia. Ela nos conta com orgulho tudo que conquistou com a organização coletiva.
   Sócia e militante do MMTR-SE, ela ocupa a  diretoria da Associação do seu  Assentamento.
@@ -102,6 +102,252 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
 </p>
   <p><strong>Aqui é um lugar bom de se morar. Eu gosto daqui. Eu não penso em sair daqui de forma nenhuma. </strong></p>
 
+  `},
+  // ------------------------------------------------------------------
+  {
+    id: "3",
+    title: "Sou benzedeira, minha avó me ensinou",
+    name: "Ivanilde",
+    description: "Benzedeira e trabalhadora rural, moradora do Povoado São Bento em Salgado (SE). Diretora do MMTR-NE.",
+    slug: "ivanilde",
+    regionId: "SAL",
+    mediaUrl: "/images/stories/ivanilde.webp",
+    content:`
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Ivanilde Maria de Souza, 61 anos. Mulher negra, moradora do Povoado São Bento, estrada do Riacho Seco em Salgado (SE). Dona de uma história com tantas perdas familiares desde a partida de sua mãe ainda criança, encontrou acolhimento e junto a sua comunidade ajudou com sua herança de benzedeira e construiu sua família.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Sou uma trabalhadora rural. Não tenho terra, mas eu tenho meu quintalzinho aqui, trabalho no meu quintal. Me aposentei como trabalhadora rural. Sou benzedeira, minha avó me ensinou a rezar, ela rezava e fui aprendendo. Participo de vários grupos, da associação, da igreja, da Mãe Rainha. E atualmente sou diretora do MMTR-Ne, esse meu segundo mandato.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A minha história é muito sofrida, mas superei. Eu nasci num lugar chamado Pé da Preta em Lagarto (SE). Desse lugar do Pé da Preta, saí de lá na faixa dos dois anos e sete meses. Vim pra um lugar chamado Teiú, lá comecei a me criar. Nesse Teiú a gente viveu na fome. Não tinha o que comer. Pra gente comer, ia pra o riacho que chamava Alvoroço pescar. E pegava os peixes, milho, torrava e fazia farinha, fubá, para comer com os peixes.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Depois, com dois anos minha mãe engravidou de novo. Dessa gravidez, ela passou muito tempo doente, durante a gravidez. Não tinha médico nessa época. E ela teve uma menina. No parto ficou mais mal ainda que não despachou. A parteira não teve como despachar. Não conseguia. Meu avô, pai de meu pai, morava em Riachão do Dantas, e de lá, ele soube e pegou e veio buscar ela. E levou ela pra Riachão. Ela e minha irmã.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha avó quando soube mandou vir buscar a gente. Quando chegou lá em Riachão, minha irmã só passou dois dias de nascida. Aí, a gente veio-se embora, junto com a minha avó, que se chamava Ilara, que é a mãe que eu conheci. Eu e meu irmão Rael que ficou se arrastando. Quando mãe foi liberada pra vir pra casa, viemos. Mãe chegou, como hoje, no Teiú, com três dias, piorou. Eu ia fazer três anos, mas lembro desse dia. Eu estava tomando banho no riacho Alvoroço, que passava na frente de minha casa, e o povo lá, lutando com ela, depois, chegou uma pessoa e me pegou. Minha filha, vamos pra cá. Quando chegou lá dentro, a mãe me pediu um beijo. Minha avó, a mãe do meu pai, que me falou tudinho isso. Aí, me pegaram e me baixaram perto dela e dei um beijo. Aí, ali mesmo, foi a despedida. Deus levou ela.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fiquei morando com minha avó, a mãe do meu pai, Ilara. Meu pai não vinha quase em casa ver a gente. Pai não queria que eu estudasse. Não era pra estudar, mãe (avó) dizia, enquanto eu estiver viva, eles vão estudar. Só depois que eu morrer agora, aí você pode fazer o que você quiser com seus filhos, que eu não vou estar, é seu. Aí, continuo estudando no Tanque. Depois do Tanque, minha mãe (avó) adoeceu e faleceu.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Adolescência</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fui morar no Açu (Lagarto) com meu pai e a madrasta, estava casado com uma mulher chamada Zefa. Foi aí que começou meu inferno, era explorada, tudo que fazia reclamava. Pra roça não prestava, pra dentro de casa não prestava. Era escrava. Tiveram dez filhos e os dez filhos foram todos eu que criei. Trabalhava, mas não pegava o dinheiro. Quem pegava o dinheiro era ela.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">E a roupa era duas roupas, uma no couro e uma no arame. Pra de tardezinha tirar aquela do arame e tomar banho e vestir. Para resumir, depois de uma briga feia com ela e meu pai ficou do lado dela, fugir, mas se não fujo, se não fujo de casa tinha sido estuprada pelo irmão dela, comecei a contar e ela disse que era mentira o irmão contou que era mentira.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vim morar no Treze, também em Lagarto com uma tia, Judite era irmã da minha avó Ilara, aí fiquei na casa da tia Judite, quando eu tinha uns 20 anos, Deus levou. E desta forma vim morar no São Bento, Salgado. Fiquei trabalhando de doméstica em Aracaju, mãe Luzia me deu um terreno, um chão de casa lá embaixo (no povoado), mas tio Joãozinho lá embaixo não dar certo e em conversa com os filhos me deu esse chão, onde construir minha casa, eu não os amigos, construir através de mutirão, muitas pessoas ajudaram, agradeço a Deus primeiramente e abençoe todas as pessoas que me ajudaram e ainda que vem me ajudando até com uma palavra.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">O Movimento</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha história com Movimento começa depois que estou aqui no São Bento. Foi através de Izaldira, ela me chamou pra cozinhar, eu e Marta, nesta etapa de cozinha então a Marta ficava brincando vai se aposentar como cozinheira, depois fui participando de outros momentos e foi uma superação, de cozinheira passei diretora, estou diretora do MMTR-NE pela segunda vez. Vim tendo espaço para contar histórias, comecei a escutar as outras e foi como uma terapia e fui superando principalmente medo de falar.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Muita coisa a gente que é agricultora precisa saber de tecnologia. Temos condições de mostrar que estamos aprendendo tudo. Apostar na nossa capacidade.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Quintal</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Meu quintalzinho de lado a minha roça é pouca, mas suficiente para mim, planto, minhas cebolinhas, meus coentrinhos, meus tomatinhos, aqui no quintalzinho. Meus chás de remédio. Também faço crochê.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha casa</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Era uma casinha pequena com um quarto e um banheiro. Cresci mais a casa, graças a Deus, mais um espaço, e meu quintalzinho que tem tudo.</p>
+
+  <p><strong>O que me motiva aqui é porque aqui é muito calmo, e gosto muito daqui, do meu território aqui. Acho calmo, gosto muito daqui."</strong></p>
+  `},
+  {
+    id: "4",
+    title: "Tem que ser mulher, mas tem que ser feminista-aprovada",
+    name: "Madalena Santana",
+    description: "Militante desde os 15 anos, assentada há 35 anos no Assentamento Vitória da União. Ajudou a criar o MST, CUT e MMTR-NE em Sergipe.",
+    slug: "madalena",
+    regionId: "GLO",
+    mediaUrl: "/images/stories/madalena.webp",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vamos conhecer Maria Madalena de Santana, 63 anos, nascida em Nossa Senhora da Glória, no sertão de Sergipe. Ela é assentada há 35 anos no Assentamento Vitória da União. Mergulhar um pouco na sua história é também mergulhar na memória das lutas de resistência e por direitos desde o período da redemocratização do país. Militante desde a adolescência, ela ajudou a criar os principais movimentos sociais no estado de Sergipe. Participando dos processos políticos ativamente, engajou-se na luta pela terra, onde passou de sem-terra à assentada.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Meu nome de guerra é Madalena Santana. Nasci no sertão de Sergipe, desse imenso nordeste belo, nos anos 60. E o que lembro dos anos 60 e 70, foi uma grande seca, lembro muito bem porque a minha mãe chorou muito, porque quase todos meus tios foram tudo embora para São Paulo e para o sul. E ficou só a gente, outros tios e as avós, que eram idosas. Meus pais eram trabalhadores rurais sem-terra. Quem nasce no sertão, já nasce com a disposição de lutar pela vida. Lutar pela vida e ir lutando também para melhorar as condições da vida. A gente morava em uma comunidade e lá éramos uns dos mais pobres, então existia toda essa carga de discriminação que até hoje existe. Éramos nove filhos, seis homens e três mulheres, sou a do meio, entre os nove e entre as mulheres."</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Hoje sou assentada no Assentamento Vitória da União há 35 anos, quando a gente criou o assentamento em 1990. Sou mãe de duas filhas, também militantes.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Meus pais eram trabalhadores rurais sem terra. Somos nove filhos. Meu irmão mais velho do que eu, morreu ainda pequeno. E meu outro irmão, Francisco, morreu já com oito, nove anos porque a gente não tinha acesso à saúde, não tinha água, não tinha nada. Então ficamos em sete irmãos. Foi daí que começamos a discutir e ver que o problema do sertão não era a seca, era a cerca.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Quando criança não estudei. Quando fui alfabetizada foi no Mobral (Movimento Brasileiro de Alfabetização) que hoje é equivalente ao EJA (Educação de Jovens e Adultos). Depois eu estudei na escola normal.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Meus dois irmãos mais velhos, não lembro da vivência de infância com eles, porque eles iam trabalhar com meu pai de alugado, que hoje chamam de diarista, eles que desbravaram as terras entre Nossa Senhora da Glória para Monte Alegre, para outro município distante, e ficaram lá a semana. Eles só vinham para casa no final de semana.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Início da militância nos anos 70</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Nos anos 70, a gente fazia parte do grupo de jovens ligados à igreja católica e como jovens fomos participar da luta da retomada de Santana dos Frades (Pacatuba-SE) e da resistência dos índios Xocós em Porto da Folha (SE). Começou lá.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Não tinha muita coisa na cabeça, mas eu só achava injusto o que estava acontecendo. E a gente fez muita campanha em Nossa Senhora da Glória para ajudar os posseiros e indígenas.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Naquele tempo, principalmente as meninas, sair era uma coisa brava. Mesmo assim a gente foi para essas lutas. Depois, já nos anos 80, já estava na luta pela redemocratização do país e a gente começou a participar de um monte de lutas.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A gente fez a oposição sindical no sindicato rural de Glória e ajudou a construir a CUT- Central Única dos Trabalhadores e o Partido dos Trabalhadores. O Movimento Sem Terra foi a gente que trouxe para Sergipe.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fizemos a primeira ocupação de terra em Barra da Onça, em Poço Redondo (SE) nos anos 80, e naquele corre-corre ia fazendo a luta também contra a Companhia de Saneamento de Sergipe (Deso) porque não tinha água. As pessoas pagavam, não tinha.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Assim passamos a viver vigiados. Na Barra da Onça, a gente só sai escondidos porque tinha muito jagunço atrás da gente também. E a luta foi acontecendo, os trabalhadoras/es foram entrando e discutindo e decidimos avançar para região Sul do estado que também tinham problemas como as/os catadoras/es de laranja, das crianças que quebraram pedra.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Aqui também existe a cerca, as pessoas eram exploradas porque eles não tinham terra.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Quem não tem terra não tem água.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu participei de todas as lutas, desde os meus 15 anos, inclusive de resistência à terra e de oposição de tudo. Era uma jovem e era menina, e tinha toda aquela carga de preconceito e o movimento veio me ajudar discutir e enfrentar esses preconceitos.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">As frentes de trabalho: emergências</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">As frentes de trabalho eram feitas nas fazendas dos fazendeiros, nas terras deles. Então, essa água quando chovia também era deles. E, naquela época, só os homens podiam se cadastrar para trabalhar, porque as mulheres não podiam. Segundo quem coordenava na época, diziam que as mulheres menstruavam e perdiam o dia de serviço. Então, a gente não tinha acesso a esse trabalho. Mas, a gente também já estava participando do sindicato rural e íamos para as barragens, de mulheres tinha eu e Lúcia que era minha cunhada fazer trabalho de base com as pessoas, falando sobre os direitos, o que estava errado, o que não estava e colocando o porquê daquela situação.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Movimento de Mulheres</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu e a companheira Yolanda, que ainda está lá em Nossa Senhora da Glória, tivemos o privilégio de ir para a primeira reunião na Paraíba de fundação e criação do MMTR Nordeste. Nunca me esqueço. Conheci Nazaré Flor e outras companheiras que já partiram também. E aí a gente começou a lutar.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Me achei enquanto mulher no MMTR, então esse é um movimento. E por ser do MMTR que, em 2017, tive o prazer e o privilégio de ir na caravana Lula pelo Brasil. Ele esteve aqui em Estância (SE) e representei as mulheres trabalhadoras rurais. Falei com o Lula, dei a bandeira do movimento para ele, porque tem muita assentada aqui, mas fui escolhida e me sinto privilegiada de falar com o Presidente Lula e dizer da importância do que foi e do que são as políticas públicas que o ele implantou nesse Brasil para as/os trabalhadoras/es de modo geral.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tem que ser mulher, mas tem que ser feminista</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha vida foi sempre marcada por grandes desafios, pela luta de se firmar enquanto mulher, enquanto trabalhadora e enquanto jovem porque ninguém acreditava e acredita na juventude. Eu era muito jovem, comecei com 15 anos a lutar e até hoje estou aqui na luta, vivendo.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Políticas públicas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Tenho duas filhas que hoje com as políticas públicas de acesso à educação e com todos os esforços que tivemos são formadas, uma em Direito e a outra em Assistência Social, para a gente é um orgulho ver essas meninas e outras meninas estudando e chegando lá. Fui abrindo espaços para outras e fui assumindo outras missões. Algumas infelizmente só acontece para as mulheres quando os filhos chegam.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Trabalho do Cuidado</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Agora é cuidar dos nossos pais. Já cuidaram da gente, a gente tem que cuidar dos pais. A mulher é sempre desafiada a tudo, é a grande criadora, a grande cuidadora da humanidade. Posso dizer porque cuido desde pequena, e quando chega mais pra frente vai ter que cuidar dos seus pais. Pra mim é um orgulho cuidar do meu pai.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Já éramos contra o uso de veneno, agora com mais consciência estamos entrando nessa linha da agroecologia e está legal a discussão com outras/os companheiras/os. Não são muitas ainda, mas vamos chegar lá. Eu acho que é por aí o caminho. Acho que a luta tem várias frentes e vários momentos e que a gente tem que estar em todas.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Mudanças</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Morar em Agrovila foi uma escolha por facilitar a organização social, inclusive das mulheres participarem. E facilita a chegada de energia, de água encanada. Na época isso era uma novidade, alguns não entenderam. Hoje é um espaço meio quadrado, que tem a intenção de fazer uma praça mais bela do que aqui já tem.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Assentamento como território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No início foi a luta pela nossa permanência no assentamento porque também os coronéis, os fazendeiros e a polícia lá do sertão também tinha aqui e também veio atrás da gente.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">E a gente conseguiu. Aqui não era nada. Hoje, essa beleza que é o assentamento e o Priapu têm mais de 100 famílias. Fomos os pioneiros aqui no estado, em vários pontos fomos os pioneiros a brigar por água, por qualidade de vida. Estamos lutando pra melhorar e pra se firmar aqui, nesse pedaço que eu digo que é meu.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Também, na área da agroecologia, temos uma boa reserva de mato. Mas ainda faltam muitas condições para avançar na produção. Tem várias frutas plantadas e juntos querendo entrar nessa linha. Então, a minha roça, tirando meu fundo de casa, ela tem uma diversidade muito grande de frutas. Tá uma beleza.</p>
+
+  <p><strong>Aqui é meu lugar, aqui é a minha vida, aqui foi que eu escolhi, eu escolhi vir para aqui, morar aqui, criar minhas filhas aqui e vou continuar aqui.</strong></p>
+  `},
+  // ------------------------------------------------------------------
+  {
+    id: "5",
+    title: "Venha o que vier, mas eu estou sempre sorrindo",
+    name: "Rosa",
+    description: "Doceira e agricultora de 58 anos, moradora do Assentamento Vitória da União. Mãe de três filhos, sempre sorridente e engajada no MMTR.",
+    slug: "rosa",
+    regionId: "GLO",
+    mediaUrl: "/images/stories/rosa.webp",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Nada é mais contagiante que um sorriso, nos faz bem encontrar pessoas felizes. Esse é o convite para conhecer um pedaço da história de vida de Rosa, ou Rosivania Farias, 58 anos, mãe de três filhos, duas netas, e dona de risadas soltas que contagia quem está ao redor. Doceira de mão cheia, nos conta que herdou o gosto pela cozinha de sua mãe, também excelente cozinheira, com especialidade para comidas típicas Alagoana. Hoje vive dividida entre Sergipe e Alagoas.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Rosa é uma pessoa amigueira, sorridente, rio com o vento. Adoro fazer amizade, conhecer pessoas, interagir. E estou sempre feliz. Venha o que vier, mas eu estou sempre sorrindo. E Tenho três filhos, o Jefferson foi o primeiro depois do Jefferson veio a Aline, depois o Jonathan, que é uma benção, ele é filho do coração. Mas que eu amo da mesma forma, não tem diferença. E são minhas três joias raras. E agora duas netas que Deus me deu de presente agora. A Alice e a Maya.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Sou agricultora e faço e vendo doces e salgados. Também vendo roupas, trabalho com vendas. E sempre estou buscando uma ajuda financeira, porque depois que a gente se aposenta é aquela quantia contada. E agradecer a Deus por ter. Mas a gente tem que sempre estar buscando, trabalhando para ter uma rendinha, não só depender daquele salariozinho."</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">MMTR</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Quando eu cheguei aqui, em Sergipe, que sou alagoana, mas nunca tinha participado de nada desses projetos. Quando cheguei aqui em Sergipe, conheci Madalena. E através de Madalena, foi que me engajei nesses projetos. Tive conhecimento do MMTR, comecei a participar de reuniões, viajar com elas, conhecer o dia-a-dia de outras pessoas fora. E assim fui me apegando a participar de todas as coisas que surgiam, que pudesse participar, estava presente. E me trouxe conhecimento enorme, eu achava que a mulher era só ser dona de casa, trabalhar, cozinhar, lavar, passar. E através do movimento eu tive outra visão da vida, que não só é isso, a mulher tem seus direitos, tem seus sonhos. E quando a gente busca, tem que batalhar para conseguir as coisas, realizar os sonhos. E através do MMTR a gente tem muitos conhecimentos, sabemos nossos direitos, os deveres. E assim, a cada dia, a cada encontro, a gente vai se aperfeiçoando, ganhando conhecimento. E foi assim que eu aprendi muitas coisas.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Uso tecnologia da comunicação</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">É importante as agricultoras aprenderem a usar as tecnologias porque facilita a vida. Como eu já falei, era difícil expor as coisas da agricultura, o que a gente vendesse, alguma coisa. E hoje em dia, com a tecnologia, as coisas ficam tudo mais fáceis. Você posta, divulga e vender os produtos.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção / Herança de mãe</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Estou trabalhando com doces, doces caseiros.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Aprendi a cozinhar, a culinária, com a minha mãe, porque ela cozinhava muito bem e eu peguei o gosto pela cozinha, porque eu estando dentro de uma cozinha, eu me realizo. Então, eu acho que foi isso, pelo gosto pela culinária da minha mãe.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Ela fazia muito bem, buchada, que é um prato típico lá de Alagoas, o povo gosta muito, e o doce de mamão com coco.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Assentamento</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Agora, no Assentamento Vitória da União, está com muito sol e as está plantações estão penando, no momento, tem fruteiras, abacate, laranja, mexerica, quando eu cheguei, aí só tinha, no local, tinha muitas acerolas, só que dono antigo, cortou. Aí a gente foi replantando, aí plantamos as fruteiras que tem hoje, pé de coco, coco d'água, e, como é, bananeira, e as outras coisas que já tinha, que era o abacateiro e o Genipapo.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vejo muitas melhoras, o calçamento, que facilitou a vida das pessoas, por não ter as estradas. Melhoraram muito. E cada dia, aos poucos, está melhorando.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Adaptações ao clima</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu vejo que as chuvas, principalmente esse ano, no tempo da plantação foi pouquinha, mas depois ela já chegou. Então, o tempo está mudando.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Divisão de tarefas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu faço tudo em casa, costumo fazer tudo. Os filhos só levantam, forram a cama e pronto. Mas as outras coisas eu tenho mania de fazer tudo só. Eu não gosto muito de botar eles para fazer, mas eles sabem como são os deveres deles e sempre que pode ajuda.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Venda no aplicativo</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Então, quero sim. Vou achar os meus produtos que eu estou vendendo agora, os meus doces gourmet. A comunidade já comprou, e gostam.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Ultimamente eu estou fazendo doce gourmet, que é o doce de leite saborizado com morango, ameixa, geleia de maracujá, geleia de abacaxi. Então, eu estou fazendo agora esses doces. São fáceis. Você faz o doce batido e depois você saboriza com a geleia.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Quando a gente vem para um lugar morar, que a gente encontra pessoas boas, encontrar amigas, fazer amizade. sempre tem aquela motivação de continuar naquele lugar, para crescer com aquelas pessoas, buscar sempre as melhoras para a nossa comunidade, participar das coisas, principalmente das coisas da igreja, das coisas que Deus nos propõe a cada dia, que é servir ao nosso próximo.</p>
+
+  <p><strong>E estar sempre engajada em todas as coisas que surgem, buscando dar o melhor para a nossa comunidade.</strong></p>
+  `},
+  // ------------------------------------------------------------------
+  {
+    id: "6",
+    title: "Me descobri a mulher que sou, me descobri como feminista",
+    name: "Alba Rafaela",
+    description: "Agroecóloga de 42 anos, moradora do Povoado Barro Vermelho em Nossa Senhora de Lourdes. Produtora de queijo artesanal e feminista.",
+    slug: "alba-rafaela",
+    regionId: "NLO",
+    mediaUrl: "/images/stories/alba.webp",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Filha do semiárido e moradora do povoado Barro Vermelho, no Alto Sertão sergipano. Nasceu e cresceu na comunidade, onde viveu sua infância inteira e começou, ainda aos 12 anos, a trabalhar na roça junto à família.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Meu nome é Alba Rafaela de Andrade, tenho 42 anos solteiros, sou do município de Nossa Senhora de Lourdes, no Alto Sertão sergipano. Nasci e cresci nesse lugar. Vivi toda minha infância aqui, sempre muito ligada à roça e ao trabalho da terra.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na minha família, a gente cultivava em um sistema parecido com agrofloresta, onde tudo era cultivado no mesmo espaço, feijão, milho, abóbora, quiabo, macaxeira. Todo esse cultivo era para o nosso próprio sustento. Aos 30 anos, eu saí da comunidade para morar na capital, buscando estudo. Fiz faculdade de Agroecologia no Instituto Federal de Sergipe. Foram quatro anos de estudo e mais um tempo de trabalho na capital, embora não tenha trabalhado diretamente na área. Há cerca de seis meses, retornei para o campo, para meu município, onde trabalho na agroecologia e também na produção de queijo artesanal, um trabalho feito em família."</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha chegada ao MMTR</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Entrei no MMTR através de Gisélia, que conheci em um encontro da ASA. Foi ela quem me apresentou ao movimento. Desde 2010 participo dos espaços do MMTR. O movimento foi transformador na minha vida, me mostrou caminhos que eu não conhecia, me fez descobrir a mulher que eu sou e me descobrir como feminista. Para outras mulheres também é muito importante, porque ajuda a revelar nossa capacidade, dentro e fora de casa, e a importância da nossa liberdade e autonomia.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">A importância das tecnologias para nós, mulheres agricultoras</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Hoje, a tecnologia é essencial. Ela facilita divulgar nossos produtos, falar com familiares distantes, aprender coisas novas, acessar direitos e oportunidades. Mas também é importante saber usar, ter limite e usar a tecnologia ao nosso favor.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Sobre o aplicativo que o MMTR está lançando junto com o Intervozes, acredito que ele vai ajudar muito as mulheres a conhecerem melhor as ferramentas, divulgar sua produção e enxergar a tecnologia como algo que pode fortalecer nosso trabalho e nossa autonomia.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No meu dia a dia uso WhatsApp, Instagram, Gmail, aplicativos de banco, sites de compras e outros que facilitam a rotina. Eu gosto muito de ler livros, não online. Para estudar, prefiro o livro físico. Pelo celular, gosto de assistir vídeos, ouvir coisas, usar aplicativos.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Nossa maior renda é o leite, criamos galinhas para consumo e venda de ovos. Não participamos atualmente de feiras, mas já vendemos produtos no PNAE anos atrás. Os queijos são vendidos por encomenda, na porta de casa ou para atravessadores. Temos sementes de abobora, fava e feijão de corda.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Terra, sementes, água e mudanças climáticas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A terra onde vivemos veio de herança. São cerca de 30 tarefas que eram usadas mais para o gado, e a roça nós fazíamos em terras de um fazendeiro, em troca de plantar palma para ele. Depois minha irmã comprou um terreno maior e a partir dai começamos produzir na nossa própria terra.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">O território como um todo melhorou muito. Hoje é um território forte na bacia leiteira na agricultura. Quase todo mundo tem um pedacinho de terra e uma vaquinha. O lado negativo é a monocultura do milho, que tomou conta e devastou a caatinga. Antes tinha diversidade de plantas e animais silvestre, hoje, o solo estar descoberto, muito uso de adubo químico que acaba prejudicando um todo.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A maioria das sementes a gente acabou perdendo principalmente o milho crioulo hoje a gente pega com vizinho, ou com minha tia, mais hoje plantamos pouco, atualmente estamos comprando milho para ração animal porque vimos que comprar sai mais em conta o custo é menor pra produzir hoje o milho é necessário alto investimento. O que mantemos mais é a semente da palma. A água chega encanada, vinda do Rio São Francisco. Para os animais usamos água de chuva guardada em barreiros. Temos cisterna e, quando necessário, também dependemos de carro-pipa. O clima mudou muito. Há anos de muita chuva e anos de pouca. Este ano choveu até setembro, o que é raro no semiárido.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Divisão de tarefas</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na nossa família somos três mulheres e um homem. Meu irmão é agente de saúde e mora em outro povoado, mas vem para tirar o leite. Depois disso, todo o trabalho na produção é feito por nós, as três mulheres. Minhas irmãs Renata e Rosimeire cuidam dos animais e da produção do leite. Eu fico mais com os cuidados da casa e do quintal. A produção do queijo começou por iniciativa da minha irmã mais velha, Rosimeire. Antes, a gente só vendia o leite. Ela decidiu começar a produzir o queijo para agregar valor ao produto, e deu certo. Minha irmã também cuida da roça e dos animais. Eu e minha irmã mais nova cuidamos da casa, limpar, cozinhar e ela também faz o queijo e administra a propriedade junto com minha irmã mais velha. Eu sou a única que não faço queijo, mas eu sei fazer, só não faço no momento. No meu caso, sou mais do cuidado com os afazeres de casa lavar cozinhar. Todas nós trabalhamos cerca de 10 horas por dia das cinco da manhã ate a cinco da tarde.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">O que me motiva é a família e o desejo de produzir alimentos orgânicos, oferecer comida de qualidade para as pessoas, especialmente para quem enfrenta problemas de saúde, pois a nossa alimentação é a nossa base para uma vida saudável. Também tenho o sonho de trabalhar com turismo rural.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">São ideias que precisam de estrutura e apoio, mas que guardo com carinho.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No momento estou no interior também porque estou desempregada. Se surgir uma boa oportunidade de trabalho fora, posso sair de novo, porém enquanto estou lá, sigo acreditando no potencial do território, da agroecologia e nas possibilidades que ainda posso construir no campo.</p>
+  `},
+  // ------------------------------------------------------------------
+  {
+    id: "7",
+    title: "Aprendi a correr atrás dos meus objetivos, dos meus direitos",
+    name: "Edna Rodrigues",
+    description: "Trabalhadora rural e feirante de 45 anos, moradora da comunidade São Bento em Salgado. Aprendeu a lutar pelos seus direitos no MMTR.",
+    slug: "edna-rodrigues",
+    regionId: "SAL",
+    mediaUrl: "/images/stories/edna.webp",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Trabalhadora rural e feirante, Edna Rodrigues dos Santos Celestino, 45 anos, natural de Salgado. Cresceu e se desenvolveu na luta. Correu atrás dos seus objetivos e dos seus direitos. Mora na comunidade São Bento, município de Salgado.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"E hoje tô aqui. Aprendi a ser feirante. A necessidade ensina a gente, e eu aprendi."</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu também me encontrei na cozinha. Gosto de cozinhar. É uma das partes que mais gosto. Eu amo estar no forno, boto meu som e fico assando os produtos que vendo na feira.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Sou uma trabalhadora rural, não tive infância quando era criança. Minha infância foi na roça."</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Filha mais velha de uma família de cinco irmãos. Seus pais são assentados da reforma agrária em Santa Luzia do Itanhy. Quando meu pai saiu de casa na luta, em busca de terra, foi a parte mais sofrida, vi minha mãe chorar. Chorava porque meu pai ganhou o mundo e ficou sozinha com três filhas. Depois que tomou posse da terra, voltou para buscar a gente.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Quando eu cheguei aqui com nove anos, não tive infância. Era só na roça. Da roça para casa, de casa para a beira do rio, lavar e pescar para comer."</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vi o assentamento (onde meus pais moram) se transformar. Ainda criança, teve uma época que a associação construiu uma horta comunitária e eu era responsável pelas crianças do assentamento para as mães trabalharem. As mulheres se revezavam, cada uma era responsável pelo almoço do dia. Eu também trabalhei em uma roça de fumo que meu pai fez, e foi um período complicado, meu pai foi mordido de cobra e hospitalizado.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na adolescência e juventude jogava bola, mas meu pai era contra, dizia que bola era para homem. Eu e minhas irmãs saíamos escondidas, ele sempre descobria, mas nunca nos bateu.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Namorei, noivei e casei</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Antes de casar, passei cinco meses no Rio de Janeiro, "saí daqui em busca de uma vida melhor, que foi só ilusão. Sabe aquela história quando você sai achando que você vai encontrar um rio de leite e você não acha nada? Foi só ilusão." Quando retornei do Rio de Janeiro casei, construí uma família e fui embora do assentamento, voltei para o São Bento, Salgado.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Tenho duas filhas, uma de 23 anos, casada e fazendo faculdade física, e outra de 17 que ainda estuda e mora comigo. Em casa divido as tarefas por três: eu, a filha e o marido. Quando ele tá em casa, tem que fazer, senão, a gente deixa a parte dele.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Autonomia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Comecei a participar do movimento através de uma amiga. Ela chegou em casa e disse: "Vamos para reunião do movimento?". Eu pensei: vou sair de casa, nem que seja um dia. Fui, gostei e comecei a participar dos eventos. Através do movimento fui para Caruaru e Recife (PE), fui para Salvador e Juazeiro (BA) e para Brasília, tudo através do movimento.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No movimento eu aprendi a ter autonomia. Eu achava que a gente tinha que ser submissa ao marido, apesar de o meu nunca ter reclamado nem me proibido de fazer nada. O movimento é importante para mim porque até hoje eu faço parte e sigo aprendendo cada vez mais.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Participar da Marcha das Margaridas foi muito emocionante para mim. Eu nunca tinha ido, sempre tinha vontade, mas nunca dava certo. Antes eu não participava por causa do medo. No ano em que eu fui para marcha eu pedi muito a Deus para não ter problema com a asma. Eu tinha medo de ter uma crise no meio do caminho e dar trabalho às companheiras. Mas naquele ano foi diferente. Foi um ano em que eu me emocionei demais. Foi a primeira vez que viajei para Brasília, eu nunca tinha ido tão longe. Caminhar todo aquele percurso, naquele mundão de gente, foi uma emoção tão grande que eu nem senti o peso da caminhada. Eu não senti cansaço, só alegria de estar ali, fazendo parte da luta. Foi uma emoção grande caminhar junto daquelas mulheres. A gente chegou até o Palácio, e ver aquele monte de mulher marchando, todas na mesma luta, foi emocionante mesmo.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Me ajuda a divulgar meus produtos, a ter notícias da família, participar de reuniões, a acessar as coisas do banco. Em minha casa uso wifi, ajuda muito.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Bolo de macaxeira, bolo de puba, tapioca, maracujá, laranja, couve, milho e amendoim, vendo boa parte da produção na feira da cidade. Já vendi também para o PNAE.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha roça fica no fundo da minha casa, onde moro. Antigamente era cheio de mato, e hoje é a terra onde produzo meus alimentos. Grande parte das sementes que uso eu ganho, e guardo também, fava, feijão de corda, milho e amendoim. Uso a água da chuva para regar minha plantação. Antes na comunidade não tinha água, a gente pegava de carroça, agora passa água da Iguá, tem a casa de farinha que voltou a funcionar, onde também aprendi a trabalhar, além da roça e da feira.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Antigamente o pessoal era mais unido. Hoje, a convivência já não é a mesma, com a política, o povo se dividiu. A maioria não tá mais naquela união que tinha antes.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6"><strong>Confesso que, se tivesse a oportunidade, voltaria para o assentamento onde meus pais moram.</strong></p>
   `},
 ];
 
