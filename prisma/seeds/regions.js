@@ -5,6 +5,7 @@ const { PrismaClient } = pkg;
 const categoriesData = [
   { id: 'ARA', name: 'Aracaju' },
   { id: 'SAL', name: 'Salgado' },
+  { id: 'GLO', name: 'Nossa Senhora da Glória' },
 ];
 
 export async function seedRegions(prisma) {
