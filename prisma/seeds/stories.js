@@ -314,7 +314,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description: "Trabalhadora rural e feirante de 45 anos, moradora da comunidade São Bento em Salgado. Aprendeu a lutar pelos seus direitos no MMTR.",
     slug: "edna-rodrigues",
     regionId: "SAL",
-    mediaUrl: "/images/stories/edna.png",
+    mediaUrl: "/images/stories/edna.webp",
     content: `
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Trabalhadora rural e feirante, Edna Rodrigues dos Santos Celestino, 45 anos, natural de Salgado. Cresceu e se desenvolveu na luta. Correu atrás dos seus objetivos e dos seus direitos. Mora na comunidade São Bento, município de Salgado.</p>
 
