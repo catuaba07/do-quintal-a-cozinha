@@ -306,6 +306,49 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
   <p class="text-lg leading-relaxed text-gray-800 mb-6">São ideias que precisam de estrutura e apoio, mas que guardo com carinho.</p>
   <p class="text-lg leading-relaxed text-gray-800 mb-6">No momento estou no interior também porque estou desempregada. Se surgir uma boa oportunidade de trabalho fora, posso sair de novo, porém enquanto estou lá, sigo acreditando no potencial do território, da agroecologia e nas possibilidades que ainda posso construir no campo.</p>
   `},
+  // ------------------------------------------------------------------
+  {
+    id: "7",
+    title: "Aprendi a correr atrás dos meus objetivos, dos meus direitos",
+    name: "Edna Rodrigues",
+    description: "Trabalhadora rural e feirante de 45 anos, moradora da comunidade São Bento em Salgado. Aprendeu a lutar pelos seus direitos no MMTR.",
+    slug: "edna-rodrigues",
+    regionId: "SAL",
+    mediaUrl: "/images/stories/edna.png",
+    content: `
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Trabalhadora rural e feirante, Edna Rodrigues dos Santos Celestino, 45 anos, natural de Salgado. Cresceu e se desenvolveu na luta. Correu atrás dos seus objetivos e dos seus direitos. Mora na comunidade São Bento, município de Salgado.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"E hoje tô aqui. Aprendi a ser feirante. A necessidade ensina a gente, e eu aprendi."</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Eu também me encontrei na cozinha. Gosto de cozinhar. É uma das partes que mais gosto. Eu amo estar no forno, boto meu som e fico assando os produtos que vendo na feira.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Sou uma trabalhadora rural, não tive infância quando era criança. Minha infância foi na roça."</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Filha mais velha de uma família de cinco irmãos. Seus pais são assentados da reforma agrária em Santa Luzia do Itanhy. Quando meu pai saiu de casa na luta, em busca de terra, foi a parte mais sofrida, vi minha mãe chorar. Chorava porque meu pai ganhou o mundo e ficou sozinha com três filhas. Depois que tomou posse da terra, voltou para buscar a gente.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Quando eu cheguei aqui com nove anos, não tive infância. Era só na roça. Da roça para casa, de casa para a beira do rio, lavar e pescar para comer."</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vi o assentamento (onde meus pais moram) se transformar. Ainda criança, teve uma época que a associação construiu uma horta comunitária e eu era responsável pelas crianças do assentamento para as mães trabalharem. As mulheres se revezavam, cada uma era responsável pelo almoço do dia. Eu também trabalhei em uma roça de fumo que meu pai fez, e foi um período complicado, meu pai foi mordido de cobra e hospitalizado.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Na adolescência e juventude jogava bola, mas meu pai era contra, dizia que bola era para homem. Eu e minhas irmãs saíamos escondidas, ele sempre descobria, mas nunca nos bateu.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Namorei, noivei e casei</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Antes de casar, passei cinco meses no Rio de Janeiro, "saí daqui em busca de uma vida melhor, que foi só ilusão. Sabe aquela história quando você sai achando que você vai encontrar um rio de leite e você não acha nada? Foi só ilusão." Quando retornei do Rio de Janeiro casei, construí uma família e fui embora do assentamento, voltei para o São Bento, Salgado.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Tenho duas filhas, uma de 23 anos, casada e fazendo faculdade física, e outra de 17 que ainda estuda e mora comigo. Em casa divido as tarefas por três: eu, a filha e o marido. Quando ele tá em casa, tem que fazer, senão, a gente deixa a parte dele.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Autonomia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Comecei a participar do movimento através de uma amiga. Ela chegou em casa e disse: "Vamos para reunião do movimento?". Eu pensei: vou sair de casa, nem que seja um dia. Fui, gostei e comecei a participar dos eventos. Através do movimento fui para Caruaru e Recife (PE), fui para Salvador e Juazeiro (BA) e para Brasília, tudo através do movimento.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">No movimento eu aprendi a ter autonomia. Eu achava que a gente tinha que ser submissa ao marido, apesar de o meu nunca ter reclamado nem me proibido de fazer nada. O movimento é importante para mim porque até hoje eu faço parte e sigo aprendendo cada vez mais.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Participar da Marcha das Margaridas foi muito emocionante para mim. Eu nunca tinha ido, sempre tinha vontade, mas nunca dava certo. Antes eu não participava por causa do medo. No ano em que eu fui para marcha eu pedi muito a Deus para não ter problema com a asma. Eu tinha medo de ter uma crise no meio do caminho e dar trabalho às companheiras. Mas naquele ano foi diferente. Foi um ano em que eu me emocionei demais. Foi a primeira vez que viajei para Brasília, eu nunca tinha ido tão longe. Caminhar todo aquele percurso, naquele mundão de gente, foi uma emoção tão grande que eu nem senti o peso da caminhada. Eu não senti cansaço, só alegria de estar ali, fazendo parte da luta. Foi uma emoção grande caminhar junto daquelas mulheres. A gente chegou até o Palácio, e ver aquele monte de mulher marchando, todas na mesma luta, foi emocionante mesmo.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Me ajuda a divulgar meus produtos, a ter notícias da família, participar de reuniões, a acessar as coisas do banco. Em minha casa uso wifi, ajuda muito.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Produção</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Bolo de macaxeira, bolo de puba, tapioca, maracujá, laranja, couve, milho e amendoim, vendo boa parte da produção na feira da cidade. Já vendi também para o PNAE.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Território</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha roça fica no fundo da minha casa, onde moro. Antigamente era cheio de mato, e hoje é a terra onde produzo meus alimentos. Grande parte das sementes que uso eu ganho, e guardo também, fava, feijão de corda, milho e amendoim. Uso a água da chuva para regar minha plantação. Antes na comunidade não tinha água, a gente pegava de carroça, agora passa água da Iguá, tem a casa de farinha que voltou a funcionar, onde também aprendi a trabalhar, além da roça e da feira.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Antigamente o pessoal era mais unido. Hoje, a convivência já não é a mesma, com a política, o povo se dividiu. A maioria não tá mais naquela união que tinha antes.</p>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6"><strong>Confesso que, se tivesse a oportunidade, voltaria para o assentamento onde meus pais moram.</strong></p>
+  `},
 ];
 
   export async function seedStories(prisma) {
