@@ -274,7 +274,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description: "Agroecóloga de 42 anos, moradora do Povoado Barro Vermelho em Nossa Senhora de Lourdes. Produtora de queijo artesanal e feminista.",
     slug: "alba-rafaela",
     regionId: "NLO",
-    mediaUrl: "/images/stories/alba.png",
+    mediaUrl: "/images/stories/alba.webp",
     content: `
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Filha do semiárido e moradora do povoado Barro Vermelho, no Alto Sertão sergipano. Nasceu e cresceu na comunidade, onde viveu sua infância inteira e começou, ainda aos 12 anos, a trabalhar na roça junto à família.</p>
 
