@@ -11,7 +11,7 @@ export const storiesData = [
       "Artesã, agricultora e matriarca da família que vive em Mattas. Segue com a lida e sua vida, sendo inspiração para muitas gerações.",
     slug: "raimunda",
     regionId: "ARA",
-    mediaUrl: "/images/stories/raimunda.png",
+    mediaUrl: "/images/stories/raimunda.webp",
     content:`
   <p>Quer inspiração? Então vamos conhecer um pouquinho da história de Raimunda Raquel da Cruz, 82 anos, mulher branca, moradora do povoado Matatas em Salgado (SE). Ela nos inspira pela simplicidade de enxergar a vida e as dificuldades que acreditamos difíceis de transpor. Não existem obstáculos para sua ocupação nos espaços, seja pela falta de leitura ou condição geracional. Sem ter frequentado escola formal, nos dar aula de sabedoria e nos inspira a superar nossas dificuldades. Onde tem marchas e atividade sempre está presente. Por isso, o aplicativo “Do quintal a cozinha” está  “femenageando” dando nome ao nosso chatbot de <strong>Dona Raimunda</strong>, facilitando a acessibilidade às nossas conversas.</p>
 
@@ -53,7 +53,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description:"Mulher negra, agricultora não assentada, moradora há mais de 30 anos do Assentamento.",
     slug: "silvia-helena",
     regionId: "ARA",
-    mediaUrl: "/images/stories/dita.jpg",
+    mediaUrl: "/images/stories/dita.webp",
     content:`
   <p class="text-lg leading-relaxed text-gray-800 mb-6>Vamos conhecer a história de vida de Silvia Helena, 56 anos, ou Dita como é conhecida, mulher negra moradora há mais de 30 do Assentamento Vitória da União, no município de Santa Luzia do Itanhy (SE). Arupemba Dita é agricultora não assentada, fez sua vida trabalhando na terra de sua mãe e irmãos assentados, passou por uma infância difícil e a superação veio na conquista de sua autonomia. Ela nos conta com orgulho tudo que conquistou com a organização coletiva.
   Sócia e militante do MMTR-SE, ela ocupa a  diretoria da Associação do seu  Assentamento.
@@ -111,7 +111,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description: "Benzedeira e trabalhadora rural, moradora do Povoado São Bento em Salgado (SE). Diretora do MMTR-NE.",
     slug: "ivanilde",
     regionId: "SAL",
-    mediaUrl: "/images/stories/ivanilde.png",
+    mediaUrl: "/images/stories/ivanilde.webp",
     content:`
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Ivanilde Maria de Souza, 61 anos. Mulher negra, moradora do Povoado São Bento, estrada do Riacho Seco em Salgado (SE). Dona de uma história com tantas perdas familiares desde a partida de sua mãe ainda criança, encontrou acolhimento e junto a sua comunidade ajudou com sua herança de benzedeira e construiu sua família.</p>
 
@@ -154,7 +154,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description: "Militante desde os 15 anos, assentada há 35 anos no Assentamento Vitória da União. Ajudou a criar o MST, CUT e MMTR-NE em Sergipe.",
     slug: "madalena",
     regionId: "GLO",
-    mediaUrl: "/images/stories/madalena.png",
+    mediaUrl: "/images/stories/madalena.webp",
     content: `
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Vamos conhecer Maria Madalena de Santana, 63 anos, nascida em Nossa Senhora da Glória, no sertão de Sergipe. Ela é assentada há 35 anos no Assentamento Vitória da União. Mergulhar um pouco na sua história é também mergulhar na memória das lutas de resistência e por direitos desde o período da redemocratização do país. Militante desde a adolescência, ela ajudou a criar os principais movimentos sociais no estado de Sergipe. Participando dos processos políticos ativamente, engajou-se na luta pela terra, onde passou de sem-terra à assentada.</p>
 
@@ -228,7 +228,7 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
     description: "Doceira e agricultora de 58 anos, moradora do Assentamento Vitória da União. Mãe de três filhos, sempre sorridente e engajada no MMTR.",
     slug: "rosa",
     regionId: "GLO",
-    mediaUrl: "/images/stories/rosa.png",
+    mediaUrl: "/images/stories/rosa.webp",
     content: `
   <p class="text-lg leading-relaxed text-gray-800 mb-6">Nada é mais contagiante que um sorriso, nos faz bem encontrar pessoas felizes. Esse é o convite para conhecer um pedaço da história de vida de Rosa, ou Rosivania Farias, 58 anos, mãe de três filhos, duas netas, e dona de risadas soltas que contagia quem está ao redor. Doceira de mão cheia, nos conta que herdou o gosto pela cozinha de sua mãe, também excelente cozinheira, com especialidade para comidas típicas Alagoana. Hoje vive dividida entre Sergipe e Alagoas.</p>
 
