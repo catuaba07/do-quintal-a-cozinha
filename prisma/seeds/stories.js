@@ -103,6 +103,48 @@ Meu sítio  fica aqui mesmo, na Matatas. Quando eu comprei, só era terra. Mas a
   <p><strong>Aqui é um lugar bom de se morar. Eu gosto daqui. Eu não penso em sair daqui de forma nenhuma. </strong></p>
 
   `},
+  // ------------------------------------------------------------------
+  {
+    id: "3",
+    title: "Sou benzedeira, minha avó me ensinou",
+    name: "Ivanilde",
+    description: "Ivanilde Maria de Souza, 61 anos. Mulher negra, moradora do Povoado São Bento, estrada do Riacho Seco em Salgado (SE). Dona de uma história com tantas perdas familiares desde a partida de sua mãe ainda criança, encontrou acolhimento e junto a sua comunidade ajudou com sua herança de benzedeira e construiu sua família.",
+    slug: "ivanilde",
+    regionId: "SAL",
+    mediaUrl: "/images/stories/ivanilde.png",
+    content:`
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">"Sou uma trabalhadora rural. Não tenho terra, mas eu tenho meu quintalzinho aqui, trabalho no meu quintal. Me aposentei como trabalhadora rural. Sou benzedeira, minha avó me ensinou a rezar, ela rezava e fui aprendendo. Participo de vários grupos, da associação, da igreja, da Mãe Rainha. E atualmente sou diretora do MMTR-Ne, esse meu segundo mandato.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha infância</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">A minha história é muito sofrida, mas superei. Eu nasci num lugar chamado Pé da Preta em Lagarto (SE). Desse lugar do Pé da Preta, saí de lá na faixa dos dois anos e sete meses. Vim pra um lugar chamado Teiú, lá comecei a me criar. Nesse Teiú a gente viveu na fome. Não tinha o que comer. Pra gente comer, ia pra o riacho que chamava Alvoroço pescar. E pegava os peixes, milho, torrava e fazia farinha, fubá, para comer com os peixes.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Depois, com dois anos minha mãe engravidou de novo. Dessa gravidez, ela passou muito tempo doente, durante a gravidez. Não tinha médico nessa época. E ela teve uma menina. No parto ficou mais mal ainda que não despachou. A parteira não teve como despachar. Não conseguia. Meu avô, pai de meu pai, morava em Riachão do Dantas, e de lá, ele soube e pegou e veio buscar ela. E levou ela pra Riachão. Ela e minha irmã.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha avó quando soube mandou vir buscar a gente. Quando chegou lá em Riachão, minha irmã só passou dois dias de nascida. Aí, a gente veio-se embora, junto com a minha avó, que se chamava Ilara, que é a mãe que eu conheci. Eu e meu irmão Rael que ficou se arrastando. Quando mãe foi liberada pra vir pra casa, viemos. Mãe chegou, como hoje, no Teiú, com três dias, piorou. Eu ia fazer três anos, mas lembro desse dia. Eu estava tomando banho no riacho Alvoroço, que passava na frente de minha casa, e o povo lá, lutando com ela, depois, chegou uma pessoa e me pegou. Minha filha, vamos pra cá. Quando chegou lá dentro, a mãe me pediu um beijo. Minha avó, a mãe do meu pai, que me falou tudinho isso. Aí, me pegaram e me baixaram perto dela e dei um beijo. Aí, ali mesmo, foi a despedida. Deus levou ela.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fiquei morando com minha avó, a mãe do meu pai, Ilara. Meu pai não vinha quase em casa ver a gente. Pai não queria que eu estudasse. Não era pra estudar, mãe (avó) dizia, enquanto eu estiver viva, eles vão estudar. Só depois que eu morrer agora, aí você pode fazer o que você quiser com seus filhos, que eu não vou estar, é seu. Aí, continuo estudando no Tanque. Depois do Tanque, minha mãe (avó) adoeceu e faleceu.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Adolescência</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Fui morar no Açu (Lagarto) com meu pai e a madrasta, estava casado com uma mulher chamada Zefa. Foi aí que começou meu inferno, era explorada, tudo que fazia reclamava. Pra roça não prestava, pra dentro de casa não prestava. Era escrava. Tiveram dez filhos e os dez filhos foram todos eu que criei. Trabalhava, mas não pegava o dinheiro. Quem pegava o dinheiro era ela.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">E a roupa era duas roupas, uma no couro e uma no arame. Pra de tardezinha tirar aquela do arame e tomar banho e vestir. Para resumir, depois de uma briga feia com ela e meu pai ficou do lado dela, fugir, mas se não fujo, se não fujo de casa tinha sido estuprada pelo irmão dela, comecei a contar e ela disse que era mentira o irmão contou que era mentira.</p>
+
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Vim morar no Treze, também em Lagarto com uma tia, Judite era irmã da minha avó Ilara, aí fiquei na casa da tia Judite, quando eu tinha uns 20 anos, Deus levou. E desta forma vim morar no São Bento, Salgado. Fiquei trabalhando de doméstica em Aracaju, mãe Luzia me deu um terreno, um chão de casa lá embaixo (no povoado), mas tio Joãozinho lá embaixo não dar certo e em conversa com os filhos me deu esse chão, onde construir minha casa, eu não os amigos, construir através de mutirão, muitas pessoas ajudaram, agradeço a Deus primeiramente e abençoe todas as pessoas que me ajudaram e ainda que vem me ajudando até com uma palavra.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">O Movimento</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Minha história com Movimento começa depois que estou aqui no São Bento. Foi através de Izaldira, ela me chamou pra cozinhar, eu e Marta, nesta etapa de cozinha então a Marta ficava brincando vai se aposentar como cozinheira, depois fui participando de outros momentos e foi uma superação, de cozinheira passei diretora, estou diretora do MMTR-NE pela segunda vez. Vim tendo espaço para contar histórias, comecei a escutar as outras e foi como uma terapia e fui superando principalmente medo de falar.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Tecnologia</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Muita coisa a gente que é agricultora precisa saber de tecnologia. Temos condições de mostrar que estamos aprendendo tudo. Apostar na nossa capacidade.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Quintal</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Meu quintalzinho de lado a minha roça é pouca, mas suficiente para mim, planto, minhas cebolinhas, meus coentrinhos, meus tomatinhos, aqui no quintalzinho. Meus chás de remédio. Também faço crochê.</p>
+
+  <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Minha casa</h2>
+  <p class="text-lg leading-relaxed text-gray-800 mb-6">Era uma casinha pequena com um quarto e um banheiro. Cresci mais a casa, graças a Deus, mais um espaço, e meu quintalzinho que tem tudo.</p>
+
+  <p><strong>O que me motiva aqui é porque aqui é muito calmo, e gosto muito daqui, do meu território aqui. Acho calmo, gosto muito daqui."</strong></p>
+  `},
 ];
 
   export async function seedStories(prisma) {
