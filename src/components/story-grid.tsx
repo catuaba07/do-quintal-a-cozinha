@@ -18,7 +18,7 @@ export function StoryGrid({ stories, isLoading }: StoryGridProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Array.from({ length: 3 }).map((_, index) => (
             <Card key={index} className="overflow-hidden h-full">
-              <div className="relative h-48">
+              <div className="relative aspect-[3/4]">
                 <Skeleton className="w-full h-full" />
               </div>
 

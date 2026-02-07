@@ -14,7 +14,7 @@ export function StoryCard({ story }: StoryCardProps) {
       href={`/nossas-historias/${story.slug}`}
       imageUrl={story.media[0]?.media.url || PLACEHOLDER_IMAGE}
       imageAlt={`Foto de ${story.name}`}
-      imageHeight="fixed"
+      imageHeight="portrait"
     >
       <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
         {story.name}
