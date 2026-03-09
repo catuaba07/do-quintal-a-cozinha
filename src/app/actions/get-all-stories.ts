@@ -25,6 +25,7 @@ export async function getAllStories(options?: Options) {
     return await prisma.story.findMany({
         select: {
             id: true,
+            title: true,
             name: true,
             description: true,
             slug: true,
