@@ -12,19 +12,12 @@ import { prisma } from "@/lib/prisma";
  */
 
 interface Options {
-  search?: string;
   tags?: string[];
   profileId?: string;
 }
 
 export async function getAllRecipes(options?: Options) {
   const where: any = {};
-
-  if (options?.search) {
-    where.title = {
-      contains: options.search,
-    };
-  }
 
   // Select only fields needed for list view (no ingredients/steps for better performance)
   return await prisma.recipe.findMany({
