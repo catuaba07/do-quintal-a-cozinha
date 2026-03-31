@@ -22,13 +22,6 @@ export function StoryCard({ story }: StoryCardProps) {
       <p className="text-muted-foreground text-sm mb-4 leading-relaxed line-clamp-2 flex-1">
         {story.description}
       </p>
-
-      {story.region && (
-        <div className="flex items-center gap-1 text-xs text-muted-foreground">
-          <MapPin className="h-3 w-3" />
-          <span>{story.region.name}</span>
-        </div>
-      )}
     </GridCard>
   );
 }

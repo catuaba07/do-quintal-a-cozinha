@@ -84,13 +84,6 @@ export default function StoryDetail({ story, isLoading }: StoryDetailProps) {
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               {story.description}
             </p>
-
-            {story.region && (
-              <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>{story.region.name}</span>
-              </div>
-            )}
           </div>
 
           {images.length > 0 && (
