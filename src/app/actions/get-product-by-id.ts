@@ -19,6 +19,7 @@ export async function getProductById(options: Options) {
       description: true,
       price: true,
       category: true,
+      profile_id: true,
       profile: {
         select: {
           name: true,
