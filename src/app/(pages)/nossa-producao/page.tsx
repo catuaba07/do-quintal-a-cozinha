@@ -8,6 +8,8 @@ import { useFuzzySearch } from "@/hooks/use-fuzzy-search";
 import { ProductGrid } from "@/components/product-grid";
 import { PageHeader } from "@/components/page-header";
 import { SearchBar } from "@/components/search-bar";
+import { CategoryFilter } from "@/components/category-filter";
+import { PRODUCT_CATEGORIES } from "@/config/categories";
 import type { Product } from "@/types/product";
 
 const PRODUCT_FUSE_OPTIONS: IFuseOptions<Product> = {
@@ -21,7 +23,10 @@ const PRODUCT_FUSE_OPTIONS: IFuseOptions<Product> = {
 
 export default function Page() {
   const [search, setSearch] = useState("");
-  const { data, isLoading } = useGetAllProducts({});
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const { data, isLoading } = useGetAllProducts({
+    categories: selectedCategories.length > 0 ? selectedCategories : undefined,
+  });
 
   const filtered = useFuzzySearch(data, search, PRODUCT_FUSE_OPTIONS);
 
@@ -37,6 +42,11 @@ export default function Page() {
             value={search}
             onSubmit={setSearch}
             placeholder="Buscar produtos..."
+          />
+          <CategoryFilter
+            options={PRODUCT_CATEGORIES}
+            value={selectedCategories}
+            onChange={setSelectedCategories}
           />
           <ProductGrid products={filtered} isLoading={isLoading} />
         </div>
