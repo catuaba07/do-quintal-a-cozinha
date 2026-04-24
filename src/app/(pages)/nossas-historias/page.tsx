@@ -1,7 +1,7 @@
 "use client";
 
 import { useGetAllStories } from "@/hooks/use-get-all-stories";
-import { StoryGrid } from "@/components/story-grid";
+import { StoryGrid } from "@/components/modules/story/story-grid";
 
 export default function StoriesPage() {
   const { data: stories, isLoading } = useGetAllStories();

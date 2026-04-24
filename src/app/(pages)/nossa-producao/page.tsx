@@ -4,8 +4,8 @@ import { useMemo, useState } from "react";
 import Fuse from "fuse.js";
 
 import { useGetAllProducts } from "@/hooks/use-get-all-products";
-import { ProductGrid } from "@/components/product-grid";
-import { PageHeader } from "@/components/page-header";
+import { ProductGrid } from "@/components/modules/production/product-grid";
+import { PageHeader } from "@/components/layout/page-header";
 import { SearchBar } from "@/components/search-bar";
 
 /**

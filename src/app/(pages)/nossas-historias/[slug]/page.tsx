@@ -1,6 +1,6 @@
 "use client";
 
-import StoryDetail from "@/components/story-detail";
+import StoryDetail from "@/components/modules/story/story-detail";
 import { useGetStoryBySlug } from "@/hooks/use-get-story-by-slug";
 import { use } from "react";
 

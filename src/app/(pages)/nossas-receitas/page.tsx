@@ -3,10 +3,10 @@
 import { useMemo, useState } from "react";
 import Fuse from "fuse.js";
 
-import { PageHeader } from "@/components/page-header";
+import { PageHeader } from "@/components/layout/page-header";
 import { SearchBar } from "@/components/search-bar";
-import { FeaturedRecipes } from "@/components/featured-recipes";
-import { RecipeGrid } from "@/components/recipe-grid";
+import { FeaturedRecipes } from "@/components/modules/recipe/featured-recipes";
+import { RecipeGrid } from "@/components/modules/recipe/recipe-grid";
 import { useGetAllRecipes } from "@/hooks/use-get-all-recipes";
 
 /**
