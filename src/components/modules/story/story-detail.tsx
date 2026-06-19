@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ImageLightbox } from "@/components/image-lightbox";
+import { ImageLightbox } from "@/components/ui/image-lightbox";
 import { Story } from "@/types/story";
 import { ArrowLeft, MapPin } from "lucide-react";
 import Link from "next/link";

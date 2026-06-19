@@ -6,7 +6,7 @@ import Fuse from "fuse.js";
 import { useGetAllProducts } from "@/hooks/use-get-all-products";
 import { ProductGrid } from "@/components/modules/production/product-grid";
 import { PageHeader } from "@/components/layout/page-header";
-import { SearchBar } from "@/components/search-bar";
+import { SearchBar } from "@/components/ui/search-bar";
 
 /**
  * Product listing page with search and filter support via URL params.

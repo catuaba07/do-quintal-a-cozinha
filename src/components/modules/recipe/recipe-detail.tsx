@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ImageLightbox } from "@/components/image-lightbox";
+import { ImageLightbox } from "@/components/ui/image-lightbox";
 import { formatMinutes, formatRecipeDifficulty } from "@/lib/utils";
 import { RecipeWithDetail } from "@/types/recipe";
 import { Clock, Users, ChefHat, ArrowLeft } from "lucide-react";
