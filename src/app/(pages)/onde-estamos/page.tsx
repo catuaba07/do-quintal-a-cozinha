@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/page-header";
+import { PageHeader } from "@/components/layout/page-header";
 import dynamic from "next/dynamic";
 
 interface TerritoryMapProps {
@@ -28,7 +28,6 @@ export default function OndeEstamos() {
       <PageHeader
         title="Onde Estamos"
         subtitle="Territórios de atuação do MMTR-SE"
-        backgroundImage="/mmtr-sobre-1.webp"
       />
 
 

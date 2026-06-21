@@ -2,6 +2,14 @@
 
 import { prisma } from "@/lib/prisma";
 
+/**
+ * Fetches complete recipe details for the recipe detail page.
+ * Unlike getAllRecipes, includes full ingredients and steps.
+ *
+ * @param options.id - Recipe UUID
+ * @returns Complete recipe with ingredients (JSON array) and steps, or null if not found
+ */
+
 interface Options {
   id: string;
 }
@@ -26,7 +34,7 @@ export async function getRecipeById(options: Options) {
           },
         },
       },
-      ingredients: true,
+      ingredients: true, // JSON array
       steps: {
         select: {
           step_number: true,

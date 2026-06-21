@@ -1,6 +1,6 @@
 "use client";
 
-import { RecipeDetail } from "@/components/recipe-detail";
+import { RecipeDetail } from "@/components/modules/recipe/recipe-detail";
 import { useGetRecipeById } from "@/hooks/use-get-recipe-by-id";
 import { use } from "react";
 
@@ -10,6 +10,9 @@ interface RecipePageProps {
   }>;
 }
 
+/**
+ * Recipe detail page showing full recipe with steps and ingredients.
+ */
 export default function RecipePage({ params }: RecipePageProps) {
   const { id } = use(params);
 
