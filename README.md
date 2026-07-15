@@ -1,3 +1,12 @@
+# ⚠️ Repositorio Arquivado
+
+[Movemos o projeto](https://github.com/MMTR-SE/do-quintal-a-cozinha/pulls) para dentro da organização MMTR-SE
+
+
+-----
+
+
+
 # Do Quintal a Cozinha
 
 Do Quintal a Cozinha é uma aplicação de software livre, desenvolvido pelas e para as mulheres do MMTR-SE (Movimento da Mulher Trabalhadora Rural de Sergipe) em parceria com [Intervozes](https://intervozes.org.br/), [Coolab](https://coolab.org) e muitas mão e corações.
